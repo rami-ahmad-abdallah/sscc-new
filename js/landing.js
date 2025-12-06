@@ -1,7 +1,16 @@
 window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
-  loader.style.opacity = 0;
-  loader.style.display = "none";
+  setTimeout(loaderOpacity, 1000);
+  setTimeout(loaderRemove, 1350);
+
+  function loaderOpacity() {
+    loader.style.opacity = 0;
+  }
+
+  function loaderRemove() {
+    loader.style.display = "none";
+  }
+
   const videos = document.querySelectorAll(".video-container");
   const logo = document.querySelector(".logo");
 

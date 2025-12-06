@@ -1,0 +1,89 @@
+$positionsMap: (
+  absolute,
+  fixed,
+  relative,
+  static,
+  sticky
+);
+
+@each $key in $positionsMap {
+  .#{$key} {
+    position: $key !important;
+  }
+}
+
+$positionValues: (
+  0,
+  50,
+  100
+);
+
+@each $val in $positionValues {
+  .top-#{$val} {
+    top: $val;
+  }
+
+  .left-#{$val} {
+    top: $val;
+  }
+
+  .right-#{$val} {
+    top: $val;
+  }
+
+  .bottom-#{$val} {
+    top: $val;
+  }
+}
+
+$displayMap: (
+  flex,
+  block,
+  inline-block,
+  inline-flex,
+  grid,
+  none,
+);
+
+@each $key in $displayMap {
+  .#{$key} {
+    display: $key !important;
+  }
+}
+
+// ALIGN FOR FLEX
+$alignMap: (
+  "align-baseline": baseline,
+  "align-center": center,
+  "align-start": start,
+  "align-end": end,
+);
+
+@each $key, $val in $alignMap {
+  .#{$key} {
+    align-items: $val !important;
+  }
+}
+
+$justifyMap: (
+  "justify-baseline": baseline,
+  "justify-center": center,
+  "justify-between": space-between,
+  "justify-evenly": space-evenly,
+  "justify-around": space-around,
+  "justify-start": flex-start,
+  "justify-end": flex-end,
+);
+
+@each $key, $val in $justifyMap {
+  .#{$key} {
+    justify-content: $val !important;
+  }
+}
+
+// GAPS
+@each $val in $utilitiesValues {
+  .gap-#{$val} {
+    gap: $base-gap * $val !important;
+  }
+}

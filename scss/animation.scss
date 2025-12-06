@@ -1,0 +1,188 @@
+:root {
+  --gold: #f5d730;
+  --blue: #1c457d;
+  --gray: #85888b;
+  --brown: #c79949;
+
+  --light-gold: #ffea70;
+  --light-blue: #4071b6;
+  --light-gray: #ababab;
+  --light-brown: #e3b15a;
+}
+
+@mixin square-rotation(
+  $x,
+  $y,
+  $delay: 0,
+  $duration: 4,
+  $count: infinite,
+  $fillMode: forwards,
+  $direction: normal
+) {
+  x: #{$x};
+  y: #{$y};
+
+  transform: translate(0px, 0px);
+
+  animation-delay: #{$delay}s;
+  animation-timing-function: ease-in-out;
+  animation-duration: #{$duration}s;
+  animation-iteration-count: $count;
+  animation-fill-mode: $fillMode;
+  animation-direction: $direction;
+}
+
+@mixin animation(
+  $name,
+  $delay: 0,
+  $duration: 4,
+  $count: infinite,
+  $fillMode: forwards,
+  $direction: normal
+) {
+  will-change: clip-path;
+  animation-name: #{$name};
+  animation-delay: #{$delay}s;
+  animation-timing-function: ease-in-out;
+  animation-duration: #{$duration}s;
+  animation-iteration-count: $count;
+  animation-fill-mode: $fillMode;
+  animation-direction: $direction;
+}
+
+@keyframes logo-colors {
+  0% {
+    clip-path: polygon(
+      103.35% 18.38%,
+      106.09% 16.88%,
+      109.68% 15.95%,
+      79.44% -7.48%,
+      72.91% -4.26%
+    );
+  }
+
+  10% {
+    clip-path: polygon(
+      52.04% 38.59%,
+      55.46% 37.55%,
+      109.68% 15.95%,
+      79.44% -7.48%,
+      49.95% 9.98%
+    );
+  }
+
+  20% {
+    clip-path: polygon(
+      54.06% 62.93%,
+      55.46% 41.22%,
+      109.68% 15.95%,
+      79.44% -7.48%,
+      3.37% 42.59%
+    );
+  }
+
+  30% {
+    clip-path: polygon(
+      43.26% 82.68%,
+      73.01% 67.86%,
+      109.68% 15.95%,
+      79.44% -7.48%,
+      -8.78% 52.24%
+    );
+  }
+
+  40% {
+    clip-path: polygon(
+      73.64% 102.89%,
+      139.84% 62.81%,
+      109.68% 15.95%,
+      79.44% -7.48%,
+      -8.78% 52.24%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      -14.13% 111.16%,
+      208.71% 110.12%,
+      208.25% -12.53%,
+      -7.65% -13.45%,
+      -8.78% 52.24%
+    );
+  }
+
+  80% {
+    clip-path: polygon(
+      -14.13% 111.16%,
+      208.71% 110.12%,
+      208.25% -12.53%,
+      -7.65% -13.45%,
+      -8.78% 52.24%
+    );
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes logo-text {
+  0% {
+    clip-path: polygon(-2.66% 0%, 0.47% 1%, 0.53% 101.39%, -3.79% 100%);
+  }
+
+  10% {
+    clip-path: polygon(-2.66% 0%, 23.34% -1.78%, 23.4% 104.17%, -3.79% 100%);
+  }
+
+  20% {
+    clip-path: polygon(-2.66% 0%, 50.46% -3.17%, 49.99% 104.17%, -3.79% 100%);
+  }
+
+  30% {
+    clip-path: polygon(-2.66% 0%, 75.46% -4.56%, 74.99% 105.56%, -3.79% 100%);
+  }
+
+  40% {
+    clip-path: polygon(-2.66% 0%, 106.31% -3.17%, 107.43% 106.95%, -3.79% 100%);
+  }
+  50% {
+    clip-path: polygon(
+      -61.16% -101.62%,
+      108.44% -108.97%,
+      107.43% 229.46%,
+      -61.76% 225.29%
+    );
+  }
+
+  80% {
+    clip-path: polygon(
+      -61.16% -101.62%,
+      108.44% -108.97%,
+      107.43% 229.46%,
+      -61.76% 225.29%
+    );
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#logo-colors {
+  @include animation(logo-colors, 0, 2, infinite);
+}
+
+#logo-text {
+  @include animation(logo-text, 0, 2, infinite);
+}

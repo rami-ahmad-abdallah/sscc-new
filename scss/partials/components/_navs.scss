@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
 
-  &>div {
+  & > div {
     height: $base-nav-height;
     display: flex;
     justify-content: center;
@@ -21,14 +21,16 @@
     cursor: pointer;
     text-decoration: none;
     color: set-text-color($bg-color);
+    height: $base-nav-height;
 
     a {
       text-decoration: none;
       color: set-text-color($bg-color);
-      height: 100%;
+      height: $base-nav-height;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px;
 
       img {
         width: 100%;
@@ -51,6 +53,7 @@
       margin: 0px $base-margin;
 
       a {
+        text-transform: uppercase;
         text-decoration: none;
         color: set-text-color($bg-color);
         padding: $base-padding;
@@ -128,7 +131,7 @@
     cursor: pointer;
   }
 
-  @include on-md-screen-and-lower() {
+  @include on-lg-screen-and-lower() {
     .nav-menu {
       width: 100vw;
       height: 100vh;
@@ -137,7 +140,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 1000;
+      z-index: 100;
       justify-content: start;
       align-items: start;
       flex-direction: column;
@@ -151,6 +154,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
+
+        a {
+          width: 100%;
+          color: set-text-color(rgba($dark, 0.86));
+        }
 
         .sub-links {
           position: static;
@@ -181,7 +189,7 @@
 
           a {
             width: 100%;
-            color: set-text-color($dark);
+            color: $light;
             width: 100%;
             text-align: left;
             justify-content: left;
@@ -206,6 +214,7 @@
         display: flex;
         border: 1px solid white;
         border-radius: 7px;
+        margin-left: 15px;
       }
 
       &.show-nav {

@@ -53,12 +53,12 @@
 }
 
 .bg-light {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
   color: #000000;
 }
 
 .text-light {
-  color: rgb(240, 240, 240);
+  color: rgb(250, 250, 250);
 }
 
 .p-0 {
@@ -735,22 +735,22 @@
 }
 
 .btn-light {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
   color: #000000;
 }
 .btn-light:hover {
-  background-color: rgb(222.15, 222.15, 222.15);
+  background-color: rgb(232.15, 232.15, 232.15);
   color: #000000;
 }
 
 .btn-light-outlined {
-  border: 1px solid rgb(240, 240, 240);
-  color: rgb(240, 240, 240);
+  border: 1px solid rgb(250, 250, 250);
+  color: rgb(250, 250, 250);
   background-color: white;
 }
 .btn-light-outlined:hover {
   color: #000000;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
 }
 
 .card {
@@ -866,7 +866,7 @@
 }
 .card-light .card-head {
   padding: 10px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
   color: #000000;
 }
 .card-light .card-body {
@@ -1241,7 +1241,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
   color: #000000;
 }
 .notification-light .notification-head .close-btn {
@@ -1274,7 +1274,7 @@
 }
 
 .nav-primary {
-  height: 60px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
   background-color: rgb(32, 111, 214);
   color: #ffffff;
@@ -1285,7 +1285,7 @@
   align-items: center;
 }
 .nav-primary > div {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1295,14 +1295,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
+  height: 100px;
 }
 .nav-primary .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .nav-primary .nav-brand a img {
   width: 100%;
@@ -1312,7 +1314,7 @@
 }
 .nav-primary .nav-menu {
   display: flex;
-  height: 60px;
+  height: 100px;
 }
 .nav-primary .nav-menu .nav-item {
   height: 100%;
@@ -1323,6 +1325,7 @@
   margin: 0px 7px;
 }
 .nav-primary .nav-menu .nav-item a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
@@ -1385,7 +1388,7 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-primary .nav-menu {
     width: 100vw;
     height: 100vh;
@@ -1395,7 +1398,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -1409,6 +1412,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .nav-primary .nav-menu .nav-item a {
+    width: 100%;
+    color: #ffffff;
   }
   .nav-primary .nav-menu .nav-item .sub-links {
     position: static;
@@ -1437,7 +1444,7 @@
   }
   .nav-primary .nav-menu .nav-item .sub-links a {
     width: 100%;
-    color: #ffffff;
+    color: rgb(250, 250, 250);
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -1455,6 +1462,7 @@
     display: flex;
     border: 1px solid white;
     border-radius: 7px;
+    margin-left: 15px;
   }
   .nav-primary .nav-menu.show-nav {
     transform: translateX(45%);
@@ -1466,7 +1474,7 @@
 }
 
 .nav-accent {
-  height: 60px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
   background-color: rgb(255, 129, 255);
   color: #000000;
@@ -1477,7 +1485,7 @@
   align-items: center;
 }
 .nav-accent > div {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1487,14 +1495,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
+  height: 100px;
 }
 .nav-accent .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .nav-accent .nav-brand a img {
   width: 100%;
@@ -1504,7 +1514,7 @@
 }
 .nav-accent .nav-menu {
   display: flex;
-  height: 60px;
+  height: 100px;
 }
 .nav-accent .nav-menu .nav-item {
   height: 100%;
@@ -1515,6 +1525,7 @@
   margin: 0px 7px;
 }
 .nav-accent .nav-menu .nav-item a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   padding: 10px;
@@ -1577,7 +1588,7 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-accent .nav-menu {
     width: 100vw;
     height: 100vh;
@@ -1587,7 +1598,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -1601,6 +1612,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .nav-accent .nav-menu .nav-item a {
+    width: 100%;
+    color: #ffffff;
   }
   .nav-accent .nav-menu .nav-item .sub-links {
     position: static;
@@ -1629,7 +1644,7 @@
   }
   .nav-accent .nav-menu .nav-item .sub-links a {
     width: 100%;
-    color: #ffffff;
+    color: rgb(250, 250, 250);
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -1647,6 +1662,7 @@
     display: flex;
     border: 1px solid white;
     border-radius: 7px;
+    margin-left: 15px;
   }
   .nav-accent .nav-menu.show-nav {
     transform: translateX(45%);
@@ -1658,7 +1674,7 @@
 }
 
 .nav-success {
-  height: 60px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
   background-color: rgb(56, 143, 56);
   color: #ffffff;
@@ -1669,7 +1685,7 @@
   align-items: center;
 }
 .nav-success > div {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1679,14 +1695,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
+  height: 100px;
 }
 .nav-success .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .nav-success .nav-brand a img {
   width: 100%;
@@ -1696,7 +1714,7 @@
 }
 .nav-success .nav-menu {
   display: flex;
-  height: 60px;
+  height: 100px;
 }
 .nav-success .nav-menu .nav-item {
   height: 100%;
@@ -1707,6 +1725,7 @@
   margin: 0px 7px;
 }
 .nav-success .nav-menu .nav-item a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
@@ -1769,7 +1788,7 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-success .nav-menu {
     width: 100vw;
     height: 100vh;
@@ -1779,7 +1798,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -1793,6 +1812,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .nav-success .nav-menu .nav-item a {
+    width: 100%;
+    color: #ffffff;
   }
   .nav-success .nav-menu .nav-item .sub-links {
     position: static;
@@ -1821,7 +1844,7 @@
   }
   .nav-success .nav-menu .nav-item .sub-links a {
     width: 100%;
-    color: #ffffff;
+    color: rgb(250, 250, 250);
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -1839,6 +1862,7 @@
     display: flex;
     border: 1px solid white;
     border-radius: 7px;
+    margin-left: 15px;
   }
   .nav-success .nav-menu.show-nav {
     transform: translateX(45%);
@@ -1850,7 +1874,7 @@
 }
 
 .nav-danger {
-  height: 60px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
   background-color: rgb(207, 68, 68);
   color: #ffffff;
@@ -1861,7 +1885,7 @@
   align-items: center;
 }
 .nav-danger > div {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1871,14 +1895,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
+  height: 100px;
 }
 .nav-danger .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .nav-danger .nav-brand a img {
   width: 100%;
@@ -1888,7 +1914,7 @@
 }
 .nav-danger .nav-menu {
   display: flex;
-  height: 60px;
+  height: 100px;
 }
 .nav-danger .nav-menu .nav-item {
   height: 100%;
@@ -1899,6 +1925,7 @@
   margin: 0px 7px;
 }
 .nav-danger .nav-menu .nav-item a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
@@ -1961,7 +1988,7 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-danger .nav-menu {
     width: 100vw;
     height: 100vh;
@@ -1971,7 +1998,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -1985,6 +2012,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .nav-danger .nav-menu .nav-item a {
+    width: 100%;
+    color: #ffffff;
   }
   .nav-danger .nav-menu .nav-item .sub-links {
     position: static;
@@ -2013,7 +2044,7 @@
   }
   .nav-danger .nav-menu .nav-item .sub-links a {
     width: 100%;
-    color: #ffffff;
+    color: rgb(250, 250, 250);
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -2031,6 +2062,7 @@
     display: flex;
     border: 1px solid white;
     border-radius: 7px;
+    margin-left: 15px;
   }
   .nav-danger .nav-menu.show-nav {
     transform: translateX(45%);
@@ -2042,7 +2074,7 @@
 }
 
 .nav-warning {
-  height: 60px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
   background-color: rgb(255, 217, 0);
   color: #000000;
@@ -2053,7 +2085,7 @@
   align-items: center;
 }
 .nav-warning > div {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2063,14 +2095,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
+  height: 100px;
 }
 .nav-warning .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .nav-warning .nav-brand a img {
   width: 100%;
@@ -2080,7 +2114,7 @@
 }
 .nav-warning .nav-menu {
   display: flex;
-  height: 60px;
+  height: 100px;
 }
 .nav-warning .nav-menu .nav-item {
   height: 100%;
@@ -2091,6 +2125,7 @@
   margin: 0px 7px;
 }
 .nav-warning .nav-menu .nav-item a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   padding: 10px;
@@ -2153,7 +2188,7 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-warning .nav-menu {
     width: 100vw;
     height: 100vh;
@@ -2163,7 +2198,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -2177,6 +2212,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .nav-warning .nav-menu .nav-item a {
+    width: 100%;
+    color: #ffffff;
   }
   .nav-warning .nav-menu .nav-item .sub-links {
     position: static;
@@ -2205,7 +2244,7 @@
   }
   .nav-warning .nav-menu .nav-item .sub-links a {
     width: 100%;
-    color: #ffffff;
+    color: rgb(250, 250, 250);
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -2223,6 +2262,7 @@
     display: flex;
     border: 1px solid white;
     border-radius: 7px;
+    margin-left: 15px;
   }
   .nav-warning .nav-menu.show-nav {
     transform: translateX(45%);
@@ -2234,7 +2274,7 @@
 }
 
 .nav-dark {
-  height: 60px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
   background-color: rgb(70, 70, 70);
   color: #ffffff;
@@ -2245,7 +2285,7 @@
   align-items: center;
 }
 .nav-dark > div {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2255,14 +2295,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
+  height: 100px;
 }
 .nav-dark .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .nav-dark .nav-brand a img {
   width: 100%;
@@ -2272,7 +2314,7 @@
 }
 .nav-dark .nav-menu {
   display: flex;
-  height: 60px;
+  height: 100px;
 }
 .nav-dark .nav-menu .nav-item {
   height: 100%;
@@ -2283,6 +2325,7 @@
   margin: 0px 7px;
 }
 .nav-dark .nav-menu .nav-item a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
@@ -2345,7 +2388,7 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-dark .nav-menu {
     width: 100vw;
     height: 100vh;
@@ -2355,7 +2398,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -2369,6 +2412,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .nav-dark .nav-menu .nav-item a {
+    width: 100%;
+    color: #ffffff;
   }
   .nav-dark .nav-menu .nav-item .sub-links {
     position: static;
@@ -2397,7 +2444,7 @@
   }
   .nav-dark .nav-menu .nav-item .sub-links a {
     width: 100%;
-    color: #ffffff;
+    color: rgb(250, 250, 250);
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -2415,6 +2462,7 @@
     display: flex;
     border: 1px solid white;
     border-radius: 7px;
+    margin-left: 15px;
   }
   .nav-dark .nav-menu.show-nav {
     transform: translateX(45%);
@@ -2426,9 +2474,9 @@
 }
 
 .nav-light {
-  height: 60px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
   color: #000000;
   margin-bottom: 14px;
   padding: 0px 10px;
@@ -2437,7 +2485,7 @@
   align-items: center;
 }
 .nav-light > div {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2447,14 +2495,16 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
+  height: 100px;
 }
 .nav-light .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .nav-light .nav-brand a img {
   width: 100%;
@@ -2464,7 +2514,7 @@
 }
 .nav-light .nav-menu {
   display: flex;
-  height: 60px;
+  height: 100px;
 }
 .nav-light .nav-menu .nav-item {
   height: 100%;
@@ -2475,6 +2525,7 @@
   margin: 0px 7px;
 }
 .nav-light .nav-menu .nav-item a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   padding: 10px;
@@ -2537,7 +2588,7 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-light .nav-menu {
     width: 100vw;
     height: 100vh;
@@ -2547,7 +2598,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     justify-content: start;
     align-items: start;
     flex-direction: column;
@@ -2561,6 +2612,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+  }
+  .nav-light .nav-menu .nav-item a {
+    width: 100%;
+    color: #ffffff;
   }
   .nav-light .nav-menu .nav-item .sub-links {
     position: static;
@@ -2589,7 +2644,7 @@
   }
   .nav-light .nav-menu .nav-item .sub-links a {
     width: 100%;
-    color: #ffffff;
+    color: rgb(250, 250, 250);
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -2607,6 +2662,7 @@
     display: flex;
     border: 1px solid white;
     border-radius: 7px;
+    margin-left: 15px;
   }
   .nav-light .nav-menu.show-nav {
     transform: translateX(45%);
@@ -2692,7 +2748,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border-right: 3px solid rgb(240, 240, 240);
+  border-right: 3px solid rgb(250, 250, 250);
   border-bottom: 3px solid transparent;
   animation: rotation 0.7s linear infinite;
 }

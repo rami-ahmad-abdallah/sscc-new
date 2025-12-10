@@ -1,4 +1,4 @@
-const CAROUSAL_TIME = 5000;
+let CAROUSAL_TIME = 5000;
 function makePreviousBtn(carousalId) {
   // PREVIOUS BUTTON
   const previousBtn = document.createElement("button");
@@ -38,6 +38,7 @@ function makeProgressBar() {
 // GET ALL THE CAROUSALS IN THE DOCUMENT
 let carousals = document.querySelectorAll(".carousal");
 
+// PREPARING EACH CAROUSAL USING JS
 carousals.forEach((carousal, carousalNumber) => {
   // SETTING THE CAROUSAL ID FOR USE LATER
   carousal.id = `c-${carousalNumber}`;
@@ -45,11 +46,19 @@ carousals.forEach((carousal, carousalNumber) => {
   // GETTING ALL IMAGES INSIDE THE CAROUSAL
   const carousalImages = carousal.querySelectorAll(".image");
 
+  // ADDING ACTIVE CLASS TO THE FIRST IMAGE OF EACH CAROUSAL
   carousalImages[0].classList.add("active");
 
   // CREATING CAROUSAL CONTROLS CONTAINER
   const carousalControls = document.createElement("div");
   carousalControls.classList.add("carousal-controls");
+
+  // CREATING A WRAPPER FOR THE CONTROLS
+  let controlsWrapper = document.createElement("div");
+  controlsWrapper.classList.add("controls-wrapper");
+
+  // APPENDING PREVIOUS BUTTON TO CONTROLS WRAPPER
+  controlsWrapper.appendChild(makePreviousBtn(carousalNumber));
 
   // CREATING THE CONTAINER THAT WILL HOLD ALL PROGRESS BARS
   const progressContainer = document.createElement("div");
@@ -62,17 +71,22 @@ carousals.forEach((carousal, carousalNumber) => {
     progressItem.classList.add("progress-item");
     progressItem.id = `c-${carousalNumber}-image-${imageNumber}`;
 
+    if (carousal.dataset.auto == "true") {
+      // GET THE CAROUSAL ANIMATION DURATION FROM THE AUTO CAROUSAL DATA_DURATION
+      CAROUSAL_TIME = carousal.dataset.duration;
+      if (CAROUSAL_TIME) {
+        CAROUSAL_TIME = parseInt(carousal.dataset.duration);
+      } else {
+        CAROUSAL_TIME = 5000;
+      }
+
+      image.style.animationDuration = `${CAROUSAL_TIME}ms`;
+    }
+
     // ADDING PROGRESS BAR TO PROGRESS ITEM WHICH WILL BE ADDED DEPENDING ON THE IMAGES COUNT IN THE CAROUSAL
     progressItem.appendChild(makeProgressBar());
     progressContainer.appendChild(progressItem);
   });
-
-  // CREATING A WRAPPER FOR THE CONTROLS
-  let controlsWrapper = document.createElement("div");
-  controlsWrapper.classList.add("controls-wrapper");
-
-  // APPENDING PREVIOUS BUTTON TO CONTROLS WRAPPER
-  controlsWrapper.appendChild(makePreviousBtn(carousalNumber));
 
   // APPENDING THE WHOLE PROGRESS CONTAINER TO THE CAROUSAL CONTROLS WRAPPER
   controlsWrapper.appendChild(progressContainer);
@@ -88,11 +102,13 @@ carousals.forEach((carousal, carousalNumber) => {
 
   // SET THE CAROUSAL IMAGE TO THE FIRST IMAGE
   carousalControls.dataset.currentImage = 0;
-  carousalControls
+
+  progressContainer
     .querySelector(`#c-${carousalNumber}-image-0`)
     .classList.add("active");
 });
 
+// IF A NEXT OR PREVIOUS BUTTON CLICKED ON A CAROUSAL
 document.addEventListener("click", (e) => {
   if (e.target && e.target.classList.contains("control-btn")) {
     const carousal = e.target.closest(".carousal");
@@ -105,6 +121,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// GO TO NEXT SLIDE ON A CAROUSAL
 function nextSlide(carousal) {
   let carousalId = parseInt(carousal.id.split("-")[1]);
   let carousalImages = carousal.querySelectorAll(".image");
@@ -114,6 +131,7 @@ function nextSlide(carousal) {
 
   // REMOVE ACTIVE CLASS FROM THE IMAGE
   carousalImages[currentImage].classList.remove("active");
+
   // REMOVE ACTIVE CLASS FROM THE PROGRESS ITEM OF THE IMAGE
   progressItems[currentImage].classList.remove("active");
 
@@ -124,15 +142,15 @@ function nextSlide(carousal) {
   }
 
   carousalImages[currentImage].classList.add("active");
-  progressItems[currentImage].classList.add("active");
   carousalControls.dataset.currentImage = currentImage;
-
+  progressItems[currentImage].classList.add("active");
   if (carousal.dataset.auto == "true") {
     // Reset the timeout specific to this carousel instance
     resetCarousalTimeout(carousal);
   }
 }
 
+// GO TO PREVIOUS SLIDE ON A CAROUSAL
 function previousSlide(carousal) {
   let carousalId = parseInt(carousal.id.split("-")[1]);
   let carousalImages = carousal.querySelectorAll(".image");
@@ -178,11 +196,27 @@ function resetCarousalTimeout(carousal) {
 }
 
 // GET ALL CAROUSALS THAT HAS A DATA-AUTO = TRUE
-// This selector finds all elements with the class 'carousal'
-// AND the attribute data-auto exactly equal to "true"
 const autoCarousals = document.querySelectorAll('.carousal[data-auto="true"]');
 
 autoCarousals.forEach((carousal, index) => {
   // Reset the timeout specific to this carousel instance
   resetCarousalTimeout(carousal);
+});
+
+// EVENT LISTENER TO PAUSE THE CAROUSALS WHEN TAB IS NOT OPEN
+document.addEventListener("visibilitychange", function () {
+  let carousals = document.querySelectorAll('.carousal[data-auto="true"]');
+
+  if (document.hidden) {
+    carousals.forEach((carousal, index) => {
+      const existingTimeoutId = carousal.dataset.timeoutId;
+      if (existingTimeoutId) {
+        clearTimeout(parseInt(existingTimeoutId));
+      }
+    });
+  } else {
+    carousals.forEach((carousal, index) => {
+      nextSlide(carousal);
+    });
+  }
 });

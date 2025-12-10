@@ -440,6 +440,7 @@
 
 .h-100vh {
   height: 100vh;
+  height: 100dvh;
 }
 
 .w-100 {
@@ -452,6 +453,7 @@
 
 .container {
   margin: 0px auto;
+  height: inherit;
 }
 @media (max-width: 992px) {
   .container {
@@ -1397,6 +1399,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-primary > div {
   height: 100px;
@@ -1504,14 +1507,15 @@
 }
 @media (max-width: 992px) {
   .nav-primary .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -1579,7 +1583,7 @@
     margin-left: 15px;
   }
   .nav-primary .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-primary .burger {
@@ -1598,6 +1602,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-accent > div {
   height: 100px;
@@ -1705,14 +1710,15 @@
 }
 @media (max-width: 992px) {
   .nav-accent .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -1780,7 +1786,7 @@
     margin-left: 15px;
   }
   .nav-accent .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-accent .burger {
@@ -1799,6 +1805,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-success > div {
   height: 100px;
@@ -1906,14 +1913,15 @@
 }
 @media (max-width: 992px) {
   .nav-success .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -1981,7 +1989,7 @@
     margin-left: 15px;
   }
   .nav-success .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-success .burger {
@@ -2000,6 +2008,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-danger > div {
   height: 100px;
@@ -2107,14 +2116,15 @@
 }
 @media (max-width: 992px) {
   .nav-danger .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -2182,7 +2192,7 @@
     margin-left: 15px;
   }
   .nav-danger .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-danger .burger {
@@ -2201,6 +2211,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-warning > div {
   height: 100px;
@@ -2308,14 +2319,15 @@
 }
 @media (max-width: 992px) {
   .nav-warning .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -2383,7 +2395,7 @@
     margin-left: 15px;
   }
   .nav-warning .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-warning .burger {
@@ -2402,6 +2414,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-dark > div {
   height: 100px;
@@ -2509,14 +2522,15 @@
 }
 @media (max-width: 992px) {
   .nav-dark .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -2584,7 +2598,7 @@
     margin-left: 15px;
   }
   .nav-dark .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-dark .burger {
@@ -2603,6 +2617,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-light > div {
   height: 100px;
@@ -2710,14 +2725,15 @@
 }
 @media (max-width: 992px) {
   .nav-light .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -2785,7 +2801,7 @@
     margin-left: 15px;
   }
   .nav-light .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-light .burger {
@@ -2804,6 +2820,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1100;
 }
 .nav-transparent > div {
   height: 100px;
@@ -2911,14 +2928,15 @@
 }
 @media (max-width: 992px) {
   .nav-transparent .nav-menu {
-    width: 100vw;
+    width: -moz-max-content;
+    width: max-content;
     height: 100vh;
     background: rgba(70, 70, 70, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     justify-content: start;
     align-items: start;
@@ -2986,7 +3004,7 @@
     margin-left: 15px;
   }
   .nav-transparent .nav-menu.show-nav {
-    transform: translateX(45%);
+    transform: translateX(0%);
     box-shadow: 0 0 10px 0 black;
   }
   .nav-transparent .burger {
@@ -3084,9 +3102,7 @@
 }
 
 .carousal {
-  position: fixed;
-  top: 0;
-  height: 0;
+  position: relative;
   width: 100vw;
   height: 100vh;
   height: 100dvh;
@@ -3108,7 +3124,7 @@
   width: 100%;
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .carousal .carousal-controls .control-btn {
@@ -3128,9 +3144,8 @@
 }
 .carousal .carousal-controls .progress-container {
   background: transparent;
-  height: 10px;
   flex: 1;
-  padding: 10px;
+  padding: 0px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3149,19 +3164,6 @@
 .carousal .carousal-controls .progress-container .progress-item .progress-bar .progress-value {
   width: 100%;
   height: 100%;
-  background: white;
-  transform-origin: left;
-  transform: translateX(-100%);
-}
-.carousal .carousal-controls .progress-container .progress-item.active {
-  flex: 1;
-}
-.carousal .carousal-controls .progress-container .progress-item.active .progress-bar {
-  width: 100%;
-  border-radius: 3px;
-}
-.carousal .carousal-controls .progress-container .progress-item.active .progress-value {
-  animation: increase-progress 10s 1 linear forwards;
 }
 .carousal .carousal-images {
   width: 100%;
@@ -3170,21 +3172,59 @@
   position: relative;
 }
 .carousal .carousal-images .image {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
-.carousal .carousal-images .image.active {
-  opacity: 1;
-}
 .carousal .carousal-images .image img {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.carousal[data-auto=true] .carousal-controls .progress-item.active {
+  flex: 1;
+}
+.carousal[data-auto=true] .carousal-controls .progress-item.active .progress-bar {
+  width: 100%;
+  border-radius: 3px;
+}
+.carousal[data-auto=true] .carousal-controls .progress-item.active .progress-value {
+  background: white;
+  animation: increase-progress 10s 1 linear forwards;
+}
+.carousal[data-auto=true] .carousal-images .image {
+  transform: scale(1.2) rotate(2deg);
+}
+.carousal[data-auto=true] .carousal-images .image.active {
+  opacity: 1;
+  animation: carousal-image 10s 1 forwards normal;
+}
+.carousal[data-auto=false] .carousal-controls .progress-item.active {
+  flex: 0;
+}
+.carousal[data-auto=false] .carousal-controls .progress-item.active .progress-value {
+  background: white;
+}
+.carousal[data-auto=false] .carousal-images .image.active {
+  opacity: 1;
+  animation: carousal-ige 10s 1 forwards normal;
+}
 
+@keyframes carousal-image {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  95% {
+    transform: scale(1.2) rotate(2deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(2deg);
+  }
+}
 @keyframes increase-progress {
   0% {
     transform-origin: left;

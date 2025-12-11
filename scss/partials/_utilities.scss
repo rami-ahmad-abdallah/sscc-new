@@ -27,4 +27,8 @@
         margin-top: $val * $base-margin;
         margin-bottom: $val * $base-margin;
     }
+
+    .radius-#{$val} {
+        border-radius: $val * $base-radius;
+    }
 }

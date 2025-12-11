@@ -183,10 +183,10 @@ $card-carousal-gap: 10px;
 }
 
 .card-carousal {
-  border: 1px solid;
   height: 50%;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 
   .card-carousal-controls {
     display: flex;
@@ -214,11 +214,14 @@ $card-carousal-gap: 10px;
         background-color: $carousal-controls-active-bg;
       }
     }
+
+    .hide-control {
+      display: none;
+    }
   }
 
   .carousal-cards {
     position: absolute;
-    border: 1px solid;
     width: 100%;
     height: 100%;
     top: 0;
@@ -227,6 +230,10 @@ $card-carousal-gap: 10px;
     display: flex;
     gap: $card-carousal-gap;
     scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .carousal-card {
       scroll-snap-align: center;

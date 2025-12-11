@@ -4496,10 +4496,10 @@
   }
 }
 .card-carousal {
-  border: 1px solid;
   height: 50%;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 .card-carousal .card-carousal-controls {
   display: flex;
@@ -4527,9 +4527,11 @@
   color: black;
   background-color: white;
 }
+.card-carousal .card-carousal-controls .hide-control {
+  display: none;
+}
 .card-carousal .carousal-cards {
   position: absolute;
-  border: 1px solid;
   width: 100%;
   height: 100%;
   top: 0;
@@ -4538,6 +4540,9 @@
   display: flex;
   gap: 10px;
   scroll-snap-type: x mandatory;
+}
+.card-carousal .carousal-cards::-webkit-scrollbar {
+  display: none;
 }
 .card-carousal .carousal-cards .carousal-card {
   scroll-snap-align: center;

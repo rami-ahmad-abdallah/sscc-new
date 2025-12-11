@@ -1,6 +1,7 @@
 $carousal-controls-bg: rgba(255, 255, 255, 0.25);
 $carousal-controls-active-bg: white;
 $card-carousal-gap: 10px;
+$card-carousal-radius: 7px;
 
 .carousal {
   position: relative;
@@ -183,53 +184,49 @@ $card-carousal-gap: 10px;
 }
 
 .card-carousal {
-  height: 50%;
+  height: 400px;
   overflow: hidden;
-  position: relative;
-  border-radius: 10px;
+  border-radius: $card-carousal-radius;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $card-carousal-gap;
+  padding: 10px;
 
-  .card-carousal-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: min-content;
-    z-index: 10;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  .card-carousal-control {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: $carousal-controls-bg;
+    border: 0;
+    border-radius: 50%;
+    font-size: 18px;
+    padding-bottom: 3px;
+    color: #000000a6;
+    visibility: visible;
+    pointer-events: all;
 
-    button {
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      background: $carousal-controls-bg;
-      border: 0;
-      border-radius: 50%;
-      font-size: 18px;
-      padding-bottom: 3px;
-      color: #000000a6;
-
-      &:hover {
-        color: black;
-        background-color: $carousal-controls-active-bg;
-      }
+    &:hover {
+      color: black;
+      background-color: $carousal-controls-active-bg;
     }
 
-    .hide-control {
-      display: none;
+    &.hide-control {
+      visibility: hidden;
+      pointer-events: none;
     }
   }
 
   .carousal-cards {
-    position: absolute;
-    width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
     overflow-x: auto;
     display: flex;
-    gap: $card-carousal-gap;
+    gap: $card-carousal-gap * 2;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    flex: 1;
+    border-radius: $card-carousal-radius;
 
     &::-webkit-scrollbar {
       display: none;
@@ -238,13 +235,36 @@ $card-carousal-gap: 10px;
     .carousal-card {
       scroll-snap-align: center;
       width: 100%;
-      background: #ffd8d8;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 100px;
       flex: 0 0 100%;
+      position: relative;
+      border: 1px solid;
+      border-radius: $card-carousal-radius;
+      overflow: hidden;
+
+      .card-image {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .card-title {
+        position: absolute;
+        background: #0000007d;
+        font-size: 28px;
+        color: white;
+        padding: 28px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        text-transform: uppercase;
+      }
     }
   }
 }

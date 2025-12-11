@@ -1,8 +1,12 @@
 function makePreviousBtn(carousalId) {
   // PREVIOUS BUTTON
   const previousBtn = document.createElement("button");
-  previousBtn.classList.add("card-carousal-control", 'previous-btn');
-  previousBtn.id = `previous-btn-${carousalId}`;
+  previousBtn.classList.add(
+    "card-carousal-control",
+    "previous-btn",
+    "hide-control"
+  );
+  previousBtn.id = `previous-card-btn-${carousalId}`;
   previousBtn.innerHTML = "&#10094;";
 
   return previousBtn;
@@ -11,8 +15,8 @@ function makePreviousBtn(carousalId) {
 function makeNextBtn(carousalId) {
   // NEXT BUTTON
   const nextBtn = document.createElement("button");
-  nextBtn.classList.add("card-carousal-control", 'next-btn');
-  nextBtn.id = `next-btn-${carousalId}`;
+  nextBtn.classList.add("card-carousal-control", "next-btn");
+  nextBtn.id = `next-card-btn-${carousalId}`;
   nextBtn.innerHTML = "&#10095;";
 
   return nextBtn;
@@ -26,29 +30,36 @@ cardCarousals.forEach((carousal, carousalNumber) => {
   // SETTING THE CAROUSAL ID FOR USE LATER
   carousal.id = `card-carousal-${carousalNumber}`;
 
+  const carousalCardsContainer = carousal.querySelector(".carousal-cards");
+
   // GETTING ALL cardS INSIDE THE CAROUSAL
   const carousalCards = carousal.querySelectorAll(".carousal-card");
 
-  // CREATING CAROUSAL CONTROLS CONTAINER
-  const carousalControls = document.createElement("div");
-  carousalControls.classList.add("card-carousal-controls");
+  // ADDING A PREVIOUS BUTTON BEFORE THE CARDS CONTAINER
+  carousalCardsContainer.insertAdjacentElement(
+    "beforebegin",
+    makePreviousBtn(carousalNumber)
+  );
 
-
-  // APPENDING PREVIOUS BUTTON TO CONTROLS WRAPPER
-  carousalControls.appendChild(makePreviousBtn(carousalNumber));
-  // APPENDING THE NEXT BUTTON AT LAST
-  carousalControls.appendChild(makeNextBtn(carousalNumber));
+  // ADDING A NEXT BUTTON AFTER THE CARDS CONTAINER
+  carousalCardsContainer.insertAdjacentElement(
+    "afterend",
+    makeNextBtn(carousalNumber)
+  );
 
   carousalCards.forEach((card, cardNumber) => {
     card.id = `c-${carousalNumber}-card-${cardNumber}`;
   });
 
-  // APPENDING EVERYTHING TO THE CAROUSAL
-  carousal.appendChild(carousalControls);
-
   carousalCards[0].classList.add("active");
   // SET THE CAROUSAL card TO THE FIRST card
-  carousalControls.dataset.currentCard = 0;
+  carousal.dataset.currentCard = 0;
+
+  carousalCards[0].scrollIntoView({
+    behavior: "smooth", // Optional: adds a smooth animation
+    block: "nearest", // Prevents forced vertical scrolling if already visible vertically
+    inline: "center", // Aligns the target to the center of the horizontal container
+  });
 });
 
 // IF A NEXT OR PREVIOUS BUTTON CLICKED ON A CAROUSAL
@@ -67,56 +78,51 @@ document.addEventListener("click", (e) => {
 // GO TO NEXT Card ON A CAROUSAL
 function nextCard(carousal) {
   let carousalCards = carousal.querySelectorAll(".carousal-card");
-  let carousalControls = carousal.querySelector(".card-carousal-controls");
-  let currentCard = carousalControls.dataset.currentCard;
+  let currentCard = carousal.dataset.currentCard;
 
   // REMOVE ACTIVE CLASS FROM THE card
   carousalCards[currentCard].classList.remove("active");
+  currentCard++;
 
   if (currentCard == carousalCards.length - 1) {
-    carousal.querySelector('.next-btn').classList.add('hide-control');
-    currentCard = 0;
-  } else {
-    currentCard++;
+    carousal.querySelector(".next-btn").classList.add("hide-control");
   }
 
-  carousalCards[currentCard].scrollIntoView({
-    behavior: 'smooth', // Optional: adds a smooth animation
-    block: 'nearest',   // Prevents forced vertical scrolling if already visible vertically
-    inline: 'center'    // Aligns the target to the center of the horizontal container
-  });
+  if (currentCard > 0) {
+    carousal.querySelector(".previous-btn").classList.remove("hide-control");
+  }
 
-  carousalCards[currentCard].classList.add("active");
-  carousalControls.dataset.currentCard = currentCard;
-
-
+  scrollCardToView(carousal, currentCard);
 }
 
 // GO TO PREVIOUS Card ON A CAROUSAL
 function previousCard(carousal) {
-  let carousalId = parseInt(carousal.id.split("-")[1]);
+  let carousalId = parseInt(carousal.id.split("-")[2]); // GET THE CAROUSAL ID IF NEEDED
   let carousalCards = carousal.querySelectorAll(".carousal-card");
-  let carousalControls = carousal.querySelector(".card-carousal-controls");
-  let progressItems = carousal.querySelectorAll(".progress-item");
-  let currentCard = carousalControls.dataset.currentCard;
+  let currentCard = carousal.dataset.currentCard;
 
   // REMOVE ACTIVE CLASS FROM THE card
   carousalCards[currentCard].classList.remove("active");
+  currentCard--;
 
   if (currentCard == 0) {
-    currentCard = carousalCards.length - 1;
-  } else {
-    currentCard--;
+    carousal.querySelector(".previous-btn").classList.add("hide-control");
   }
-  carousalCards[currentCard].scrollIntoView({
-    behavior: 'smooth', // Optional: adds a smooth animation
-    block: 'nearest',   // Prevents forced vertical scrolling if already visible vertically
-    inline: 'center'    // Aligns the target to the center of the horizontal container
-  });
-  carousalCards[currentCard].classList.add("active");
 
-  carousalControls.dataset.currentCard = currentCard;
+  if (currentCard < carousalCards.length - 1) {
+    carousal.querySelector(".next-btn").classList.remove("hide-control");
+  }
 
+  scrollCardToView(carousal, currentCard);
 }
 
-
+function scrollCardToView(carousal, cardNumber) {
+  let carousalCards = carousal.querySelectorAll(".carousal-card");
+  carousalCards[cardNumber].scrollIntoView({
+    behavior: "smooth", // Optional: adds a smooth animation
+    block: "nearest", // Prevents forced vertical scrolling if already visible vertically
+    inline: "center", // Aligns the target to the center of the horizontal container
+  });
+  carousalCards[cardNumber].classList.add("active");
+  carousal.dataset.currentCard = cardNumber;
+}

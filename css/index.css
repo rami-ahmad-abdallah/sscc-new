@@ -1818,7 +1818,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-primary .nav-brand a img {
   width: 100%;
@@ -2022,7 +2022,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-accent .nav-brand a img {
   width: 100%;
@@ -2226,7 +2226,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-success .nav-brand a img {
   width: 100%;
@@ -2430,7 +2430,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-danger .nav-brand a img {
   width: 100%;
@@ -2634,7 +2634,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-warning .nav-brand a img {
   width: 100%;
@@ -2838,7 +2838,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-dark .nav-brand a img {
   width: 100%;
@@ -3042,7 +3042,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-light .nav-brand a img {
   width: 100%;
@@ -3246,7 +3246,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-transparent .nav-brand a img {
   width: 100%;
@@ -3450,7 +3450,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-theme-1 .nav-brand a img {
   width: 100%;
@@ -3654,7 +3654,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-theme-2 .nav-brand a img {
   width: 100%;
@@ -3858,7 +3858,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-theme-3 .nav-brand a img {
   width: 100%;
@@ -4062,7 +4062,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .nav-theme-4 .nav-brand a img {
   width: 100%;
@@ -4496,23 +4496,16 @@
   }
 }
 .card-carousal {
-  height: 50%;
+  height: 400px;
   overflow: hidden;
-  position: relative;
-  border-radius: 10px;
-}
-.card-carousal .card-carousal-controls {
+  border-radius: 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: -moz-min-content;
-  height: min-content;
-  z-index: 10;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  gap: 10px;
+  padding: 10px;
 }
-.card-carousal .card-carousal-controls button {
+.card-carousal .card-carousal-control {
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -4522,24 +4515,27 @@
   font-size: 18px;
   padding-bottom: 3px;
   color: rgba(0, 0, 0, 0.6509803922);
+  visibility: visible;
+  pointer-events: all;
 }
-.card-carousal .card-carousal-controls button:hover {
+.card-carousal .card-carousal-control:hover {
   color: black;
   background-color: white;
 }
-.card-carousal .card-carousal-controls .hide-control {
-  display: none;
+.card-carousal .card-carousal-control.hide-control {
+  visibility: hidden;
+  pointer-events: none;
 }
 .card-carousal .carousal-cards {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   overflow-x: auto;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overflow-y: hidden;
+  flex: 1;
+  border-radius: 7px;
 }
 .card-carousal .carousal-cards::-webkit-scrollbar {
   display: none;
@@ -4547,13 +4543,36 @@
 .card-carousal .carousal-cards .carousal-card {
   scroll-snap-align: center;
   width: 100%;
-  background: #ffd8d8;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
   flex: 0 0 100%;
+  position: relative;
+  border: 1px solid;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.card-carousal .carousal-cards .carousal-card .card-image {
+  width: 100%;
+  height: 100%;
+}
+.card-carousal .carousal-cards .carousal-card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-carousal .carousal-cards .carousal-card .card-title {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4901960784);
+  font-size: 28px;
+  color: white;
+  padding: 28px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  text-transform: uppercase;
 }
 
 /* barlow-regular - latin_latin-ext_vietnamese */

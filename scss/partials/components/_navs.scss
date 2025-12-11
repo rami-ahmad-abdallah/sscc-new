@@ -12,7 +12,7 @@
   position: relative;
   z-index: 1100;
 
-  &>div {
+  & > div {
     height: $base-nav-height;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding: 10px 0px;
 
       img {
         width: 100%;

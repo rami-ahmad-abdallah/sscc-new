@@ -1,0 +1,29 @@
+.linear-list-style {
+  display: flex;
+
+  .linear-list-line {
+    width: 2px;
+  }
+
+  .linear-list-items {
+    margin: 15px 0px;
+    .item {
+      font-size: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+      transform: translateX(-10px);
+
+      .circle {
+        width: 20px;
+        height: 20px;
+        border: 4px solid #f4cb2a;
+        border-radius: 50%;
+        background: #232323;
+        flex: 0 0 20px;
+      }
+    }
+  }
+}

@@ -44,12 +44,12 @@
 }
 
 .bg-dark {
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(35, 35, 35);
   color: #ffffff;
 }
 
 .text-dark {
-  color: rgb(70, 70, 70);
+  color: rgb(35, 35, 35);
 }
 
 .bg-light {
@@ -511,6 +511,10 @@
   width: 100vw;
 }
 
+.w-50 {
+  width: 50%;
+}
+
 .container {
   margin: 0px auto;
   height: inherit;
@@ -532,8 +536,17 @@
   }
 }
 
+.blur-bg {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
 .row-wrap {
   flex-flow: row wrap;
+}
+
+.flex-child-auto > div {
+  flex: 0 0 auto;
 }
 
 .absolute {
@@ -807,22 +820,22 @@
 }
 
 .btn-dark {
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(35, 35, 35);
   color: #ffffff;
 }
 .btn-dark:hover {
-  background-color: rgb(52.15, 52.15, 52.15);
+  background-color: rgb(17.15, 17.15, 17.15);
   color: #ffffff;
 }
 
 .btn-dark-outlined {
-  border: 1px solid rgb(70, 70, 70);
-  color: rgb(70, 70, 70);
+  border: 1px solid rgb(35, 35, 35);
+  color: rgb(35, 35, 35);
   background-color: white;
 }
 .btn-dark-outlined:hover {
   color: #ffffff;
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(35, 35, 35);
 }
 
 .btn-light {
@@ -941,7 +954,7 @@
 
 .card {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -956,7 +969,7 @@
 
 .card-primary {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -971,7 +984,7 @@
 
 .card-accent {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -986,7 +999,7 @@
 
 .card-success {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1001,7 +1014,7 @@
 
 .card-danger {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1016,7 +1029,7 @@
 
 .card-warning {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1031,13 +1044,13 @@
 
 .card-dark {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
 .card-dark .card-head {
   padding: 10px;
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(35, 35, 35);
   color: #ffffff;
 }
 .card-dark .card-body {
@@ -1046,7 +1059,7 @@
 
 .card-light {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1061,7 +1074,7 @@
 
 .card-transparent {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1076,7 +1089,7 @@
 
 .card-theme-1 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1091,7 +1104,7 @@
 
 .card-theme-2 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1106,7 +1119,7 @@
 
 .card-theme-3 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1121,7 +1134,7 @@
 
 .card-theme-4 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
 }
@@ -1136,7 +1149,7 @@
 
 .notification {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1186,7 +1199,7 @@
 
 .notification-primary {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1236,7 +1249,7 @@
 
 .notification-accent {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1286,7 +1299,7 @@
 
 .notification-success {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1336,7 +1349,7 @@
 
 .notification-danger {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1386,7 +1399,7 @@
 
 .notification-warning {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1436,7 +1449,7 @@
 
 .notification-dark {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1452,7 +1465,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(35, 35, 35);
   color: #ffffff;
 }
 .notification-dark .notification-head .close-btn {
@@ -1486,7 +1499,7 @@
 
 .notification-light {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1536,7 +1549,7 @@
 
 .notification-transparent {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1586,7 +1599,7 @@
 
 .notification-theme-1 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1636,7 +1649,7 @@
 
 .notification-theme-2 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1686,7 +1699,7 @@
 
 .notification-theme-3 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1736,7 +1749,7 @@
 
 .notification-theme-4 {
   border-radius: 7px;
-  box-shadow: 0 0px 10px -5px rgb(70, 70, 70);
+  box-shadow: 0 0px 10px -5px rgb(35, 35, 35);
   overflow: hidden;
   margin: 14px 0px;
   width: 572px;
@@ -1786,8 +1799,8 @@
 
 .nav-primary {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(32, 111, 214);
   color: #ffffff;
   margin-bottom: 14px;
@@ -1799,7 +1812,7 @@
   z-index: 1100;
 }
 .nav-primary > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1809,12 +1822,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
 }
 .nav-primary .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1828,7 +1841,7 @@
 }
 .nav-primary .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-primary .nav-menu .nav-item {
   height: 100%;
@@ -1907,7 +1920,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -1934,7 +1947,7 @@
   }
   .nav-primary .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -1990,8 +2003,8 @@
 
 .nav-accent {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(255, 129, 255);
   color: #000000;
   margin-bottom: 14px;
@@ -2003,7 +2016,7 @@
   z-index: 1100;
 }
 .nav-accent > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2013,12 +2026,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
 }
 .nav-accent .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2032,7 +2045,7 @@
 }
 .nav-accent .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-accent .nav-menu .nav-item {
   height: 100%;
@@ -2111,7 +2124,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -2138,7 +2151,7 @@
   }
   .nav-accent .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -2194,8 +2207,8 @@
 
 .nav-success {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(56, 143, 56);
   color: #ffffff;
   margin-bottom: 14px;
@@ -2207,7 +2220,7 @@
   z-index: 1100;
 }
 .nav-success > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2217,12 +2230,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
 }
 .nav-success .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2236,7 +2249,7 @@
 }
 .nav-success .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-success .nav-menu .nav-item {
   height: 100%;
@@ -2315,7 +2328,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -2342,7 +2355,7 @@
   }
   .nav-success .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -2398,8 +2411,8 @@
 
 .nav-danger {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(207, 68, 68);
   color: #ffffff;
   margin-bottom: 14px;
@@ -2411,7 +2424,7 @@
   z-index: 1100;
 }
 .nav-danger > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2421,12 +2434,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
 }
 .nav-danger .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2440,7 +2453,7 @@
 }
 .nav-danger .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-danger .nav-menu .nav-item {
   height: 100%;
@@ -2519,7 +2532,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -2546,7 +2559,7 @@
   }
   .nav-danger .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -2602,8 +2615,8 @@
 
 .nav-warning {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(255, 217, 0);
   color: #000000;
   margin-bottom: 14px;
@@ -2615,7 +2628,7 @@
   z-index: 1100;
 }
 .nav-warning > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2625,12 +2638,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
 }
 .nav-warning .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2644,7 +2657,7 @@
 }
 .nav-warning .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-warning .nav-menu .nav-item {
   height: 100%;
@@ -2723,7 +2736,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -2750,7 +2763,7 @@
   }
   .nav-warning .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -2806,9 +2819,9 @@
 
 .nav-dark {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
-  background-color: rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
+  background-color: rgb(35, 35, 35);
   color: #ffffff;
   margin-bottom: 14px;
   padding: 0px 10px;
@@ -2819,7 +2832,7 @@
   z-index: 1100;
 }
 .nav-dark > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2829,12 +2842,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
 }
 .nav-dark .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2848,7 +2861,7 @@
 }
 .nav-dark .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-dark .nav-menu .nav-item {
   height: 100%;
@@ -2883,7 +2896,7 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  background: rgb(108.25, 108.25, 108.25);
+  background: rgb(73.25, 73.25, 73.25);
   width: -moz-max-content;
   width: max-content;
   display: flex;
@@ -2927,7 +2940,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -2954,7 +2967,7 @@
   }
   .nav-dark .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -3010,8 +3023,8 @@
 
 .nav-light {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(250, 250, 250);
   color: #000000;
   margin-bottom: 14px;
@@ -3023,7 +3036,7 @@
   z-index: 1100;
 }
 .nav-light > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3033,12 +3046,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
 }
 .nav-light .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3052,7 +3065,7 @@
 }
 .nav-light .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-light .nav-menu .nav-item {
   height: 100%;
@@ -3131,7 +3144,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -3158,7 +3171,7 @@
   }
   .nav-light .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -3214,8 +3227,8 @@
 
 .nav-transparent {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
   margin-bottom: 14px;
@@ -3227,7 +3240,7 @@
   z-index: 1100;
 }
 .nav-transparent > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3237,12 +3250,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
 }
 .nav-transparent .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3256,7 +3269,7 @@
 }
 .nav-transparent .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-transparent .nav-menu .nav-item {
   height: 100%;
@@ -3335,7 +3348,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -3362,7 +3375,7 @@
   }
   .nav-transparent .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -3418,8 +3431,8 @@
 
 .nav-theme-1 {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #f4cb2a;
   color: #000000;
   margin-bottom: 14px;
@@ -3431,7 +3444,7 @@
   z-index: 1100;
 }
 .nav-theme-1 > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3441,12 +3454,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-1 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3460,7 +3473,7 @@
 }
 .nav-theme-1 .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-1 .nav-menu .nav-item {
   height: 100%;
@@ -3539,7 +3552,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -3566,7 +3579,7 @@
   }
   .nav-theme-1 .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -3622,8 +3635,8 @@
 
 .nav-theme-2 {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #1c477f;
   color: #ffffff;
   margin-bottom: 14px;
@@ -3635,7 +3648,7 @@
   z-index: 1100;
 }
 .nav-theme-2 > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3645,12 +3658,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-2 .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3664,7 +3677,7 @@
 }
 .nav-theme-2 .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-2 .nav-menu .nav-item {
   height: 100%;
@@ -3743,7 +3756,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -3770,7 +3783,7 @@
   }
   .nav-theme-2 .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -3826,8 +3839,8 @@
 
 .nav-theme-3 {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #818588;
   color: #000000;
   margin-bottom: 14px;
@@ -3839,7 +3852,7 @@
   z-index: 1100;
 }
 .nav-theme-3 > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3849,12 +3862,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-3 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3868,7 +3881,7 @@
 }
 .nav-theme-3 .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-3 .nav-menu .nav-item {
   height: 100%;
@@ -3947,7 +3960,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -3974,7 +3987,7 @@
   }
   .nav-theme-3 .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -4030,8 +4043,8 @@
 
 .nav-theme-4 {
   width: 100%;
-  height: 100px;
-  box-shadow: 0 5px 10px -5px rgb(70, 70, 70);
+  height: 70px;
+  box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #d9b47e;
   color: #000000;
   margin-bottom: 14px;
@@ -4043,7 +4056,7 @@
   z-index: 1100;
 }
 .nav-theme-4 > div {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4053,12 +4066,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-4 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4072,7 +4085,7 @@
 }
 .nav-theme-4 .nav-menu {
   display: flex;
-  height: 100px;
+  height: 70px;
 }
 .nav-theme-4 .nav-menu .nav-item {
   height: 100%;
@@ -4151,7 +4164,7 @@
     width: -moz-max-content;
     width: max-content;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.86);
+    background: rgba(35, 35, 35, 0.86);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     position: fixed;
@@ -4178,7 +4191,7 @@
   }
   .nav-theme-4 .nav-menu .nav-item .sub-links {
     position: static;
-    background: rgba(70, 70, 70, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     width: -moz-max-content;
     width: max-content;
     display: none;
@@ -4298,7 +4311,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border-right: 3px solid rgb(70, 70, 70);
+  border-right: 3px solid rgb(35, 35, 35);
   border-bottom: 3px solid transparent;
   animation: rotation 0.7s linear infinite;
 }
@@ -4435,7 +4448,8 @@
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
-.carousal .carousal-images .image img {
+.carousal .carousal-images .image img,
+.carousal .carousal-images .image video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -4503,7 +4517,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  padding: 10px;
 }
 .card-carousal .card-carousal-control {
   cursor: pointer;
@@ -4536,6 +4549,7 @@
   overflow-y: hidden;
   flex: 1;
   border-radius: 7px;
+  pointer-events: none;
 }
 .card-carousal .carousal-cards::-webkit-scrollbar {
   display: none;
@@ -4549,7 +4563,6 @@
   align-items: center;
   flex: 0 0 100%;
   position: relative;
-  border: 1px solid;
   border-radius: 7px;
   overflow: hidden;
 }
@@ -4557,7 +4570,8 @@
   width: 100%;
   height: 100%;
 }
-.card-carousal .carousal-cards .carousal-card .card-image img {
+.card-carousal .carousal-cards .carousal-card .card-image img,
+.card-carousal .carousal-cards .carousal-card .card-image video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -4573,6 +4587,55 @@
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .card-carousal {
+    position: relative;
+  }
+  .card-carousal .carousal-cards .carousal-card .card-title {
+    font-size: 14px;
+    padding: 20px;
+    font-weight: bold;
+    bottom: 5px;
+  }
+  .card-carousal .card-carousal-control {
+    position: absolute;
+    bottom: 5px;
+    z-index: 1;
+  }
+  .card-carousal .next-btn {
+    right: 3px;
+  }
+  .card-carousal .previous-btn {
+    left: 3px;
+  }
+}
+
+.linear-list-style {
+  display: flex;
+}
+.linear-list-style .linear-list-line {
+  width: 2px;
+}
+.linear-list-style .linear-list-items {
+  margin: 15px 0px;
+}
+.linear-list-style .linear-list-items .item {
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  transform: translateX(-10px);
+}
+.linear-list-style .linear-list-items .item .circle {
+  width: 20px;
+  height: 20px;
+  border: 4px solid #f4cb2a;
+  border-radius: 50%;
+  background: #232323;
+  flex: 0 0 20px;
 }
 
 /* barlow-regular - latin_latin-ext_vietnamese */
@@ -4632,6 +4695,12 @@
 body {
   max-width: 100vw;
   min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 26px;
+  }
 }
 
 @property --angle {

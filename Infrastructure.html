@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 
-
 <body>
 
     <style>
@@ -28,6 +27,10 @@
             transition: opacity 0.3s ease-in-out;
             flex-direction: column;
             gap: 10px;
+        }
+
+        .loader svg {
+            width: 200px;
         }
 
         .loader .box {
@@ -106,7 +109,7 @@
         <div class="box"></div>
     </div>
 
-    <nav class="nav-transparent fixed shadow-0">
+    <nav class="nav-transparent fixed shadow-0 ">
         <div class="container flex justify-between align-center">
             <div class="nav-brand">
                 <a href=".">
@@ -150,27 +153,27 @@
     <div class="carousal" data-auto="true" data-duration="7000">
         <div class="carousal-images">
             <div class="image">
-                <img src="./files/images/infra/carousal-images/1.jpeg" alt="c1">
+                <img src="./files/images/infra/main-carousal/1.jpeg" alt="c1">
             </div>
             <div class="image">
-                <img src="./files/images/infra/carousal-images/10.jpg" alt="c1">
+                <img src="./files/images/infra/main-carousal/10.jpg" alt="c1">
             </div>
             <div class="image">
-                <img src="./files/images/infra/carousal-images/3.jpg" alt="c1">
-            </div>
-
-            <div class="image">
-                <img src="./files/images/infra/carousal-images/9.jpg" alt="c2">
+                <img src="./files/images/infra/main-carousal/3.jpg" alt="c1">
             </div>
 
             <div class="image">
-                <img src="./files/images/infra/carousal-images/irrigation-1.jpg" alt="c3">
+                <img src="./files/images/infra/main-carousal/9.jpg" alt="c2">
+            </div>
+
+            <div class="image">
+                <img src="./files/images/infra/main-carousal/irrigation-1.jpg" alt="c3">
             </div>
         </div>
     </div>
 
-    <section class="w-100 bg-dark">
-        <div class="container">
+    <section class="w-100 bg-dark pb-5">
+        <div class="container flex row-wrap ">
             <div class="text-center my-5">
                 <h1 class="text-theme-1">Infrastructure Development</h1>
                 <p class="text-secondary fs-18px mt-2">
@@ -223,31 +226,334 @@
                         </div>
                         <div class="card-title">tiles works</div>
                     </div>
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/drill.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">Drilling works</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <section class="h-100vh w-100 bg-primary ">
+    <section class="w-100 bg-dark pb-5">
         <div class="container">
-            <div class="carousal radius-1" style=" height: 50%;" data-auto="false">
-                <div class="carousal-images">
-                    <div class="image">
-                        <img src="./files/images/Garden/1.jpeg" alt="asd">
+            <div class="my-5">
+                <h1 class="text-theme-1">Networking Works</h1>
+                <p class="my-2">Scientific Systems Construction Company employs robust networking strategies that extend
+                    far beyond
+                    information technology, creating a dynamic ecosystem essential for modern construction project
+                    delivery. This encompasses intricate professional relationship networks—connecting key personnel,
+                    subcontractors, suppliers, and regulatory bodies—which are crucial for resource acquisition and
+                    project approvals. Furthermore, the company relies heavily on sophisticated physical logistical
+                    networks: coordinating complex supply chains for materials delivery, managing heavy equipment
+                    movement across various job sites, and establishing efficient onsite communication loops among
+                    diverse trade teams to ensure seamless project execution and timely completion.
+                </p>
+            </div>
+            <div class="card-carousal">
+                <div class="carousal-cards">
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/electric.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">Electricity network</div>
                     </div>
-                    <div class="image">
-                        <img src="./files/images/Garden/2.jpeg" alt="asd">
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/flood.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">Flood network</div>
                     </div>
-                    <div class="image">
-                        <img src="./files/images/Garden/3.png" alt="asd">
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/irrigation.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">irrigation network</div>
                     </div>
-                    <div class="image">
-                        <img src="./files/images/Garden/4.png" alt="asd">
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/lighting-2.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">lighting network</div>
                     </div>
-                    <div class="image">
-                        <img src="./files/images/Garden/5.png" alt="asd">
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/sewage.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">sewage network</div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/tele.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">telecommunication network</div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/network-carousal/water.jpg" alt="soil-1">
+                        </div>
+                        <div class="card-title">water network</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 bg-dark pb-5">
+        <div class="container">
+            <div class="my-5">
+                <h1 class="text-theme-1">Projects we have done</h1>
+                <p class="my-2">
+                    Scientific Systems Construction Company (SSCC) maintains a diverse project portfolio centered on
+                    building and infrastructure development.
+                    Its projects span across residential, commercial, and public works sectors, demonstrating a
+                    versatile capability in the construction domain.
+                </p>
+            </div>
+
+            <div class="linear-list-style">
+                <div class="linear-list-line bg-theme-1"></div>
+                <div class="linear-list-items">
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Developing Sheikh Abdullah Mutlaq Al-Qurini's Plans
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing the main canal of the Wadi El-Salli project, affiliated
+                        with Sercon Company.
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Supplying basic materials to the Wadi Namar project of the Saudi Salco
+                        Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing the works of the flood and sewage network in the Awj
+                        project with Al-Ajaimi Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing interlock and balcony works for the Shams Al Riyadh
+                        project, affiliated with Crete Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing road works for the Digital City project of Al-Ajaimi
+                        Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing various road works in the Mahdia project of the Riyadh
+                        Municipality with Turaif Al Arabiya
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing the interlock and balcony works of the Roshen project,
+                        affiliated with Al-Gedrawy Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing road works in the Future Project with Al-Ajaimi
+                        Foundation
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing garden works in the Al-Rush project with Astra Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing sewage network works with Al-Rawaf Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing water network works with the Basic Gate Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing irrigation network works with the Basic Gate Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Design and implementation of the largest park in Al-Kharj Governorate
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Design and implementation of the telephone network with Al-Rumaih plan
+                        in Al-Majma'ah Governorate
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing network works in the King Salman Energy City (SPARK)
+                        project with Aramco
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing gardens and sidewalks works in the Green Riyadh project
+                        with Marco Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing sidewalk works in the Riyadh neighborhoods development
+                        project with Al Yamamah Company
+                    </div>
+
+                    <div class="item mb-5">
+                        <div class="circle"></div>
+                        Implementing telephone network work with the Indian company affiliated
+                        with STC
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 bg-dark pb-5 ">
+        <div class="container">
+            <h1 class="my-5 text-theme-1">
+                Designing and implementation of the largest park in Al-kharj
+            </h1>
+            <div class="card-carousal radius-1" style=" height:500px" data-auto="false">
+                <div class="carousal-cards">
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <video src="./files/images/Garden/GARDEN-SSCC.mp4" playsinline loop muted autoplay></video>
+                        </div>
+                    </div>
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/Garden/1.jpeg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/Garden/7.png" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/Garden/2.jpeg" alt="asd">
+                        </div>
+                    </div>
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/Garden/3.png" alt="asd">
+                        </div>
+                    </div>
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/Garden/4.png" alt="asd">
+                        </div>
+                    </div>
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/Garden/5.png" alt="asd">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 bg-dark pb-5 ">
+        <div class="container">
+            <h1 class="my-5 text-theme-1">
+                Some pictures of our work in sites
+            </h1>
+            <div class="card-carousal radius-1" style=" height:500px" data-auto="false">
+                <div class="carousal-cards">
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/1.jpeg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/1.jpg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/18.jpg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/2.webp" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/3.jpg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/5.jpg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/6.jpg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/7.jpg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/9.jpg" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/drill.jpg (copy)" alt="asd">
+                        </div>
+                    </div>
+
+                    <div class="carousal-card">
+                        <div class="card-image">
+                            <img src="./files/images/infra/last-carousal/electric.jpg (copy)" alt="asd">
+                        </div>
                     </div>
                 </div>
             </div>

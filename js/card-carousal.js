@@ -54,12 +54,6 @@ cardCarousals.forEach((carousal, carousalNumber) => {
   carousalCards[0].classList.add("active");
   // SET THE CAROUSAL card TO THE FIRST card
   carousal.dataset.currentCard = 0;
-
-  carousalCards[0].scrollIntoView({
-    behavior: "smooth", // Optional: adds a smooth animation
-    block: "nearest", // Prevents forced vertical scrolling if already visible vertically
-    inline: "center", // Aligns the target to the center of the horizontal container
-  });
 });
 
 // IF A NEXT OR PREVIOUS BUTTON CLICKED ON A CAROUSAL

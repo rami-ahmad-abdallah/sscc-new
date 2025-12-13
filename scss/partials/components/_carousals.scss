@@ -89,7 +89,8 @@ $card-carousal-radius: 7px;
       opacity: 0;
       transition: opacity 0.5s ease-out;
 
-      img {
+      img,
+      video {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -191,7 +192,6 @@ $card-carousal-radius: 7px;
   justify-content: space-between;
   align-items: center;
   gap: $card-carousal-gap;
-  padding: 10px;
 
   .card-carousal-control {
     cursor: pointer;
@@ -227,6 +227,7 @@ $card-carousal-radius: 7px;
     overflow-y: hidden;
     flex: 1;
     border-radius: $card-carousal-radius;
+    pointer-events: none;
 
     &::-webkit-scrollbar {
       display: none;
@@ -241,14 +242,14 @@ $card-carousal-radius: 7px;
       align-items: center;
       flex: 0 0 100%;
       position: relative;
-      border: 1px solid;
       border-radius: $card-carousal-radius;
       overflow: hidden;
 
       .card-image {
         width: 100%;
         height: 100%;
-        img {
+        img,
+        video {
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -264,6 +265,37 @@ $card-carousal-radius: 7px;
         border-radius: 10px;
         backdrop-filter: blur(5px);
         text-transform: uppercase;
+      }
+    }
+  }
+
+  @include on-lg-screen-and-lower() {
+    & {
+      position: relative;
+
+      .carousal-cards {
+        .carousal-card {
+          .card-title {
+            font-size: 14px;
+            padding: 20px;
+            font-weight: bold;
+            bottom: 5px;
+          }
+        }
+      }
+
+      .card-carousal-control {
+        position: absolute;
+        bottom: 5px;
+        z-index: 1;
+      }
+
+      .next-btn {
+        right: 3px;
+      }
+
+      .previous-btn {
+        left: 3px;
       }
     }
   }

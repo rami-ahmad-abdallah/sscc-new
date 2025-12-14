@@ -8,10 +8,8 @@
     width: 27px;
     height: 27px;
     border-radius: 50%;
-    background-color: rgba(
-      lighten(set-text-color($bg-color), 50%),
-      $alpha: 0.2
-    );
+    background-color: rgba(lighten(set-text-color($bg-color), 50%),
+        $alpha: 0.2);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,6 +71,30 @@
   }
 }
 
+.place-center {
+  place-content: center;
+}
+
+.row-wrap-card {
+  width: clamp(350px, 50%, 30%);
+  overflow: hidden;
+  border-radius: 7px;
+  height: 450px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.center-absolute-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .blur-bg {
   backdrop-filter: blur(3px);
 }
@@ -82,9 +104,13 @@
 }
 
 .flex-child-auto {
-  & > div {
+  &>div {
     flex: 0 0 auto;
   }
+}
+
+.grow-flex {
+  flex: 1;
 }
 
 .overflow-hidden {

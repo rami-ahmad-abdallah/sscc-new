@@ -1,4 +1,4 @@
-.animated-logo {
+.animated-normal-stroke {
   position: absolute;
   left: 0%;
   width: 300px;
@@ -14,22 +14,22 @@
 
 @keyframes path-shift {
   0% {
-    stroke-dasharray: 50%;
+
     stroke-dashoffset: 100%;
   }
 
   25% {
-    stroke-dasharray: 150%;
+
     stroke-dashoffset: 0%;
   }
 
   50% {
-    stroke-dasharray: 150%;
+
     stroke-dashoffset: 0%;
   }
 
   100% {
-    stroke-dasharray: 50%;
+
     stroke-dashoffset: -100%;
   }
 }

@@ -7,6 +7,7 @@
 
   .linear-list-items {
     margin: 15px 0px;
+
     .item {
       font-size: 20px;
       position: relative;
@@ -21,7 +22,7 @@
         height: 20px;
         border: 4px solid #f4cb2a;
         border-radius: 50%;
-        background: #232323;
+        background: white;
         flex: 0 0 20px;
       }
     }

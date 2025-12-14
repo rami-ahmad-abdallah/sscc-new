@@ -1,10 +1,4 @@
-$positionsMap: (
-  absolute,
-  fixed,
-  relative,
-  static,
-  sticky
-);
+$positionsMap: (absolute, fixed, relative, static, sticky);
 
 @each $key in $positionsMap {
   .#{$key} {
@@ -12,11 +6,7 @@ $positionsMap: (
   }
 }
 
-$positionValues: (
-  0,
-  50,
-  100
-);
+$positionValues: (0, 50, 100);
 
 @each $val in $positionValues {
   .top-#{$val} {
@@ -36,14 +26,7 @@ $positionValues: (
   }
 }
 
-$displayMap: (
-  flex,
-  block,
-  inline-block,
-  inline-flex,
-  grid,
-  none,
-);
+$displayMap: (flex, block, inline-block, inline-flex, grid, none);
 
 @each $key in $displayMap {
   .#{$key} {
@@ -78,6 +61,14 @@ $justifyMap: (
 @each $key, $val in $justifyMap {
   .#{$key} {
     justify-content: $val !important;
+  }
+}
+
+$textAlign: (center, left, right);
+
+@each $val in $textAlign {
+  .text-#{$val} {
+    text-align: $val;
   }
 }
 

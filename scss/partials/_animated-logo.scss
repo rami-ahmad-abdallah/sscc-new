@@ -1,0 +1,44 @@
+.animated-logo {
+  position: absolute;
+  left: -10%;
+  width: 200px;
+  animation: spi 20s linear infinite forwards normal;
+  path {
+    stroke-width: 7px;
+    stroke: $theme-color-1;
+    stroke-dasharray: 100%;
+    animation: path-shift 10s ease infinite forwards normal;
+  }
+}
+
+@keyframes path-shift {
+  0% {
+    stroke-dasharray: 50%;
+    stroke-dashoffset: 100%;
+  }
+
+  25% {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 0%;
+  }
+
+  50% {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 0%;
+  }
+
+  100% {
+    stroke-dasharray: 50%;
+    stroke-dashoffset: -100%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

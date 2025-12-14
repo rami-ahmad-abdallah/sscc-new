@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Scientific Systems Construction Company</title>
+    <link rel="shortcut icon" href="files/logo/icon-square.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <section class="x-sections">
+        <div class="x-section">1</div>
+        <div class="x-section">2</div>
+        <div class="x-section">3</div>
+        <div class="x-section">4</div>
+        <div class="x-section">5</div>
+    </section>
+
+    <section class="y-sections">
+        <div class="y-section">1</div>
+        <div class="y-section">2</div>
+        <div class="y-section">3</div>
+    </section>
+
+    <script>
+        let xSections = document.querySelector('.x-sections');
+        let xSectionsNumber = xSections.querySelectorAll('.x-section').length; // 5
+        let xSectionsWidth = xSections.scrollWidth; // 2700
+        let windowWidth = window.innerWidth; // 500
+
+        let sectionWidth = xSectionsWidth / xSectionsNumber; // 2700 / 5 = 540 // with gap
+        let xSectionsGap = sectionWidth - windowWidth; // 540 - 500 = 40
+        let areaThumbCovers = xSectionsGap + windowWidth; // 40 + 500 = 540 
+        let xSectionsThumbWidth = window.innerWidth / xSectionsNumber; // 500 / 5 = 100
+
+        let scrollbar = document.createElement('div');
+        scrollbar.classList.add('x-scrollbar');
+
+        let scrollbarThumb = document.createElement('div');
+        scrollbarThumb.classList.add('thumb');
+        scrollbarThumb.style.width = `${xSectionsThumbWidth}px`;
+
+
+        scrollbar.appendChild(scrollbarThumb);
+
+        xSections.appendChild(scrollbar);
+
+        console.log(window.innerWidth);
+        console.log(`All Sections width: ${xSections.scrollWidth}`);
+    </script>
+</body>
+
+</html>

@@ -41,7 +41,14 @@ $uMap: (
   "ml": "margin-left",
 );
 
-$utilitiesValues: (0, 1, 2, 3, 4, 5);
+$utilitiesValues: (
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+);
 
 $base-padding: 10px;
 $base-margin: 7px;
@@ -49,7 +56,7 @@ $base-radius: 7px;
 $base-border: 1px;
 $base-shadow: 0 0px 10px -5px $dark;
 $base-mobile-width: 345px;
-$base-nav-height: 70px;
+$base-nav-height: 100px;
 $base-nav-shadow: 0 5px 10px -5px $dark;
 $base-spinner-size: 25px;
 $base-gap: 5px;

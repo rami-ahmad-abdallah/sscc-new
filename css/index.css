@@ -1908,7 +1908,7 @@
 
 .nav-primary {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(32, 111, 214);
   color: #ffffff;
@@ -1921,7 +1921,7 @@
   z-index: 1100;
 }
 .nav-primary > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1931,12 +1931,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
 }
 .nav-primary .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1950,7 +1950,7 @@
 }
 .nav-primary .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-primary .nav-menu .nav-item {
   height: 100%;
@@ -2112,7 +2112,7 @@
 
 .nav-accent {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(255, 129, 255);
   color: #000000;
@@ -2125,7 +2125,7 @@
   z-index: 1100;
 }
 .nav-accent > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2135,12 +2135,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
 }
 .nav-accent .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2154,7 +2154,7 @@
 }
 .nav-accent .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-accent .nav-menu .nav-item {
   height: 100%;
@@ -2316,7 +2316,7 @@
 
 .nav-success {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(56, 143, 56);
   color: #ffffff;
@@ -2329,7 +2329,7 @@
   z-index: 1100;
 }
 .nav-success > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2339,12 +2339,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
 }
 .nav-success .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2358,7 +2358,7 @@
 }
 .nav-success .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-success .nav-menu .nav-item {
   height: 100%;
@@ -2520,7 +2520,7 @@
 
 .nav-danger {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(207, 68, 68);
   color: #ffffff;
@@ -2533,7 +2533,7 @@
   z-index: 1100;
 }
 .nav-danger > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2543,12 +2543,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
 }
 .nav-danger .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2562,7 +2562,7 @@
 }
 .nav-danger .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-danger .nav-menu .nav-item {
   height: 100%;
@@ -2724,7 +2724,7 @@
 
 .nav-warning {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(255, 217, 0);
   color: #000000;
@@ -2737,7 +2737,7 @@
   z-index: 1100;
 }
 .nav-warning > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2747,12 +2747,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
 }
 .nav-warning .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2766,7 +2766,7 @@
 }
 .nav-warning .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-warning .nav-menu .nav-item {
   height: 100%;
@@ -2928,7 +2928,7 @@
 
 .nav-dark {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(35, 35, 35);
   color: #ffffff;
@@ -2941,7 +2941,7 @@
   z-index: 1100;
 }
 .nav-dark > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2951,12 +2951,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
 }
 .nav-dark .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2970,7 +2970,7 @@
 }
 .nav-dark .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-dark .nav-menu .nav-item {
   height: 100%;
@@ -3132,7 +3132,7 @@
 
 .nav-light {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(250, 250, 250);
   color: #000000;
@@ -3145,7 +3145,7 @@
   z-index: 1100;
 }
 .nav-light > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3155,12 +3155,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
 }
 .nav-light .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3174,7 +3174,7 @@
 }
 .nav-light .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-light .nav-menu .nav-item {
   height: 100%;
@@ -3336,7 +3336,7 @@
 
 .nav-transparent {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
@@ -3349,7 +3349,7 @@
   z-index: 1100;
 }
 .nav-transparent > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3359,12 +3359,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
 }
 .nav-transparent .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3378,7 +3378,7 @@
 }
 .nav-transparent .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-transparent .nav-menu .nav-item {
   height: 100%;
@@ -3540,7 +3540,7 @@
 
 .nav-black {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: rgb(5, 5, 5);
   color: #ffffff;
@@ -3553,7 +3553,7 @@
   z-index: 1100;
 }
 .nav-black > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3563,12 +3563,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
 }
 .nav-black .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3582,7 +3582,7 @@
 }
 .nav-black .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-black .nav-menu .nav-item {
   height: 100%;
@@ -3744,7 +3744,7 @@
 
 .nav-theme-1 {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #f4cb2a;
   color: #000000;
@@ -3757,7 +3757,7 @@
   z-index: 1100;
 }
 .nav-theme-1 > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3767,12 +3767,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-1 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3786,7 +3786,7 @@
 }
 .nav-theme-1 .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-1 .nav-menu .nav-item {
   height: 100%;
@@ -3948,7 +3948,7 @@
 
 .nav-theme-2 {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #1c477f;
   color: #ffffff;
@@ -3961,7 +3961,7 @@
   z-index: 1100;
 }
 .nav-theme-2 > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3971,12 +3971,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-2 .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3990,7 +3990,7 @@
 }
 .nav-theme-2 .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-2 .nav-menu .nav-item {
   height: 100%;
@@ -4152,7 +4152,7 @@
 
 .nav-theme-3 {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #818588;
   color: #000000;
@@ -4165,7 +4165,7 @@
   z-index: 1100;
 }
 .nav-theme-3 > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4175,12 +4175,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-3 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4194,7 +4194,7 @@
 }
 .nav-theme-3 .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-3 .nav-menu .nav-item {
   height: 100%;
@@ -4356,7 +4356,7 @@
 
 .nav-theme-4 {
   width: 100%;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 5px 10px -5px rgb(35, 35, 35);
   background-color: #d9b47e;
   color: #000000;
@@ -4369,7 +4369,7 @@
   z-index: 1100;
 }
 .nav-theme-4 > div {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4379,12 +4379,12 @@
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-4 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4398,7 +4398,7 @@
 }
 .nav-theme-4 .nav-menu {
   display: flex;
-  height: 70px;
+  height: 100px;
 }
 .nav-theme-4 .nav-menu .nav-item {
   height: 100%;
@@ -5009,9 +5009,9 @@
 
 .animated-logo {
   position: absolute;
-  left: -10%;
-  width: 200px;
-  animation: spi 20s linear infinite forwards normal;
+  left: 0%;
+  width: 300px;
+  animation: spin 120s linear infinite forwards normal;
 }
 .animated-logo path {
   stroke-width: 7px;
@@ -5026,11 +5026,11 @@
     stroke-dashoffset: 100%;
   }
   25% {
-    stroke-dasharray: 100%;
+    stroke-dasharray: 150%;
     stroke-dashoffset: 0%;
   }
   50% {
-    stroke-dasharray: 100%;
+    stroke-dasharray: 150%;
     stroke-dashoffset: 0%;
   }
   100% {

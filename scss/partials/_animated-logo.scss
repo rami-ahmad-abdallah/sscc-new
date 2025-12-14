@@ -1,8 +1,9 @@
 .animated-logo {
   position: absolute;
-  left: -10%;
-  width: 200px;
-  animation: spi 20s linear infinite forwards normal;
+  left: 0%;
+  width: 300px;
+  animation: spin 120s linear infinite forwards normal;
+
   path {
     stroke-width: 7px;
     stroke: $theme-color-1;
@@ -18,12 +19,12 @@
   }
 
   25% {
-    stroke-dasharray: 100%;
+    stroke-dasharray: 150%;
     stroke-dashoffset: 0%;
   }
 
   50% {
-    stroke-dasharray: 100%;
+    stroke-dasharray: 150%;
     stroke-dashoffset: 0%;
   }
 

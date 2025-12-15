@@ -5254,6 +5254,7 @@
   color: rgba(0, 0, 0, 0.6509803922);
   visibility: visible;
   pointer-events: all;
+  z-index: 5;
 }
 .card-carousal .card-carousal-control:hover {
   color: black;
@@ -5356,7 +5357,7 @@
 .linear-list-style .linear-list-items .item .circle {
   width: 20px;
   height: 20px;
-  border: 4px solid #f4cb2a;
+  border: 2px solid #f4cb2a;
   border-radius: 50%;
   background: white;
   flex: 0 0 20px;
@@ -5422,17 +5423,13 @@
   animation: path-shift 10s ease infinite forwards normal;
 }
 
-.all-over-animation svg {
-  position: relative;
-  top: -150px;
-  transform-origin: center;
-  animation: all-ove 60s linear 0s infinite forwards normal;
-  transform: translateX(10%) rotate(0deg);
+.all-over-animation {
+  /* Golden */
 }
 
 @keyframes all-over {
   to {
-    transform: translateX(-110%) rotate(-360deg);
+    transform: translateX(-50vw) rotate(-360deg);
   }
 }
 @keyframes path-shift {

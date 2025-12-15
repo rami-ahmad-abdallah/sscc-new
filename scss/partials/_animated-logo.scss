@@ -13,18 +13,48 @@
 }
 
 .all-over-animation {
-  svg {
-    position: relative;
-    top: -150px;
-    transform-origin: center;
-    animation: all-ove 60s linear 0s infinite forwards normal;
-    transform: translateX(10%) rotate(0deg);
-  }
+  // svg {
+  //   position: relative;
+
+  //   transform-origin: center;
+  //   animation: all-over linear 0s infinite forwards normal;
+  //   transform: translateX(100vw) rotate(0deg);
+
+  //   &:nth-child(1) {
+  //     top: -300px;
+  //     width: 200px;
+  //     animation-duration: 20s;
+  //   }
+
+  //   &:nth-child(2) {
+  //     top: 0;
+  //     width: 300px;
+  //     animation-duration: 15s;
+  //   }
+
+  //   &:nth-child(3) {
+  //     top: 60%;
+  //     width: 500px;
+  //     animation-duration: 25s;
+  //   }
+
+  //   &:nth-child(4) {
+  //     top: -38%;
+  //     width: 600px;
+  //     animation-duration: 17s;
+  //   }
+
+  /* Golden */
+
+
+
+
 }
+
 
 @keyframes all-over {
   to {
-    transform: translateX(-110%) rotate(-360deg);
+    transform: translateX(-50vw) rotate(-360deg);
   }
 }
 

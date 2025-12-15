@@ -647,6 +647,10 @@
           backdrop-filter: blur(3px);
 }
 
+.z-1 {
+  z-index: 1;
+}
+
 .row-wrap {
   flex-flow: row wrap;
 }
@@ -5418,6 +5422,19 @@
   animation: path-shift 10s ease infinite forwards normal;
 }
 
+.all-over-animation svg {
+  position: relative;
+  top: -150px;
+  transform-origin: center;
+  animation: all-ove 60s linear 0s infinite forwards normal;
+  transform: translateX(10%) rotate(0deg);
+}
+
+@keyframes all-over {
+  to {
+    transform: translateX(-110%) rotate(-360deg);
+  }
+}
 @keyframes path-shift {
   0% {
     stroke-dashoffset: 100%;

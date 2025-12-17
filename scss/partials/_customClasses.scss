@@ -107,6 +107,19 @@
 
 .row-wrap {
   flex-flow: row wrap;
+  gap: 10px;
+  > div {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 7px;
+    height: 450px;
+    flex: 1 0 auto;
+  }
+
+  .wrap-auto-height {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .flex-child-auto {
@@ -115,8 +128,12 @@
   }
 }
 
-.grow-flex {
-  flex: 1;
+.flex-1 {
+  flex: 1 0 100%;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 .overflow-hidden {

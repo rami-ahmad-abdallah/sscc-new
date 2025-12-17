@@ -58,6 +58,10 @@ $justifyMap: (
   "justify-end": flex-end,
 );
 
+.flex-column {
+  flex-direction: column;
+}
+
 @each $key, $val in $justifyMap {
   .#{$key} {
     justify-content: $val !important;

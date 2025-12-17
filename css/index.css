@@ -1,3 +1,60 @@
+/* barlow-regular - latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.woff2") format("woff2"), url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* barlow-500 - latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "barlow";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.woff2") format("woff2"), url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* cairo-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "cairo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../files/fonts/cairo-v31-latin-regular.woff2") format("woff2"), url("../files/fonts/cairo-v31-latin-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* cairo-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "cairo";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../files/fonts/cairo-v31-latin-600.woff2") format("woff2"), url("../files/fonts/cairo-v31-latin-600.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "cairo", "barlow";
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
 .bg-primary {
   background-color: rgb(32, 111, 214);
   color: #ffffff;
@@ -653,14 +710,30 @@
 
 .row-wrap {
   flex-flow: row wrap;
+  gap: 10px;
+}
+.row-wrap > div {
+  width: 350px;
+  overflow: hidden;
+  border-radius: 7px;
+  height: 450px;
+  flex: 1 0 auto;
+}
+.row-wrap .wrap-auto-height {
+  height: auto;
+  width: 100%;
 }
 
 .flex-child-auto > div {
   flex: 0 0 auto;
 }
 
-.grow-flex {
-  flex: 1;
+.flex-1 {
+  flex: 1 0 100%;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 .overflow-hidden {
@@ -773,6 +846,10 @@
 
 .align-end {
   align-items: end !important;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-baseline {
@@ -5457,69 +5534,1419 @@
     transform: rotateZ(360deg);
   }
 }
-/* barlow-regular - latin_latin-ext_vietnamese */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "barlow";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.woff2") format("woff2"), url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* barlow-500 - latin_latin-ext_vietnamese */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "barlow";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.woff2") format("woff2"), url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* cairo-regular - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "cairo";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../files/fonts/cairo-v31-latin-regular.woff2") format("woff2"), url("../files/fonts/cairo-v31-latin-regular.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* cairo-600 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "cairo";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../files/fonts/cairo-v31-latin-600.woff2") format("woff2"), url("../files/fonts/cairo-v31-latin-600.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  font-family: "barlow", "cairo", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  scroll-behavior: smooth;
+.svg-1 svg {
+  width: 1px;
 }
 
-body {
-  max-width: 100vw;
-  min-height: 100vh;
+.svg-2 svg {
+  width: 2px;
+}
+
+.svg-3 svg {
+  width: 3px;
+}
+
+.svg-4 svg {
+  width: 4px;
+}
+
+.svg-5 svg {
+  width: 5px;
+}
+
+.svg-6 svg {
+  width: 6px;
+}
+
+.svg-7 svg {
+  width: 7px;
+}
+
+.svg-8 svg {
+  width: 8px;
+}
+
+.svg-9 svg {
+  width: 9px;
+}
+
+.svg-10 svg {
+  width: 10px;
+}
+
+.svg-11 svg {
+  width: 11px;
+}
+
+.svg-12 svg {
+  width: 12px;
+}
+
+.svg-13 svg {
+  width: 13px;
+}
+
+.svg-14 svg {
+  width: 14px;
+}
+
+.svg-15 svg {
+  width: 15px;
+}
+
+.svg-16 svg {
+  width: 16px;
+}
+
+.svg-17 svg {
+  width: 17px;
+}
+
+.svg-18 svg {
+  width: 18px;
+}
+
+.svg-19 svg {
+  width: 19px;
+}
+
+.svg-20 svg {
+  width: 20px;
+}
+
+.svg-21 svg {
+  width: 21px;
+}
+
+.svg-22 svg {
+  width: 22px;
+}
+
+.svg-23 svg {
+  width: 23px;
+}
+
+.svg-24 svg {
+  width: 24px;
+}
+
+.svg-25 svg {
+  width: 25px;
+}
+
+.svg-26 svg {
+  width: 26px;
+}
+
+.svg-27 svg {
+  width: 27px;
+}
+
+.svg-28 svg {
+  width: 28px;
+}
+
+.svg-29 svg {
+  width: 29px;
+}
+
+.svg-30 svg {
+  width: 30px;
+}
+
+.svg-31 svg {
+  width: 31px;
+}
+
+.svg-32 svg {
+  width: 32px;
+}
+
+.svg-33 svg {
+  width: 33px;
+}
+
+.svg-34 svg {
+  width: 34px;
+}
+
+.svg-35 svg {
+  width: 35px;
+}
+
+.svg-36 svg {
+  width: 36px;
+}
+
+.svg-37 svg {
+  width: 37px;
+}
+
+.svg-38 svg {
+  width: 38px;
+}
+
+.svg-39 svg {
+  width: 39px;
+}
+
+.svg-40 svg {
+  width: 40px;
+}
+
+.svg-41 svg {
+  width: 41px;
+}
+
+.svg-42 svg {
+  width: 42px;
+}
+
+.svg-43 svg {
+  width: 43px;
+}
+
+.svg-44 svg {
+  width: 44px;
+}
+
+.svg-45 svg {
+  width: 45px;
+}
+
+.svg-46 svg {
+  width: 46px;
+}
+
+.svg-47 svg {
+  width: 47px;
+}
+
+.svg-48 svg {
+  width: 48px;
+}
+
+.svg-49 svg {
+  width: 49px;
+}
+
+.svg-50 svg {
+  width: 50px;
+}
+
+.svg-51 svg {
+  width: 51px;
+}
+
+.svg-52 svg {
+  width: 52px;
+}
+
+.svg-53 svg {
+  width: 53px;
+}
+
+.svg-54 svg {
+  width: 54px;
+}
+
+.svg-55 svg {
+  width: 55px;
+}
+
+.svg-56 svg {
+  width: 56px;
+}
+
+.svg-57 svg {
+  width: 57px;
+}
+
+.svg-58 svg {
+  width: 58px;
+}
+
+.svg-59 svg {
+  width: 59px;
+}
+
+.svg-60 svg {
+  width: 60px;
+}
+
+.svg-61 svg {
+  width: 61px;
+}
+
+.svg-62 svg {
+  width: 62px;
+}
+
+.svg-63 svg {
+  width: 63px;
+}
+
+.svg-64 svg {
+  width: 64px;
+}
+
+.svg-65 svg {
+  width: 65px;
+}
+
+.svg-66 svg {
+  width: 66px;
+}
+
+.svg-67 svg {
+  width: 67px;
+}
+
+.svg-68 svg {
+  width: 68px;
+}
+
+.svg-69 svg {
+  width: 69px;
+}
+
+.svg-70 svg {
+  width: 70px;
+}
+
+.svg-71 svg {
+  width: 71px;
+}
+
+.svg-72 svg {
+  width: 72px;
+}
+
+.svg-73 svg {
+  width: 73px;
+}
+
+.svg-74 svg {
+  width: 74px;
+}
+
+.svg-75 svg {
+  width: 75px;
+}
+
+.svg-76 svg {
+  width: 76px;
+}
+
+.svg-77 svg {
+  width: 77px;
+}
+
+.svg-78 svg {
+  width: 78px;
+}
+
+.svg-79 svg {
+  width: 79px;
+}
+
+.svg-80 svg {
+  width: 80px;
+}
+
+.svg-81 svg {
+  width: 81px;
+}
+
+.svg-82 svg {
+  width: 82px;
+}
+
+.svg-83 svg {
+  width: 83px;
+}
+
+.svg-84 svg {
+  width: 84px;
+}
+
+.svg-85 svg {
+  width: 85px;
+}
+
+.svg-86 svg {
+  width: 86px;
+}
+
+.svg-87 svg {
+  width: 87px;
+}
+
+.svg-88 svg {
+  width: 88px;
+}
+
+.svg-89 svg {
+  width: 89px;
+}
+
+.svg-90 svg {
+  width: 90px;
+}
+
+.svg-91 svg {
+  width: 91px;
+}
+
+.svg-92 svg {
+  width: 92px;
+}
+
+.svg-93 svg {
+  width: 93px;
+}
+
+.svg-94 svg {
+  width: 94px;
+}
+
+.svg-95 svg {
+  width: 95px;
+}
+
+.svg-96 svg {
+  width: 96px;
+}
+
+.svg-97 svg {
+  width: 97px;
+}
+
+.svg-98 svg {
+  width: 98px;
+}
+
+.svg-99 svg {
+  width: 99px;
+}
+
+.svg-100 svg {
+  width: 100px;
+}
+
+.svg-fluid svg {
+  width: 100%;
+  height: 100%;
+}
+
+.square-1 {
+  width: 1px;
+  height: 1px;
+}
+
+.square-2 {
+  width: 2px;
+  height: 2px;
+}
+
+.square-3 {
+  width: 3px;
+  height: 3px;
+}
+
+.square-4 {
+  width: 4px;
+  height: 4px;
+}
+
+.square-5 {
+  width: 5px;
+  height: 5px;
+}
+
+.square-6 {
+  width: 6px;
+  height: 6px;
+}
+
+.square-7 {
+  width: 7px;
+  height: 7px;
+}
+
+.square-8 {
+  width: 8px;
+  height: 8px;
+}
+
+.square-9 {
+  width: 9px;
+  height: 9px;
+}
+
+.square-10 {
+  width: 10px;
+  height: 10px;
+}
+
+.square-11 {
+  width: 11px;
+  height: 11px;
+}
+
+.square-12 {
+  width: 12px;
+  height: 12px;
+}
+
+.square-13 {
+  width: 13px;
+  height: 13px;
+}
+
+.square-14 {
+  width: 14px;
+  height: 14px;
+}
+
+.square-15 {
+  width: 15px;
+  height: 15px;
+}
+
+.square-16 {
+  width: 16px;
+  height: 16px;
+}
+
+.square-17 {
+  width: 17px;
+  height: 17px;
+}
+
+.square-18 {
+  width: 18px;
+  height: 18px;
+}
+
+.square-19 {
+  width: 19px;
+  height: 19px;
+}
+
+.square-20 {
+  width: 20px;
+  height: 20px;
+}
+
+.square-21 {
+  width: 21px;
+  height: 21px;
+}
+
+.square-22 {
+  width: 22px;
+  height: 22px;
+}
+
+.square-23 {
+  width: 23px;
+  height: 23px;
+}
+
+.square-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.square-25 {
+  width: 25px;
+  height: 25px;
+}
+
+.square-26 {
+  width: 26px;
+  height: 26px;
+}
+
+.square-27 {
+  width: 27px;
+  height: 27px;
+}
+
+.square-28 {
+  width: 28px;
+  height: 28px;
+}
+
+.square-29 {
+  width: 29px;
+  height: 29px;
+}
+
+.square-30 {
+  width: 30px;
+  height: 30px;
+}
+
+.square-31 {
+  width: 31px;
+  height: 31px;
+}
+
+.square-32 {
+  width: 32px;
+  height: 32px;
+}
+
+.square-33 {
+  width: 33px;
+  height: 33px;
+}
+
+.square-34 {
+  width: 34px;
+  height: 34px;
+}
+
+.square-35 {
+  width: 35px;
+  height: 35px;
+}
+
+.square-36 {
+  width: 36px;
+  height: 36px;
+}
+
+.square-37 {
+  width: 37px;
+  height: 37px;
+}
+
+.square-38 {
+  width: 38px;
+  height: 38px;
+}
+
+.square-39 {
+  width: 39px;
+  height: 39px;
+}
+
+.square-40 {
+  width: 40px;
+  height: 40px;
+}
+
+.square-41 {
+  width: 41px;
+  height: 41px;
+}
+
+.square-42 {
+  width: 42px;
+  height: 42px;
+}
+
+.square-43 {
+  width: 43px;
+  height: 43px;
+}
+
+.square-44 {
+  width: 44px;
+  height: 44px;
+}
+
+.square-45 {
+  width: 45px;
+  height: 45px;
+}
+
+.square-46 {
+  width: 46px;
+  height: 46px;
+}
+
+.square-47 {
+  width: 47px;
+  height: 47px;
+}
+
+.square-48 {
+  width: 48px;
+  height: 48px;
+}
+
+.square-49 {
+  width: 49px;
+  height: 49px;
+}
+
+.square-50 {
+  width: 50px;
+  height: 50px;
+}
+
+.square-51 {
+  width: 51px;
+  height: 51px;
+}
+
+.square-52 {
+  width: 52px;
+  height: 52px;
+}
+
+.square-53 {
+  width: 53px;
+  height: 53px;
+}
+
+.square-54 {
+  width: 54px;
+  height: 54px;
+}
+
+.square-55 {
+  width: 55px;
+  height: 55px;
+}
+
+.square-56 {
+  width: 56px;
+  height: 56px;
+}
+
+.square-57 {
+  width: 57px;
+  height: 57px;
+}
+
+.square-58 {
+  width: 58px;
+  height: 58px;
+}
+
+.square-59 {
+  width: 59px;
+  height: 59px;
+}
+
+.square-60 {
+  width: 60px;
+  height: 60px;
+}
+
+.square-61 {
+  width: 61px;
+  height: 61px;
+}
+
+.square-62 {
+  width: 62px;
+  height: 62px;
+}
+
+.square-63 {
+  width: 63px;
+  height: 63px;
+}
+
+.square-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.square-65 {
+  width: 65px;
+  height: 65px;
+}
+
+.square-66 {
+  width: 66px;
+  height: 66px;
+}
+
+.square-67 {
+  width: 67px;
+  height: 67px;
+}
+
+.square-68 {
+  width: 68px;
+  height: 68px;
+}
+
+.square-69 {
+  width: 69px;
+  height: 69px;
+}
+
+.square-70 {
+  width: 70px;
+  height: 70px;
+}
+
+.square-71 {
+  width: 71px;
+  height: 71px;
+}
+
+.square-72 {
+  width: 72px;
+  height: 72px;
+}
+
+.square-73 {
+  width: 73px;
+  height: 73px;
+}
+
+.square-74 {
+  width: 74px;
+  height: 74px;
+}
+
+.square-75 {
+  width: 75px;
+  height: 75px;
+}
+
+.square-76 {
+  width: 76px;
+  height: 76px;
+}
+
+.square-77 {
+  width: 77px;
+  height: 77px;
+}
+
+.square-78 {
+  width: 78px;
+  height: 78px;
+}
+
+.square-79 {
+  width: 79px;
+  height: 79px;
+}
+
+.square-80 {
+  width: 80px;
+  height: 80px;
+}
+
+.square-81 {
+  width: 81px;
+  height: 81px;
+}
+
+.square-82 {
+  width: 82px;
+  height: 82px;
+}
+
+.square-83 {
+  width: 83px;
+  height: 83px;
+}
+
+.square-84 {
+  width: 84px;
+  height: 84px;
+}
+
+.square-85 {
+  width: 85px;
+  height: 85px;
+}
+
+.square-86 {
+  width: 86px;
+  height: 86px;
+}
+
+.square-87 {
+  width: 87px;
+  height: 87px;
+}
+
+.square-88 {
+  width: 88px;
+  height: 88px;
+}
+
+.square-89 {
+  width: 89px;
+  height: 89px;
+}
+
+.square-90 {
+  width: 90px;
+  height: 90px;
+}
+
+.square-91 {
+  width: 91px;
+  height: 91px;
+}
+
+.square-92 {
+  width: 92px;
+  height: 92px;
+}
+
+.square-93 {
+  width: 93px;
+  height: 93px;
+}
+
+.square-94 {
+  width: 94px;
+  height: 94px;
+}
+
+.square-95 {
+  width: 95px;
+  height: 95px;
+}
+
+.square-96 {
+  width: 96px;
+  height: 96px;
+}
+
+.square-97 {
+  width: 97px;
+  height: 97px;
+}
+
+.square-98 {
+  width: 98px;
+  height: 98px;
+}
+
+.square-99 {
+  width: 99px;
+  height: 99px;
+}
+
+.square-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.square-101 {
+  width: 101px;
+  height: 101px;
+}
+
+.square-102 {
+  width: 102px;
+  height: 102px;
+}
+
+.square-103 {
+  width: 103px;
+  height: 103px;
+}
+
+.square-104 {
+  width: 104px;
+  height: 104px;
+}
+
+.square-105 {
+  width: 105px;
+  height: 105px;
+}
+
+.square-106 {
+  width: 106px;
+  height: 106px;
+}
+
+.square-107 {
+  width: 107px;
+  height: 107px;
+}
+
+.square-108 {
+  width: 108px;
+  height: 108px;
+}
+
+.square-109 {
+  width: 109px;
+  height: 109px;
+}
+
+.square-110 {
+  width: 110px;
+  height: 110px;
+}
+
+.square-111 {
+  width: 111px;
+  height: 111px;
+}
+
+.square-112 {
+  width: 112px;
+  height: 112px;
+}
+
+.square-113 {
+  width: 113px;
+  height: 113px;
+}
+
+.square-114 {
+  width: 114px;
+  height: 114px;
+}
+
+.square-115 {
+  width: 115px;
+  height: 115px;
+}
+
+.square-116 {
+  width: 116px;
+  height: 116px;
+}
+
+.square-117 {
+  width: 117px;
+  height: 117px;
+}
+
+.square-118 {
+  width: 118px;
+  height: 118px;
+}
+
+.square-119 {
+  width: 119px;
+  height: 119px;
+}
+
+.square-120 {
+  width: 120px;
+  height: 120px;
+}
+
+.square-121 {
+  width: 121px;
+  height: 121px;
+}
+
+.square-122 {
+  width: 122px;
+  height: 122px;
+}
+
+.square-123 {
+  width: 123px;
+  height: 123px;
+}
+
+.square-124 {
+  width: 124px;
+  height: 124px;
+}
+
+.square-125 {
+  width: 125px;
+  height: 125px;
+}
+
+.square-126 {
+  width: 126px;
+  height: 126px;
+}
+
+.square-127 {
+  width: 127px;
+  height: 127px;
+}
+
+.square-128 {
+  width: 128px;
+  height: 128px;
+}
+
+.square-129 {
+  width: 129px;
+  height: 129px;
+}
+
+.square-130 {
+  width: 130px;
+  height: 130px;
+}
+
+.square-131 {
+  width: 131px;
+  height: 131px;
+}
+
+.square-132 {
+  width: 132px;
+  height: 132px;
+}
+
+.square-133 {
+  width: 133px;
+  height: 133px;
+}
+
+.square-134 {
+  width: 134px;
+  height: 134px;
+}
+
+.square-135 {
+  width: 135px;
+  height: 135px;
+}
+
+.square-136 {
+  width: 136px;
+  height: 136px;
+}
+
+.square-137 {
+  width: 137px;
+  height: 137px;
+}
+
+.square-138 {
+  width: 138px;
+  height: 138px;
+}
+
+.square-139 {
+  width: 139px;
+  height: 139px;
+}
+
+.square-140 {
+  width: 140px;
+  height: 140px;
+}
+
+.square-141 {
+  width: 141px;
+  height: 141px;
+}
+
+.square-142 {
+  width: 142px;
+  height: 142px;
+}
+
+.square-143 {
+  width: 143px;
+  height: 143px;
+}
+
+.square-144 {
+  width: 144px;
+  height: 144px;
+}
+
+.square-145 {
+  width: 145px;
+  height: 145px;
+}
+
+.square-146 {
+  width: 146px;
+  height: 146px;
+}
+
+.square-147 {
+  width: 147px;
+  height: 147px;
+}
+
+.square-148 {
+  width: 148px;
+  height: 148px;
+}
+
+.square-149 {
+  width: 149px;
+  height: 149px;
+}
+
+.square-150 {
+  width: 150px;
+  height: 150px;
+}
+
+.square-151 {
+  width: 151px;
+  height: 151px;
+}
+
+.square-152 {
+  width: 152px;
+  height: 152px;
+}
+
+.square-153 {
+  width: 153px;
+  height: 153px;
+}
+
+.square-154 {
+  width: 154px;
+  height: 154px;
+}
+
+.square-155 {
+  width: 155px;
+  height: 155px;
+}
+
+.square-156 {
+  width: 156px;
+  height: 156px;
+}
+
+.square-157 {
+  width: 157px;
+  height: 157px;
+}
+
+.square-158 {
+  width: 158px;
+  height: 158px;
+}
+
+.square-159 {
+  width: 159px;
+  height: 159px;
+}
+
+.square-160 {
+  width: 160px;
+  height: 160px;
+}
+
+.square-161 {
+  width: 161px;
+  height: 161px;
+}
+
+.square-162 {
+  width: 162px;
+  height: 162px;
+}
+
+.square-163 {
+  width: 163px;
+  height: 163px;
+}
+
+.square-164 {
+  width: 164px;
+  height: 164px;
+}
+
+.square-165 {
+  width: 165px;
+  height: 165px;
+}
+
+.square-166 {
+  width: 166px;
+  height: 166px;
+}
+
+.square-167 {
+  width: 167px;
+  height: 167px;
+}
+
+.square-168 {
+  width: 168px;
+  height: 168px;
+}
+
+.square-169 {
+  width: 169px;
+  height: 169px;
+}
+
+.square-170 {
+  width: 170px;
+  height: 170px;
+}
+
+.square-171 {
+  width: 171px;
+  height: 171px;
+}
+
+.square-172 {
+  width: 172px;
+  height: 172px;
+}
+
+.square-173 {
+  width: 173px;
+  height: 173px;
+}
+
+.square-174 {
+  width: 174px;
+  height: 174px;
+}
+
+.square-175 {
+  width: 175px;
+  height: 175px;
+}
+
+.square-176 {
+  width: 176px;
+  height: 176px;
+}
+
+.square-177 {
+  width: 177px;
+  height: 177px;
+}
+
+.square-178 {
+  width: 178px;
+  height: 178px;
+}
+
+.square-179 {
+  width: 179px;
+  height: 179px;
+}
+
+.square-180 {
+  width: 180px;
+  height: 180px;
+}
+
+.square-181 {
+  width: 181px;
+  height: 181px;
+}
+
+.square-182 {
+  width: 182px;
+  height: 182px;
+}
+
+.square-183 {
+  width: 183px;
+  height: 183px;
+}
+
+.square-184 {
+  width: 184px;
+  height: 184px;
+}
+
+.square-185 {
+  width: 185px;
+  height: 185px;
+}
+
+.square-186 {
+  width: 186px;
+  height: 186px;
+}
+
+.square-187 {
+  width: 187px;
+  height: 187px;
+}
+
+.square-188 {
+  width: 188px;
+  height: 188px;
+}
+
+.square-189 {
+  width: 189px;
+  height: 189px;
+}
+
+.square-190 {
+  width: 190px;
+  height: 190px;
+}
+
+.square-191 {
+  width: 191px;
+  height: 191px;
+}
+
+.square-192 {
+  width: 192px;
+  height: 192px;
+}
+
+.square-193 {
+  width: 193px;
+  height: 193px;
+}
+
+.square-194 {
+  width: 194px;
+  height: 194px;
+}
+
+.square-195 {
+  width: 195px;
+  height: 195px;
+}
+
+.square-196 {
+  width: 196px;
+  height: 196px;
+}
+
+.square-197 {
+  width: 197px;
+  height: 197px;
+}
+
+.square-198 {
+  width: 198px;
+  height: 198px;
+}
+
+.square-199 {
+  width: 199px;
+  height: 199px;
+}
+
+.square-200 {
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 992px) {
   h1 {
     font-size: 26px;
   }
+}
+
+svg {
+  width: 16px;
 }
 
 @property --angle {

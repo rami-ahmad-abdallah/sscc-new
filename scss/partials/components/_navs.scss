@@ -24,12 +24,12 @@
     cursor: pointer;
     text-decoration: none;
     color: set-text-color($bg-color);
-    height: $base-nav-height;
+    height: 100%;
 
     a {
       text-decoration: none;
       color: set-text-color($bg-color);
-      height: $base-nav-height;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -135,6 +135,18 @@
   }
 
   @include on-lg-screen-and-lower() {
+    height: $base-nav-height/1.2;
+    & > div {
+      height: $base-nav-height/1.2;
+    }
+
+    .nav-brand {
+      height: 100%;
+
+      a {
+        height: 100%;
+      }
+    }
     .nav-menu {
       width: max-content;
       height: 100vh;

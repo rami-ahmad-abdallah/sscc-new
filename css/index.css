@@ -2197,12 +2197,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-primary .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2291,6 +2291,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-primary {
+    height: 83.3333333333px;
+  }
+  .nav-primary > div {
+    height: 83.3333333333px;
+  }
+  .nav-primary .nav-brand {
+    height: 100%;
+  }
+  .nav-primary .nav-brand a {
+    height: 100%;
+  }
   .nav-primary .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -2401,12 +2413,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
 }
 .nav-accent .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2495,6 +2507,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-accent {
+    height: 83.3333333333px;
+  }
+  .nav-accent > div {
+    height: 83.3333333333px;
+  }
+  .nav-accent .nav-brand {
+    height: 100%;
+  }
+  .nav-accent .nav-brand a {
+    height: 100%;
+  }
   .nav-accent .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -2605,12 +2629,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-success .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2699,6 +2723,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-success {
+    height: 83.3333333333px;
+  }
+  .nav-success > div {
+    height: 83.3333333333px;
+  }
+  .nav-success .nav-brand {
+    height: 100%;
+  }
+  .nav-success .nav-brand a {
+    height: 100%;
+  }
   .nav-success .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -2809,12 +2845,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-danger .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2903,6 +2939,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-danger {
+    height: 83.3333333333px;
+  }
+  .nav-danger > div {
+    height: 83.3333333333px;
+  }
+  .nav-danger .nav-brand {
+    height: 100%;
+  }
+  .nav-danger .nav-brand a {
+    height: 100%;
+  }
   .nav-danger .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -3013,12 +3061,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
 }
 .nav-warning .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3107,6 +3155,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-warning {
+    height: 83.3333333333px;
+  }
+  .nav-warning > div {
+    height: 83.3333333333px;
+  }
+  .nav-warning .nav-brand {
+    height: 100%;
+  }
+  .nav-warning .nav-brand a {
+    height: 100%;
+  }
   .nav-warning .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -3217,12 +3277,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-dark .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3311,6 +3371,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-dark {
+    height: 83.3333333333px;
+  }
+  .nav-dark > div {
+    height: 83.3333333333px;
+  }
+  .nav-dark .nav-brand {
+    height: 100%;
+  }
+  .nav-dark .nav-brand a {
+    height: 100%;
+  }
   .nav-dark .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -3421,12 +3493,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
 }
 .nav-light .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3515,6 +3587,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-light {
+    height: 83.3333333333px;
+  }
+  .nav-light > div {
+    height: 83.3333333333px;
+  }
+  .nav-light .nav-brand {
+    height: 100%;
+  }
+  .nav-light .nav-brand a {
+    height: 100%;
+  }
   .nav-light .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -3625,12 +3709,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-transparent .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3719,6 +3803,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-transparent {
+    height: 83.3333333333px;
+  }
+  .nav-transparent > div {
+    height: 83.3333333333px;
+  }
+  .nav-transparent .nav-brand {
+    height: 100%;
+  }
+  .nav-transparent .nav-brand a {
+    height: 100%;
+  }
   .nav-transparent .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -3829,12 +3925,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-black .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3923,6 +4019,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-black {
+    height: 83.3333333333px;
+  }
+  .nav-black > div {
+    height: 83.3333333333px;
+  }
+  .nav-black .nav-brand {
+    height: 100%;
+  }
+  .nav-black .nav-brand a {
+    height: 100%;
+  }
   .nav-black .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -4033,12 +4141,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-cover .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4127,6 +4235,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-cover {
+    height: 83.3333333333px;
+  }
+  .nav-cover > div {
+    height: 83.3333333333px;
+  }
+  .nav-cover .nav-brand {
+    height: 100%;
+  }
+  .nav-cover .nav-brand a {
+    height: 100%;
+  }
   .nav-cover .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -4237,12 +4357,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
 }
 .nav-theme-1 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4331,6 +4451,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-theme-1 {
+    height: 83.3333333333px;
+  }
+  .nav-theme-1 > div {
+    height: 83.3333333333px;
+  }
+  .nav-theme-1 .nav-brand {
+    height: 100%;
+  }
+  .nav-theme-1 .nav-brand a {
+    height: 100%;
+  }
   .nav-theme-1 .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -4441,12 +4573,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
 }
 .nav-theme-2 .nav-brand a {
   text-decoration: none;
   color: #ffffff;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4535,6 +4667,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-theme-2 {
+    height: 83.3333333333px;
+  }
+  .nav-theme-2 > div {
+    height: 83.3333333333px;
+  }
+  .nav-theme-2 .nav-brand {
+    height: 100%;
+  }
+  .nav-theme-2 .nav-brand a {
+    height: 100%;
+  }
   .nav-theme-2 .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -4645,12 +4789,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
 }
 .nav-theme-3 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4739,6 +4883,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-theme-3 {
+    height: 83.3333333333px;
+  }
+  .nav-theme-3 > div {
+    height: 83.3333333333px;
+  }
+  .nav-theme-3 .nav-brand {
+    height: 100%;
+  }
+  .nav-theme-3 .nav-brand a {
+    height: 100%;
+  }
   .nav-theme-3 .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -4849,12 +5005,12 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
 }
 .nav-theme-4 .nav-brand a {
   text-decoration: none;
   color: #000000;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4943,6 +5099,18 @@ body {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  .nav-theme-4 {
+    height: 83.3333333333px;
+  }
+  .nav-theme-4 > div {
+    height: 83.3333333333px;
+  }
+  .nav-theme-4 .nav-brand {
+    height: 100%;
+  }
+  .nav-theme-4 .nav-brand a {
+    height: 100%;
+  }
   .nav-theme-4 .nav-menu {
     width: -moz-max-content;
     width: max-content;
@@ -5436,7 +5604,7 @@ body {
   height: 20px;
   border: 2px solid #f4cb2a;
   border-radius: 50%;
-  background: white;
+  background: rgb(35, 35, 35);
   flex: 0 0 20px;
 }
 

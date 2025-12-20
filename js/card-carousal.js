@@ -46,10 +46,13 @@ cardCarousals.forEach((carousal, carousalNumber) => {
     "afterend",
     makeNextBtn(carousalNumber)
   );
-
+  let cardContent = "";
   carousalCards.forEach((card, cardNumber) => {
     card.id = `c-${carousalNumber}-card-${cardNumber}`;
+    cardContent = card.querySelector(".card-image").innerHTML;
   });
+
+  console.log(cardContent);
 
   carousalCards[0].classList.add("active");
   // SET THE CAROUSAL card TO THE FIRST card

@@ -43,11 +43,11 @@ carousals.forEach((carousal, carousalNumber) => {
   // SETTING THE CAROUSAL ID FOR USE LATER
   carousal.id = `c-${carousalNumber}`;
 
-  // GETTING ALL IMAGES INSIDE THE CAROUSAL
-  const carousalImages = carousal.querySelectorAll(".image");
+  // GETTING ALL ITEMS INSIDE THE CAROUSAL
+  const carousalItems = carousal.querySelectorAll(".item");
 
-  // ADDING ACTIVE CLASS TO THE FIRST IMAGE OF EACH CAROUSAL
-  carousalImages[0].classList.add("active");
+  // ADDING ACTIVE CLASS TO THE FIRST ITEM OF EACH CAROUSAL
+  carousalItems[0].classList.add("active");
 
   // CREATING CAROUSAL CONTROLS CONTAINER
   const carousalControls = document.createElement("div");
@@ -64,12 +64,12 @@ carousals.forEach((carousal, carousalNumber) => {
   const progressContainer = document.createElement("div");
   progressContainer.classList.add("progress-container");
 
-  // APPENDING A PROGRESS ITEM FOR EACH IMAGE IN THE CAROUSAL
-  carousalImages.forEach((image, imageNumber) => {
+  // APPENDING A PROGRESS ITEM FOR EACH ITEM IN THE CAROUSAL
+  carousalItems.forEach((item, itemNumber) => {
     // PROGRESSES THAT WILL BE ADDED TO EACH CAROUSAL
     const progressItem = document.createElement("div");
     progressItem.classList.add("progress-item");
-    progressItem.id = `c-${carousalNumber}-image-${imageNumber}`;
+    progressItem.id = `c-${carousalNumber}-item-${itemNumber}`;
 
     if (carousal.dataset.auto == "true") {
       // GET THE CAROUSAL ANIMATION DURATION FROM THE AUTO CAROUSAL DATA_DURATION
@@ -80,7 +80,7 @@ carousals.forEach((carousal, carousalNumber) => {
         CAROUSAL_TIME = 5000;
       }
 
-      image.style.animationDuration = `${CAROUSAL_TIME}ms`;
+      item.style.animationDuration = `${CAROUSAL_TIME}ms`;
     }
 
     // ADDING PROGRESS BAR TO PROGRESS ITEM WHICH WILL BE ADDED DEPENDING ON THE IMAGES COUNT IN THE CAROUSAL
@@ -101,10 +101,10 @@ carousals.forEach((carousal, carousalNumber) => {
   carousal.appendChild(carousalControls);
 
   // SET THE CAROUSAL IMAGE TO THE FIRST IMAGE
-  carousalControls.dataset.currentImage = 0;
+  carousalControls.dataset.currentItem = 0;
 
   progressContainer
-    .querySelector(`#c-${carousalNumber}-image-0`)
+    .querySelector(`#c-${carousalNumber}-item-0`)
     .classList.add("active");
 });
 
@@ -124,26 +124,26 @@ document.addEventListener("click", (e) => {
 // GO TO NEXT SLIDE ON A CAROUSAL
 function nextSlide(carousal) {
   let carousalId = parseInt(carousal.id.split("-")[1]);
-  let carousalImages = carousal.querySelectorAll(".image");
+  let carousalItems = carousal.querySelectorAll(".item");
   let carousalControls = carousal.querySelector(".carousal-controls");
   let progressItems = carousal.querySelectorAll(".progress-item");
-  let currentImage = carousalControls.dataset.currentImage;
+  let currentItem = carousalControls.dataset.currentItem;
 
   // REMOVE ACTIVE CLASS FROM THE IMAGE
-  carousalImages[currentImage].classList.remove("active");
+  carousalItems[currentItem].classList.remove("active");
 
   // REMOVE ACTIVE CLASS FROM THE PROGRESS ITEM OF THE IMAGE
-  progressItems[currentImage].classList.remove("active");
+  progressItems[currentItem].classList.remove("active");
 
-  if (currentImage == carousalImages.length - 1) {
-    currentImage = 0;
+  if (currentItem == carousalItems.length - 1) {
+    currentItem = 0;
   } else {
-    currentImage++;
+    currentItem++;
   }
 
-  carousalImages[currentImage].classList.add("active");
-  carousalControls.dataset.currentImage = currentImage;
-  progressItems[currentImage].classList.add("active");
+  carousalItems[currentItem].classList.add("active");
+  carousalControls.dataset.currentItem = currentItem;
+  progressItems[currentItem].classList.add("active");
   if (carousal.dataset.auto == "true") {
     // Reset the timeout specific to this carousel instance
     resetCarousalTimeout(carousal);
@@ -153,25 +153,25 @@ function nextSlide(carousal) {
 // GO TO PREVIOUS SLIDE ON A CAROUSAL
 function previousSlide(carousal) {
   let carousalId = parseInt(carousal.id.split("-")[1]);
-  let carousalImages = carousal.querySelectorAll(".image");
+  let carousalItems = carousal.querySelectorAll(".item");
   let carousalControls = carousal.querySelector(".carousal-controls");
   let progressItems = carousal.querySelectorAll(".progress-item");
-  let currentImage = carousalControls.dataset.currentImage;
+  let currentItem = carousalControls.dataset.currentItem;
 
   // REMOVE ACTIVE CLASS FROM THE IMAGE
-  carousalImages[currentImage].classList.remove("active");
+  carousalItems[currentItem].classList.remove("active");
   // REMOVE ACTIVE CLASS FROM THE PROGRESS ITEM OF THE IMAGE
-  progressItems[currentImage].classList.remove("active");
+  progressItems[currentItem].classList.remove("active");
 
-  if (currentImage == 0) {
-    currentImage = carousalImages.length - 1;
+  if (currentItem == 0) {
+    currentItem = carousalItems.length - 1;
   } else {
-    currentImage--;
+    currentItem--;
   }
 
-  carousalImages[currentImage].classList.add("active");
-  progressItems[currentImage].classList.add("active");
-  carousalControls.dataset.currentImage = currentImage;
+  carousalItems[currentItem].classList.add("active");
+  progressItems[currentItem].classList.add("active");
+  carousalControls.dataset.currentItem = currentItem;
 
   if (carousal.dataset.auto == "true") {
     // Reset the timeout specific to this carousel instance

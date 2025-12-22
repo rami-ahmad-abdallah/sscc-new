@@ -49,7 +49,10 @@ cardCarousals.forEach((carousal, carousalNumber) => {
   let cardContent = "";
   carousalCards.forEach((card, cardNumber) => {
     card.id = `c-${carousalNumber}-card-${cardNumber}`;
-    cardContent = card.querySelector(".card-image").innerHTML;
+    cardContent = card.querySelector(".card-body").innerHTML;
+
+    cardContent = document.createRange().createContextualFragment(cardContent);
+    card.querySelector(".card-body").appendChild(cardContent);
   });
 
   console.log(cardContent);

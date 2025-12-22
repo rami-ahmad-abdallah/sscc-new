@@ -1,0 +1,10 @@
+.fade-up {
+  transition: transform 0.75s ease, opacity 0.75s ease;
+  opacity: 0;
+  transform: rotate(1deg) translateY(50px);
+}
+
+.show-fade-up {
+  opacity: 1;
+  transform: rotate(0deg) translateY(0px);
+}

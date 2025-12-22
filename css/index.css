@@ -916,6 +916,17 @@ body {
   gap: 25px !important;
 }
 
+.fade-up {
+  transition: transform 0.75s ease, opacity 0.75s ease;
+  opacity: 0;
+  transform: rotate(1deg) translateY(50px);
+}
+
+.show-fade-up {
+  opacity: 1;
+  transform: rotate(0deg) translateY(0px);
+}
+
 .btn, .btn-theme-4-outlined, .btn-theme-4, .btn-theme-3-outlined, .btn-theme-3, .btn-theme-2-outlined, .btn-theme-2, .btn-theme-1-outlined, .btn-theme-1, .btn-cover-outlined, .btn-cover, .btn-black-outlined, .btn-black, .btn-transparent-outlined, .btn-transparent, .btn-light-outlined, .btn-light, .btn-dark-outlined, .btn-dark, .btn-warning-outlined, .btn-warning, .btn-danger-outlined, .btn-danger, .btn-success-outlined, .btn-success, .btn-accent-outlined, .btn-accent, .btn-primary-outlined, .btn-primary {
   padding: 10px;
   border: 0;
@@ -5433,6 +5444,8 @@ body {
 .carousal .carousal-items .item video:nth-child(2) {
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-backdrop-filter: grayscale(1);
+          backdrop-filter: grayscale(1);
 }
 .carousal .carousal-items .item.active {
   opacity: 1;
@@ -5549,16 +5562,27 @@ body {
   border-radius: 7px;
   overflow: hidden;
 }
-.card-carousal .carousal-cards .carousal-card .card-image {
+.card-carousal .carousal-cards .carousal-card .card-body {
   width: 100%;
   height: 100%;
+  position: relative;
 }
-.card-carousal .carousal-cards .carousal-card .card-image img,
-.card-carousal .carousal-cards .carousal-card .card-image video {
+.card-carousal .carousal-cards .carousal-card .card-body img,
+.card-carousal .carousal-cards .carousal-card .card-body video {
   width: 100%;
   height: 100%;
+  position: absolute;
+}
+.card-carousal .carousal-cards .carousal-card .card-body img:nth-child(1),
+.card-carousal .carousal-cards .carousal-card .card-body video:nth-child(1) {
   -o-object-fit: cover;
      object-fit: cover;
+  filter: blur(10px);
+}
+.card-carousal .carousal-cards .carousal-card .card-body img:nth-child(2),
+.card-carousal .carousal-cards .carousal-card .card-body video:nth-child(2) {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .card-carousal .carousal-cards .carousal-card .card-title {
   position: absolute;
@@ -5570,6 +5594,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   text-transform: uppercase;
+  bottom: 10px;
 }
 @media (max-width: 992px) {
   .card-carousal {

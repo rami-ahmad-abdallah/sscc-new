@@ -6145,1003 +6145,3216 @@ body {
 .square-1 {
   width: 1px;
   height: 1px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-1 svg,
+.square-1 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-2 {
   width: 2px;
   height: 2px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-2 svg,
+.square-2 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-3 {
   width: 3px;
   height: 3px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-3 svg,
+.square-3 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-4 {
   width: 4px;
   height: 4px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-4 svg,
+.square-4 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-5 {
   width: 5px;
   height: 5px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-5 svg,
+.square-5 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-6 {
   width: 6px;
   height: 6px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-6 svg,
+.square-6 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-7 {
   width: 7px;
   height: 7px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-7 svg,
+.square-7 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-8 {
   width: 8px;
   height: 8px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-8 svg,
+.square-8 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-9 {
   width: 9px;
   height: 9px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-9 svg,
+.square-9 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-10 {
   width: 10px;
   height: 10px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-10 svg,
+.square-10 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-11 {
   width: 11px;
   height: 11px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-11 svg,
+.square-11 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-12 {
   width: 12px;
   height: 12px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-12 svg,
+.square-12 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-13 {
   width: 13px;
   height: 13px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-13 svg,
+.square-13 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-14 {
   width: 14px;
   height: 14px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-14 svg,
+.square-14 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-15 {
   width: 15px;
   height: 15px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-15 svg,
+.square-15 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-16 {
   width: 16px;
   height: 16px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-16 svg,
+.square-16 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-17 {
   width: 17px;
   height: 17px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-17 svg,
+.square-17 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-18 {
   width: 18px;
   height: 18px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-18 svg,
+.square-18 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-19 {
   width: 19px;
   height: 19px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-19 svg,
+.square-19 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-20 {
   width: 20px;
   height: 20px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-20 svg,
+.square-20 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-21 {
   width: 21px;
   height: 21px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-21 svg,
+.square-21 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-22 {
   width: 22px;
   height: 22px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-22 svg,
+.square-22 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-23 {
   width: 23px;
   height: 23px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-23 svg,
+.square-23 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-24 {
   width: 24px;
   height: 24px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-24 svg,
+.square-24 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-25 {
   width: 25px;
   height: 25px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-25 svg,
+.square-25 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-26 {
   width: 26px;
   height: 26px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-26 svg,
+.square-26 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-27 {
   width: 27px;
   height: 27px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-27 svg,
+.square-27 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-28 {
   width: 28px;
   height: 28px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-28 svg,
+.square-28 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-29 {
   width: 29px;
   height: 29px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-29 svg,
+.square-29 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-30 {
   width: 30px;
   height: 30px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-30 svg,
+.square-30 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-31 {
   width: 31px;
   height: 31px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-31 svg,
+.square-31 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-32 {
   width: 32px;
   height: 32px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-32 svg,
+.square-32 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-33 {
   width: 33px;
   height: 33px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-33 svg,
+.square-33 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-34 {
   width: 34px;
   height: 34px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-34 svg,
+.square-34 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-35 {
   width: 35px;
   height: 35px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-35 svg,
+.square-35 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-36 {
   width: 36px;
   height: 36px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-36 svg,
+.square-36 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-37 {
   width: 37px;
   height: 37px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-37 svg,
+.square-37 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-38 {
   width: 38px;
   height: 38px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-38 svg,
+.square-38 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-39 {
   width: 39px;
   height: 39px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-39 svg,
+.square-39 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-40 {
   width: 40px;
   height: 40px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-40 svg,
+.square-40 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-41 {
   width: 41px;
   height: 41px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-41 svg,
+.square-41 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-42 {
   width: 42px;
   height: 42px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-42 svg,
+.square-42 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-43 {
   width: 43px;
   height: 43px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-43 svg,
+.square-43 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-44 {
   width: 44px;
   height: 44px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-44 svg,
+.square-44 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-45 {
   width: 45px;
   height: 45px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-45 svg,
+.square-45 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-46 {
   width: 46px;
   height: 46px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-46 svg,
+.square-46 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-47 {
   width: 47px;
   height: 47px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-47 svg,
+.square-47 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-48 {
   width: 48px;
   height: 48px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-48 svg,
+.square-48 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-49 {
   width: 49px;
   height: 49px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-49 svg,
+.square-49 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-50 {
   width: 50px;
   height: 50px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-50 svg,
+.square-50 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-51 {
   width: 51px;
   height: 51px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-51 svg,
+.square-51 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-52 {
   width: 52px;
   height: 52px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-52 svg,
+.square-52 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-53 {
   width: 53px;
   height: 53px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-53 svg,
+.square-53 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-54 {
   width: 54px;
   height: 54px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-54 svg,
+.square-54 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-55 {
   width: 55px;
   height: 55px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-55 svg,
+.square-55 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-56 {
   width: 56px;
   height: 56px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-56 svg,
+.square-56 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-57 {
   width: 57px;
   height: 57px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-57 svg,
+.square-57 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-58 {
   width: 58px;
   height: 58px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-58 svg,
+.square-58 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-59 {
   width: 59px;
   height: 59px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-59 svg,
+.square-59 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-60 {
   width: 60px;
   height: 60px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-60 svg,
+.square-60 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-61 {
   width: 61px;
   height: 61px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-61 svg,
+.square-61 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-62 {
   width: 62px;
   height: 62px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-62 svg,
+.square-62 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-63 {
   width: 63px;
   height: 63px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-63 svg,
+.square-63 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-64 {
   width: 64px;
   height: 64px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-64 svg,
+.square-64 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-65 {
   width: 65px;
   height: 65px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-65 svg,
+.square-65 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-66 {
   width: 66px;
   height: 66px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-66 svg,
+.square-66 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-67 {
   width: 67px;
   height: 67px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-67 svg,
+.square-67 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-68 {
   width: 68px;
   height: 68px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-68 svg,
+.square-68 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-69 {
   width: 69px;
   height: 69px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-69 svg,
+.square-69 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-70 {
   width: 70px;
   height: 70px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-70 svg,
+.square-70 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-71 {
   width: 71px;
   height: 71px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-71 svg,
+.square-71 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-72 {
   width: 72px;
   height: 72px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-72 svg,
+.square-72 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-73 {
   width: 73px;
   height: 73px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-73 svg,
+.square-73 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-74 {
   width: 74px;
   height: 74px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-74 svg,
+.square-74 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-75 {
   width: 75px;
   height: 75px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-75 svg,
+.square-75 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-76 {
   width: 76px;
   height: 76px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-76 svg,
+.square-76 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-77 {
   width: 77px;
   height: 77px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-77 svg,
+.square-77 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-78 {
   width: 78px;
   height: 78px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-78 svg,
+.square-78 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-79 {
   width: 79px;
   height: 79px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-79 svg,
+.square-79 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-80 {
   width: 80px;
   height: 80px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-80 svg,
+.square-80 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-81 {
   width: 81px;
   height: 81px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-81 svg,
+.square-81 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-82 {
   width: 82px;
   height: 82px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-82 svg,
+.square-82 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-83 {
   width: 83px;
   height: 83px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-83 svg,
+.square-83 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-84 {
   width: 84px;
   height: 84px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-84 svg,
+.square-84 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-85 {
   width: 85px;
   height: 85px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-85 svg,
+.square-85 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-86 {
   width: 86px;
   height: 86px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-86 svg,
+.square-86 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-87 {
   width: 87px;
   height: 87px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-87 svg,
+.square-87 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-88 {
   width: 88px;
   height: 88px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-88 svg,
+.square-88 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-89 {
   width: 89px;
   height: 89px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-89 svg,
+.square-89 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-90 {
   width: 90px;
   height: 90px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-90 svg,
+.square-90 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-91 {
   width: 91px;
   height: 91px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-91 svg,
+.square-91 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-92 {
   width: 92px;
   height: 92px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-92 svg,
+.square-92 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-93 {
   width: 93px;
   height: 93px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-93 svg,
+.square-93 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-94 {
   width: 94px;
   height: 94px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-94 svg,
+.square-94 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-95 {
   width: 95px;
   height: 95px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-95 svg,
+.square-95 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-96 {
   width: 96px;
   height: 96px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-96 svg,
+.square-96 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-97 {
   width: 97px;
   height: 97px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-97 svg,
+.square-97 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-98 {
   width: 98px;
   height: 98px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-98 svg,
+.square-98 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-99 {
   width: 99px;
   height: 99px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-99 svg,
+.square-99 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-100 {
   width: 100px;
   height: 100px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-100 svg,
+.square-100 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-101 {
   width: 101px;
   height: 101px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-101 svg,
+.square-101 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-102 {
   width: 102px;
   height: 102px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-102 svg,
+.square-102 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-103 {
   width: 103px;
   height: 103px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-103 svg,
+.square-103 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-104 {
   width: 104px;
   height: 104px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-104 svg,
+.square-104 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-105 {
   width: 105px;
   height: 105px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-105 svg,
+.square-105 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-106 {
   width: 106px;
   height: 106px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-106 svg,
+.square-106 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-107 {
   width: 107px;
   height: 107px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-107 svg,
+.square-107 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-108 {
   width: 108px;
   height: 108px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-108 svg,
+.square-108 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-109 {
   width: 109px;
   height: 109px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-109 svg,
+.square-109 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-110 {
   width: 110px;
   height: 110px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-110 svg,
+.square-110 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-111 {
   width: 111px;
   height: 111px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-111 svg,
+.square-111 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-112 {
   width: 112px;
   height: 112px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-112 svg,
+.square-112 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-113 {
   width: 113px;
   height: 113px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-113 svg,
+.square-113 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-114 {
   width: 114px;
   height: 114px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-114 svg,
+.square-114 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-115 {
   width: 115px;
   height: 115px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-115 svg,
+.square-115 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-116 {
   width: 116px;
   height: 116px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-116 svg,
+.square-116 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-117 {
   width: 117px;
   height: 117px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-117 svg,
+.square-117 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-118 {
   width: 118px;
   height: 118px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-118 svg,
+.square-118 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-119 {
   width: 119px;
   height: 119px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-119 svg,
+.square-119 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-120 {
   width: 120px;
   height: 120px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-120 svg,
+.square-120 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-121 {
   width: 121px;
   height: 121px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-121 svg,
+.square-121 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-122 {
   width: 122px;
   height: 122px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-122 svg,
+.square-122 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-123 {
   width: 123px;
   height: 123px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-123 svg,
+.square-123 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-124 {
   width: 124px;
   height: 124px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-124 svg,
+.square-124 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-125 {
   width: 125px;
   height: 125px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-125 svg,
+.square-125 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-126 {
   width: 126px;
   height: 126px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-126 svg,
+.square-126 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-127 {
   width: 127px;
   height: 127px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-127 svg,
+.square-127 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-128 {
   width: 128px;
   height: 128px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-128 svg,
+.square-128 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-129 {
   width: 129px;
   height: 129px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-129 svg,
+.square-129 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-130 {
   width: 130px;
   height: 130px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-130 svg,
+.square-130 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-131 {
   width: 131px;
   height: 131px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-131 svg,
+.square-131 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-132 {
   width: 132px;
   height: 132px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-132 svg,
+.square-132 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-133 {
   width: 133px;
   height: 133px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-133 svg,
+.square-133 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-134 {
   width: 134px;
   height: 134px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-134 svg,
+.square-134 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-135 {
   width: 135px;
   height: 135px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-135 svg,
+.square-135 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-136 {
   width: 136px;
   height: 136px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-136 svg,
+.square-136 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-137 {
   width: 137px;
   height: 137px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-137 svg,
+.square-137 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-138 {
   width: 138px;
   height: 138px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-138 svg,
+.square-138 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-139 {
   width: 139px;
   height: 139px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-139 svg,
+.square-139 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-140 {
   width: 140px;
   height: 140px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-140 svg,
+.square-140 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-141 {
   width: 141px;
   height: 141px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-141 svg,
+.square-141 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-142 {
   width: 142px;
   height: 142px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-142 svg,
+.square-142 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-143 {
   width: 143px;
   height: 143px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-143 svg,
+.square-143 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-144 {
   width: 144px;
   height: 144px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-144 svg,
+.square-144 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-145 {
   width: 145px;
   height: 145px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-145 svg,
+.square-145 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-146 {
   width: 146px;
   height: 146px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-146 svg,
+.square-146 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-147 {
   width: 147px;
   height: 147px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-147 svg,
+.square-147 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-148 {
   width: 148px;
   height: 148px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-148 svg,
+.square-148 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-149 {
   width: 149px;
   height: 149px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-149 svg,
+.square-149 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-150 {
   width: 150px;
   height: 150px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-150 svg,
+.square-150 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-151 {
   width: 151px;
   height: 151px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-151 svg,
+.square-151 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-152 {
   width: 152px;
   height: 152px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-152 svg,
+.square-152 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-153 {
   width: 153px;
   height: 153px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-153 svg,
+.square-153 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-154 {
   width: 154px;
   height: 154px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-154 svg,
+.square-154 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-155 {
   width: 155px;
   height: 155px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-155 svg,
+.square-155 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-156 {
   width: 156px;
   height: 156px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-156 svg,
+.square-156 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-157 {
   width: 157px;
   height: 157px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-157 svg,
+.square-157 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-158 {
   width: 158px;
   height: 158px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-158 svg,
+.square-158 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-159 {
   width: 159px;
   height: 159px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-159 svg,
+.square-159 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-160 {
   width: 160px;
   height: 160px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-160 svg,
+.square-160 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-161 {
   width: 161px;
   height: 161px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-161 svg,
+.square-161 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-162 {
   width: 162px;
   height: 162px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-162 svg,
+.square-162 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-163 {
   width: 163px;
   height: 163px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-163 svg,
+.square-163 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-164 {
   width: 164px;
   height: 164px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-164 svg,
+.square-164 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-165 {
   width: 165px;
   height: 165px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-165 svg,
+.square-165 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-166 {
   width: 166px;
   height: 166px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-166 svg,
+.square-166 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-167 {
   width: 167px;
   height: 167px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-167 svg,
+.square-167 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-168 {
   width: 168px;
   height: 168px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-168 svg,
+.square-168 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-169 {
   width: 169px;
   height: 169px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-169 svg,
+.square-169 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-170 {
   width: 170px;
   height: 170px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-170 svg,
+.square-170 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-171 {
   width: 171px;
   height: 171px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-171 svg,
+.square-171 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-172 {
   width: 172px;
   height: 172px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-172 svg,
+.square-172 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-173 {
   width: 173px;
   height: 173px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-173 svg,
+.square-173 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-174 {
   width: 174px;
   height: 174px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-174 svg,
+.square-174 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-175 {
   width: 175px;
   height: 175px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-175 svg,
+.square-175 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-176 {
   width: 176px;
   height: 176px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-176 svg,
+.square-176 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-177 {
   width: 177px;
   height: 177px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-177 svg,
+.square-177 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-178 {
   width: 178px;
   height: 178px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-178 svg,
+.square-178 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-179 {
   width: 179px;
   height: 179px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-179 svg,
+.square-179 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-180 {
   width: 180px;
   height: 180px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-180 svg,
+.square-180 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-181 {
   width: 181px;
   height: 181px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-181 svg,
+.square-181 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-182 {
   width: 182px;
   height: 182px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-182 svg,
+.square-182 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-183 {
   width: 183px;
   height: 183px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-183 svg,
+.square-183 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-184 {
   width: 184px;
   height: 184px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-184 svg,
+.square-184 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-185 {
   width: 185px;
   height: 185px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-185 svg,
+.square-185 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-186 {
   width: 186px;
   height: 186px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-186 svg,
+.square-186 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-187 {
   width: 187px;
   height: 187px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-187 svg,
+.square-187 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-188 {
   width: 188px;
   height: 188px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-188 svg,
+.square-188 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-189 {
   width: 189px;
   height: 189px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-189 svg,
+.square-189 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-190 {
   width: 190px;
   height: 190px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-190 svg,
+.square-190 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-191 {
   width: 191px;
   height: 191px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-191 svg,
+.square-191 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-192 {
   width: 192px;
   height: 192px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-192 svg,
+.square-192 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-193 {
   width: 193px;
   height: 193px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-193 svg,
+.square-193 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-194 {
   width: 194px;
   height: 194px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-194 svg,
+.square-194 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-195 {
   width: 195px;
   height: 195px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-195 svg,
+.square-195 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-196 {
   width: 196px;
   height: 196px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-196 svg,
+.square-196 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-197 {
   width: 197px;
   height: 197px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-197 svg,
+.square-197 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-198 {
   width: 198px;
   height: 198px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-198 svg,
+.square-198 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-199 {
   width: 199px;
   height: 199px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-199 svg,
+.square-199 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .square-200 {
   width: 200px;
   height: 200px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.square-200 svg,
+.square-200 img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+.stroke-effect path {
+  stroke-dasharray: 131%;
+  stroke-dashoffset: 131%;
+}
+.stroke-effect.activate-effect path {
+  animation: stroke-effect 3s ease 1 normal forwards;
+}
+
+@keyframes stroke-effect {
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
 @media (max-width: 992px) {
   h1 {
     font-size: 26px;

@@ -927,6 +927,19 @@ body {
   transform: rotate(0deg) translateY(0px);
 }
 
+.stroke-effect path {
+  stroke-dasharray: 131%;
+  stroke-dashoffset: 131%;
+}
+.stroke-effect.activate-effect path {
+  animation: stroke-effect 5s ease 1 normal forwards;
+}
+
+@keyframes stroke-effect {
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
 .btn, .btn-theme-4-outlined, .btn-theme-4, .btn-theme-3-outlined, .btn-theme-3, .btn-theme-2-outlined, .btn-theme-2, .btn-theme-1-outlined, .btn-theme-1, .btn-cover-outlined, .btn-cover, .btn-black-outlined, .btn-black, .btn-transparent-outlined, .btn-transparent, .btn-light-outlined, .btn-light, .btn-dark-outlined, .btn-dark, .btn-warning-outlined, .btn-warning, .btn-danger-outlined, .btn-danger, .btn-success-outlined, .btn-success, .btn-accent-outlined, .btn-accent, .btn-primary-outlined, .btn-primary {
   padding: 10px;
   border: 0;
@@ -9342,19 +9355,6 @@ body {
      object-fit: contain;
 }
 
-.stroke-effect path {
-  stroke-dasharray: 131%;
-  stroke-dashoffset: 131%;
-}
-.stroke-effect.activate-effect path {
-  animation: stroke-effect 3s ease 1 normal forwards;
-}
-
-@keyframes stroke-effect {
-  to {
-    stroke-dashoffset: 0%;
-  }
-}
 @media (max-width: 992px) {
   h1 {
     font-size: 26px;

@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Scientific Systems Construction Company</title>
     <link rel="shortcut icon" href="files/logo/icon-square.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
 
     <style>
-        svg:hover {
-            mask-position: 0% 0%;
+        .margin-top {
+            margin-top: 110vh;
         }
     </style>
 
@@ -17,33 +20,21 @@
 
 <body>
 
-    <svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="600" height="300" fill="black" />
-        <mask id="shared_mask" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="200" y="50" width="200"
-            height="200">
-            <circle cx="300" cy="150" r="100" fill="#FF0000" />
-        </mask>
-        <g mask="url(#shared_mask)">
-            <rect x="-200" width="600" height="300" fill="url(#paint0_linear_55_2)" />
-        </g>
-        <defs>
-            <linearGradient id="paint0_linear_55_2" x1="400" y1="150" x2="-200" y2="150" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FDE11B" />
-                <stop offset="0.326923" stop-color="#0D5D9F" />
-                <stop offset="0.658654" stop-color="#B0A4A4" />
-                <stop offset="1" stop-color="#C69749" />
-            </linearGradient>
-        </defs>
-    </svg>
-
-    <svg width="201" height="228" viewBox="0 0 201 228" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M86.198 3.51377L196.5 112.014L2.50001 223.014L2.5 86.5138L86.198 3.51377Z" fill="white" stroke="black"
-            stroke-width="5" mask="url(#shared_mask)" />
-    </svg>
+    <h2 class="pop-up margin-top">Text that pop-up</h2>
 
 
-
-
+    <script>
+        gsap.registerPlugin(ScrollSmoother)
+        gsap.registerPlugin(ScrollTrigger);
+        ScrollSmoother.create({
+            smooth: 1,
+            effects: true
+        });
+        gsap.to('.pop-up', {
+            scrollTrigger: '.pop-up', // start animation when ".box" enters the viewport
+            x: 500
+        });
+    </script>
 </body>
 
 </html>

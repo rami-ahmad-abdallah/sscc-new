@@ -5,11 +5,9 @@
   font-family: "barlow";
   font-style: normal;
   font-weight: 400;
-  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.woff2")
-      format("woff2"),
+  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.ttf")
-      format("truetype");
+    url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-regular.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -20,11 +18,9 @@
   font-family: "barlow";
   font-style: normal;
   font-weight: 500;
-  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.woff2")
-      format("woff2"),
+  src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.ttf")
-      format("truetype");
+    url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -37,7 +33,7 @@
   font-weight: 400;
   src: url("../files/fonts/cairo-v31-latin-regular.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../files/fonts/cairo-v31-latin-regular.ttf") format("truetype");
+    url("../files/fonts/cairo-v31-latin-regular.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -50,7 +46,7 @@
   font-weight: 600;
   src: url("../files/fonts/cairo-v31-latin-600.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../files/fonts/cairo-v31-latin-600.ttf") format("truetype");
+    url("../files/fonts/cairo-v31-latin-600.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
@@ -80,6 +76,8 @@ body {
 @import "partials/customClasses";
 @import "partials/positions";
 @import "partials/fade";
+@import "partials/keyframes";
+
 
 // COMPONENTS
 @import "partials/components/buttons";

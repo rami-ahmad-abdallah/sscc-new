@@ -21,30 +21,12 @@
     padding: 1px;
     align-items: center;
     justify-content: center;
+
     svg,
     img {
       width: inherit;
       height: inherit;
       object-fit: contain;
     }
-  }
-}
-
-.stroke-effect {
-  path {
-    stroke-dasharray: 131%;
-    stroke-dashoffset: 131%;
-  }
-
-  &.activate-effect {
-    path {
-      animation: stroke-effect 3s ease 1 normal forwards;
-    }
-  }
-}
-
-@keyframes stroke-effect {
-  to {
-    stroke-dashoffset: 0%;
   }
 }

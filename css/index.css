@@ -927,19 +927,6 @@ body {
   transform: rotate(0deg) translateY(0px);
 }
 
-.stroke-effect path {
-  stroke-dasharray: 131%;
-  stroke-dashoffset: 131%;
-}
-.stroke-effect.activate-effect path {
-  animation: stroke-effect 5s ease 1 normal forwards;
-}
-
-@keyframes stroke-effect {
-  to {
-    stroke-dashoffset: 0%;
-  }
-}
 .btn, .btn-theme-4-outlined, .btn-theme-4, .btn-theme-3-outlined, .btn-theme-3, .btn-theme-2-outlined, .btn-theme-2, .btn-theme-1-outlined, .btn-theme-1, .btn-cover-outlined, .btn-cover, .btn-black-outlined, .btn-black, .btn-transparent-outlined, .btn-transparent, .btn-light-outlined, .btn-light, .btn-dark-outlined, .btn-dark, .btn-warning-outlined, .btn-warning, .btn-danger-outlined, .btn-danger, .btn-success-outlined, .btn-success, .btn-accent-outlined, .btn-accent, .btn-primary-outlined, .btn-primary {
   padding: 10px;
   border: 0;
@@ -5396,9 +5383,11 @@ body {
   background: rgba(255, 255, 255, 0.25);
   border: 0;
   border-radius: 50%;
-  font-size: 18px;
-  padding-bottom: 3px;
+  font-size: 24px;
   color: rgba(0, 0, 0, 0.6509803922);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .carousal .carousal-controls .control-btn:hover {
   color: black;
@@ -5533,12 +5522,15 @@ body {
   background: rgba(255, 255, 255, 0.25);
   border: 0;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 25px;
   padding-bottom: 3px;
   color: rgba(0, 0, 0, 0.6509803922);
   visibility: visible;
   pointer-events: all;
   z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-carousal .card-carousal-control:hover {
   color: black;

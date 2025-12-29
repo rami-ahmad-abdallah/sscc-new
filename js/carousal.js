@@ -2,7 +2,7 @@ let CAROUSAL_TIME = 5000;
 function makePreviousBtn(carousalId) {
   // PREVIOUS BUTTON
   const previousBtn = document.createElement("button");
-  previousBtn.classList.add("control-btn");
+  previousBtn.classList.add("control-btn", "pop-rotate-rtl");
   previousBtn.id = `previous-btn-${carousalId}`;
   previousBtn.innerHTML = "&#10094;";
 
@@ -12,7 +12,7 @@ function makePreviousBtn(carousalId) {
 function makeNextBtn(carousalId) {
   // NEXT BUTTON
   const nextBtn = document.createElement("button");
-  nextBtn.classList.add("control-btn");
+  nextBtn.classList.add("control-btn", "pop-rotate-ltr");
   nextBtn.id = `next-btn-${carousalId}`;
   nextBtn.innerHTML = "&#10095;";
 

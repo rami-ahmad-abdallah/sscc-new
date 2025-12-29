@@ -160,49 +160,34 @@
             <div class="carousal" data-auto="true" data-duration="7000">
                 <div class="carousal-items">
                     <div class="item">
-                        <video src="./files/videos/sscc-construction.mp4" muted="true" loop autoplay
+                        <video src="./files/videos/sscc-construction.mp4" muted muted="true" loop autoplay
                             playsinline></video>
-                        <video src="./files/videos/sscc-construction.mp4" muted="true" loop autoplay
-                            playsinline></video>
-                    </div>
-                    <div class="item">
-                        <video src="./files/videos/sscc-desgin.mp4" muted="true" loop autoplay playsinline></video>
-                        <video src="./files/videos/sscc-desgin.mp4" muted="true" loop autoplay playsinline></video>
-                    </div>
-                    <div class="item">
-                        <video src="./files/videos/sscc-project-management.mp4" muted="true" loop autoplay
-                            playsinline></video>
-                        <video src="./files/videos/sscc-project-management.mp4" muted="true" loop autoplay
+                        <video src="./files/videos/sscc-construction.mp4" muted muted="true" loop autoplay
                             playsinline></video>
                     </div>
                     <div class="item">
-                        <video src="./files/videos/sscc-rentals.mp4" muted="true" loop autoplay playsinline></video>
-                        <video src="./files/videos/sscc-rentals.mp4" muted="true" loop autoplay playsinline></video>
+                        <video src="./files/videos/sscc-desgin.mp4" muted muted="true" loop autoplay
+                            playsinline></video>
+                        <video src="./files/videos/sscc-desgin.mp4" muted muted="true" loop autoplay
+                            playsinline></video>
                     </div>
-
-                    <!-- <div class="image">
-                <img src="./files/images/infra/main-carousal/1.jpeg" alt="c1">
-            </div>
-            <div class="image">
-                <img src="./files/images/infra/main-carousal/10.jpg" alt="c1">
-            </div>
-            <div class="image">
-                <img src="./files/images/infra/main-carousal/3.jpg" alt="c1">
-            </div>
-
-            <div class="image">
-                <img src="./files/images/infra/main-carousal/9.jpg" alt="c2">
-            </div>
-
-            <div class="image">
-                <img src="./files/images/infra/main-carousal/irrigation-1.jpg" alt="c3">
-            </div> -->
+                    <div class="item">
+                        <video src="./files/videos/sscc-project-management.mp4" muted muted="true" loop autoplay
+                            playsinline></video>
+                        <video src="./files/videos/sscc-project-management.mp4" muted muted="true" loop autoplay
+                            playsinline></video>
+                    </div>
+                    <div class="item">
+                        <video src="./files/videos/sscc-rentals.mp4" muted muted="true" loop autoplay
+                            playsinline></video>
+                        <video src="./files/videos/sscc-rentals.mp4" muted muted="true" loop autoplay
+                            playsinline></video>
+                    </div>
                 </div>
             </div>
 
             <section class="relative h-100vh">
-
-
+                <h2 class="pop-up">WHO WE ARE ?</h2>
                 <svg class="w-100 stroke-effect absolute" width="1080" height="720" viewBox="0 0 1080 720" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="1080" height="720" fill="#DDFF00" fill-opacity="0" />
@@ -549,8 +534,8 @@
                             <div class="carousal-cards">
                                 <div class="carousal-card">
                                     <div class="card-body">
-                                        <video src="./files/images/Garden/GARDEN-SSCC.mp4" muted="true" playsinline loop
-                                            autoplay></video>
+                                        <video src="./files/images/Garden/GARDEN-SSCC.mp4" muted muted="true"
+                                            playsinline loop autoplay></video>
                                     </div>
                                 </div>
                                 <div class="carousal-card">
@@ -1449,15 +1434,12 @@
         gsap.registerPlugin(ScrollSmoother)
         gsap.registerPlugin(ScrollTrigger);
         ScrollSmoother.create({
-            smooth: 2,
+            smooth: 1.25,
             smoothTouch: 0.1,
             effects: true
         });
 
-        gsap.to('.pop-up', {
-            scrollTrigger: '.pop-up', // start animation when ".box" enters the viewport
-            x: 500
-        });
+
     </script>
 
 </body>

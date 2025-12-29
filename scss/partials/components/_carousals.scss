@@ -34,12 +34,14 @@ $card-carousal-radius: 7px;
       cursor: pointer;
       width: 40px;
       height: 40px;
-      background: $carousal-controls-bg;
+      background: rgba(255, 255, 255, 0.25);
       border: 0;
       border-radius: 50%;
-      font-size: 18px;
-      padding-bottom: 3px;
-      color: #000000a6;
+      font-size: 24px;
+      color: rgba(0, 0, 0, 0.6509803922);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         color: black;
@@ -211,15 +213,18 @@ $card-carousal-radius: 7px;
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background: $carousal-controls-bg;
+    background: rgba(255, 255, 255, 0.25);
     border: 0;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 25px;
     padding-bottom: 3px;
-    color: #000000a6;
+    color: rgba(0, 0, 0, 0.6509803922);
     visibility: visible;
     pointer-events: all;
     z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       color: black;

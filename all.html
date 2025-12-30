@@ -9,34 +9,149 @@
 
     <link rel="stylesheet" href="./css/index.css" />
 
-    <!-- SIMPLEBAR CODE -->
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@6.3.3/dist/simplebar.css" />
-    <script src="https://unpkg.com/simplebar@6.3.3/dist/simplebar.min.js"></script>
 </head>
 
+<style>
+    body {
+        background: #333;
+        padding: 70px 0;
+        font: 15px/20px Arial, sans-serif;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 250px;
+        height: 200px;
+        position: relative;
+        perspective: 1000px;
+    }
+
+    .carousel {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+    }
+
+    .item {
+        display: block;
+        position: absolute;
+        background: #000;
+        width: 250px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 5em;
+        text-align: center;
+        color: #FFF;
+        opacity: 0.95;
+        border-radius: 10px;
+    }
+
+    .a {
+        transform: rotateX(0deg) translateZ(250px);
+        background: #ed1c24;
+    }
+
+    .b {
+        transform: rotateX(60deg) translateZ(250px);
+        background: #0072bc;
+    }
+
+    .c {
+        transform: rotateX(120deg) translateZ(250px);
+        background: #39b54a;
+    }
+
+    .d {
+        transform: rotateX(180deg) translateZ(250px);
+        background: #f26522;
+    }
+
+    .e {
+        transform: rotateX(240deg) translateZ(250px);
+        background: #630460;
+    }
+
+    .f {
+        transform: rotateX(300deg) translateZ(250px);
+        background: #8c6239;
+    }
+
+    .next,
+    .prev {
+        color: #444;
+        position: absolute;
+        top: 100px;
+        padding: 1em 2em;
+        cursor: pointer;
+        background: #CCC;
+        border-radius: 5px;
+        border-top: 1px solid #FFF;
+        box-shadow: 0 5px 0 #999;
+        transition: box-shadow 0.1s, top 0.1s;
+    }
+
+    .next:hover,
+    .prev:hover {
+        color: #000;
+    }
+
+    .next:active,
+    .prev:active {
+        top: 104px;
+        box-shadow: 0 1px 0 #999;
+    }
+
+    .next {
+        right: 5em;
+    }
+
+    .prev {
+        left: 5em;
+    }
+</style>
+
 <body>
-    <div class="simple-scroll">
-        <section class="x-sections">
-            <div class="x-section">1</div>
-            <div class="x-section">2</div>
-            <div class="x-section">3</div>
-            <div class="x-section">4</div>
-            <div class="x-section">5</div>
-        </section>
+    <div class="container">
+        <div class="carousel">
+            <div class="item a">A</div>
+            <div class="item b">B</div>
+            <div class="item c">C</div>
+            <div class="item d">D</div>
+            <div class="item e">E</div>
+            <div class="item f">F</div>
+        </div>
     </div>
+    <div class="next">Next</div>
+    <div class="prev">Prev</div>
 
-
-    <section class="y-sections">
-        <div class="y-section">1</div>
-        <div class="y-section">2</div>
-        <div class="y-section">3</div>
-    </section>
 
     <script>
-        Array.prototype.forEach.call(
-            document.querySelectorAll('.simple-scroll'),
-            (el) => new SimpleBar(el)
-        );
+        let carousel = document.querySelector(".carousel");
+        let currdeg = 0;
+
+
+
+        document.querySelector(".next").addEventListener("click", function () {
+            rotate({ data: { direction: "next" } });
+        });
+
+        document.querySelector(".prev").addEventListener("click", function () {
+            rotate({ data: { direction: "previous" } });
+        });
+
+        function rotate(e) {
+            if (e.data.direction == "next") {
+                currdeg = currdeg + 60;
+            }
+            if (e.data.direction == "previous") {
+                currdeg = currdeg - 60;
+            }
+
+
+            carousel.style.transform = "rotateX(" + currdeg + "deg)";
+        }
     </script>
 </body>
 

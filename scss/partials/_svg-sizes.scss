@@ -29,4 +29,8 @@
       object-fit: contain;
     }
   }
+
+  .text-#{$i} {
+    font-size: #{$i}px;
+  }
 }

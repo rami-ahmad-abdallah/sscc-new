@@ -7,12 +7,6 @@
 
 }
 
-// FONT SIZE UTILITIES
-@each $val in (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30) {
-    .font-size-#{$val} {
-        font-size: $val + $base-font-size;
-    }
-}
 
 @each $val in $utilitiesValues {
     .px-#{$val} {
@@ -38,4 +32,9 @@
     .radius-#{$val} {
         border-radius: $val * $base-radius;
     }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }

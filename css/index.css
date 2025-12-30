@@ -421,70 +421,6 @@ body {
   margin-left: 50px;
 }
 
-.font-size-0 {
-  font-size: 16px;
-}
-
-.font-size-2 {
-  font-size: 18px;
-}
-
-.font-size-4 {
-  font-size: 20px;
-}
-
-.font-size-6 {
-  font-size: 22px;
-}
-
-.font-size-8 {
-  font-size: 24px;
-}
-
-.font-size-10 {
-  font-size: 26px;
-}
-
-.font-size-12 {
-  font-size: 28px;
-}
-
-.font-size-14 {
-  font-size: 30px;
-}
-
-.font-size-16 {
-  font-size: 32px;
-}
-
-.font-size-18 {
-  font-size: 34px;
-}
-
-.font-size-20 {
-  font-size: 36px;
-}
-
-.font-size-22 {
-  font-size: 38px;
-}
-
-.font-size-24 {
-  font-size: 40px;
-}
-
-.font-size-26 {
-  font-size: 42px;
-}
-
-.font-size-28 {
-  font-size: 44px;
-}
-
-.font-size-30 {
-  font-size: 46px;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -629,6 +565,11 @@ body {
   border-radius: 35px;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .shadow-0 {
   box-shadow: 0 0 0 0 transparent !important;
 }
@@ -673,6 +614,13 @@ body {
   .container {
     width: 1199px;
   }
+}
+
+.center-in-view {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .place-center {
@@ -6163,6 +6111,10 @@ body {
      object-fit: contain;
 }
 
+.text-1 {
+  font-size: 1px;
+}
+
 .square-2 {
   width: 2px;
   height: 2px;
@@ -6177,6 +6129,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-2 {
+  font-size: 2px;
 }
 
 .square-3 {
@@ -6195,6 +6151,10 @@ body {
      object-fit: contain;
 }
 
+.text-3 {
+  font-size: 3px;
+}
+
 .square-4 {
   width: 4px;
   height: 4px;
@@ -6209,6 +6169,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-4 {
+  font-size: 4px;
 }
 
 .square-5 {
@@ -6227,6 +6191,10 @@ body {
      object-fit: contain;
 }
 
+.text-5 {
+  font-size: 5px;
+}
+
 .square-6 {
   width: 6px;
   height: 6px;
@@ -6241,6 +6209,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-6 {
+  font-size: 6px;
 }
 
 .square-7 {
@@ -6259,6 +6231,10 @@ body {
      object-fit: contain;
 }
 
+.text-7 {
+  font-size: 7px;
+}
+
 .square-8 {
   width: 8px;
   height: 8px;
@@ -6273,6 +6249,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-8 {
+  font-size: 8px;
 }
 
 .square-9 {
@@ -6291,6 +6271,10 @@ body {
      object-fit: contain;
 }
 
+.text-9 {
+  font-size: 9px;
+}
+
 .square-10 {
   width: 10px;
   height: 10px;
@@ -6305,6 +6289,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-10 {
+  font-size: 10px;
 }
 
 .square-11 {
@@ -6323,6 +6311,10 @@ body {
      object-fit: contain;
 }
 
+.text-11 {
+  font-size: 11px;
+}
+
 .square-12 {
   width: 12px;
   height: 12px;
@@ -6337,6 +6329,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-12 {
+  font-size: 12px;
 }
 
 .square-13 {
@@ -6355,6 +6351,10 @@ body {
      object-fit: contain;
 }
 
+.text-13 {
+  font-size: 13px;
+}
+
 .square-14 {
   width: 14px;
   height: 14px;
@@ -6369,6 +6369,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-14 {
+  font-size: 14px;
 }
 
 .square-15 {
@@ -6387,6 +6391,10 @@ body {
      object-fit: contain;
 }
 
+.text-15 {
+  font-size: 15px;
+}
+
 .square-16 {
   width: 16px;
   height: 16px;
@@ -6401,6 +6409,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-16 {
+  font-size: 16px;
 }
 
 .square-17 {
@@ -6419,6 +6431,10 @@ body {
      object-fit: contain;
 }
 
+.text-17 {
+  font-size: 17px;
+}
+
 .square-18 {
   width: 18px;
   height: 18px;
@@ -6433,6 +6449,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-18 {
+  font-size: 18px;
 }
 
 .square-19 {
@@ -6451,6 +6471,10 @@ body {
      object-fit: contain;
 }
 
+.text-19 {
+  font-size: 19px;
+}
+
 .square-20 {
   width: 20px;
   height: 20px;
@@ -6465,6 +6489,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-20 {
+  font-size: 20px;
 }
 
 .square-21 {
@@ -6483,6 +6511,10 @@ body {
      object-fit: contain;
 }
 
+.text-21 {
+  font-size: 21px;
+}
+
 .square-22 {
   width: 22px;
   height: 22px;
@@ -6497,6 +6529,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-22 {
+  font-size: 22px;
 }
 
 .square-23 {
@@ -6515,6 +6551,10 @@ body {
      object-fit: contain;
 }
 
+.text-23 {
+  font-size: 23px;
+}
+
 .square-24 {
   width: 24px;
   height: 24px;
@@ -6529,6 +6569,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-24 {
+  font-size: 24px;
 }
 
 .square-25 {
@@ -6547,6 +6591,10 @@ body {
      object-fit: contain;
 }
 
+.text-25 {
+  font-size: 25px;
+}
+
 .square-26 {
   width: 26px;
   height: 26px;
@@ -6561,6 +6609,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-26 {
+  font-size: 26px;
 }
 
 .square-27 {
@@ -6579,6 +6631,10 @@ body {
      object-fit: contain;
 }
 
+.text-27 {
+  font-size: 27px;
+}
+
 .square-28 {
   width: 28px;
   height: 28px;
@@ -6593,6 +6649,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-28 {
+  font-size: 28px;
 }
 
 .square-29 {
@@ -6611,6 +6671,10 @@ body {
      object-fit: contain;
 }
 
+.text-29 {
+  font-size: 29px;
+}
+
 .square-30 {
   width: 30px;
   height: 30px;
@@ -6625,6 +6689,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-30 {
+  font-size: 30px;
 }
 
 .square-31 {
@@ -6643,6 +6711,10 @@ body {
      object-fit: contain;
 }
 
+.text-31 {
+  font-size: 31px;
+}
+
 .square-32 {
   width: 32px;
   height: 32px;
@@ -6657,6 +6729,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-32 {
+  font-size: 32px;
 }
 
 .square-33 {
@@ -6675,6 +6751,10 @@ body {
      object-fit: contain;
 }
 
+.text-33 {
+  font-size: 33px;
+}
+
 .square-34 {
   width: 34px;
   height: 34px;
@@ -6689,6 +6769,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-34 {
+  font-size: 34px;
 }
 
 .square-35 {
@@ -6707,6 +6791,10 @@ body {
      object-fit: contain;
 }
 
+.text-35 {
+  font-size: 35px;
+}
+
 .square-36 {
   width: 36px;
   height: 36px;
@@ -6721,6 +6809,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-36 {
+  font-size: 36px;
 }
 
 .square-37 {
@@ -6739,6 +6831,10 @@ body {
      object-fit: contain;
 }
 
+.text-37 {
+  font-size: 37px;
+}
+
 .square-38 {
   width: 38px;
   height: 38px;
@@ -6753,6 +6849,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-38 {
+  font-size: 38px;
 }
 
 .square-39 {
@@ -6771,6 +6871,10 @@ body {
      object-fit: contain;
 }
 
+.text-39 {
+  font-size: 39px;
+}
+
 .square-40 {
   width: 40px;
   height: 40px;
@@ -6785,6 +6889,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-40 {
+  font-size: 40px;
 }
 
 .square-41 {
@@ -6803,6 +6911,10 @@ body {
      object-fit: contain;
 }
 
+.text-41 {
+  font-size: 41px;
+}
+
 .square-42 {
   width: 42px;
   height: 42px;
@@ -6817,6 +6929,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-42 {
+  font-size: 42px;
 }
 
 .square-43 {
@@ -6835,6 +6951,10 @@ body {
      object-fit: contain;
 }
 
+.text-43 {
+  font-size: 43px;
+}
+
 .square-44 {
   width: 44px;
   height: 44px;
@@ -6849,6 +6969,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-44 {
+  font-size: 44px;
 }
 
 .square-45 {
@@ -6867,6 +6991,10 @@ body {
      object-fit: contain;
 }
 
+.text-45 {
+  font-size: 45px;
+}
+
 .square-46 {
   width: 46px;
   height: 46px;
@@ -6881,6 +7009,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-46 {
+  font-size: 46px;
 }
 
 .square-47 {
@@ -6899,6 +7031,10 @@ body {
      object-fit: contain;
 }
 
+.text-47 {
+  font-size: 47px;
+}
+
 .square-48 {
   width: 48px;
   height: 48px;
@@ -6913,6 +7049,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-48 {
+  font-size: 48px;
 }
 
 .square-49 {
@@ -6931,6 +7071,10 @@ body {
      object-fit: contain;
 }
 
+.text-49 {
+  font-size: 49px;
+}
+
 .square-50 {
   width: 50px;
   height: 50px;
@@ -6945,6 +7089,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-50 {
+  font-size: 50px;
 }
 
 .square-51 {
@@ -6963,6 +7111,10 @@ body {
      object-fit: contain;
 }
 
+.text-51 {
+  font-size: 51px;
+}
+
 .square-52 {
   width: 52px;
   height: 52px;
@@ -6977,6 +7129,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-52 {
+  font-size: 52px;
 }
 
 .square-53 {
@@ -6995,6 +7151,10 @@ body {
      object-fit: contain;
 }
 
+.text-53 {
+  font-size: 53px;
+}
+
 .square-54 {
   width: 54px;
   height: 54px;
@@ -7009,6 +7169,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-54 {
+  font-size: 54px;
 }
 
 .square-55 {
@@ -7027,6 +7191,10 @@ body {
      object-fit: contain;
 }
 
+.text-55 {
+  font-size: 55px;
+}
+
 .square-56 {
   width: 56px;
   height: 56px;
@@ -7041,6 +7209,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-56 {
+  font-size: 56px;
 }
 
 .square-57 {
@@ -7059,6 +7231,10 @@ body {
      object-fit: contain;
 }
 
+.text-57 {
+  font-size: 57px;
+}
+
 .square-58 {
   width: 58px;
   height: 58px;
@@ -7073,6 +7249,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-58 {
+  font-size: 58px;
 }
 
 .square-59 {
@@ -7091,6 +7271,10 @@ body {
      object-fit: contain;
 }
 
+.text-59 {
+  font-size: 59px;
+}
+
 .square-60 {
   width: 60px;
   height: 60px;
@@ -7105,6 +7289,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-60 {
+  font-size: 60px;
 }
 
 .square-61 {
@@ -7123,6 +7311,10 @@ body {
      object-fit: contain;
 }
 
+.text-61 {
+  font-size: 61px;
+}
+
 .square-62 {
   width: 62px;
   height: 62px;
@@ -7137,6 +7329,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-62 {
+  font-size: 62px;
 }
 
 .square-63 {
@@ -7155,6 +7351,10 @@ body {
      object-fit: contain;
 }
 
+.text-63 {
+  font-size: 63px;
+}
+
 .square-64 {
   width: 64px;
   height: 64px;
@@ -7169,6 +7369,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-64 {
+  font-size: 64px;
 }
 
 .square-65 {
@@ -7187,6 +7391,10 @@ body {
      object-fit: contain;
 }
 
+.text-65 {
+  font-size: 65px;
+}
+
 .square-66 {
   width: 66px;
   height: 66px;
@@ -7201,6 +7409,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-66 {
+  font-size: 66px;
 }
 
 .square-67 {
@@ -7219,6 +7431,10 @@ body {
      object-fit: contain;
 }
 
+.text-67 {
+  font-size: 67px;
+}
+
 .square-68 {
   width: 68px;
   height: 68px;
@@ -7233,6 +7449,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-68 {
+  font-size: 68px;
 }
 
 .square-69 {
@@ -7251,6 +7471,10 @@ body {
      object-fit: contain;
 }
 
+.text-69 {
+  font-size: 69px;
+}
+
 .square-70 {
   width: 70px;
   height: 70px;
@@ -7265,6 +7489,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-70 {
+  font-size: 70px;
 }
 
 .square-71 {
@@ -7283,6 +7511,10 @@ body {
      object-fit: contain;
 }
 
+.text-71 {
+  font-size: 71px;
+}
+
 .square-72 {
   width: 72px;
   height: 72px;
@@ -7297,6 +7529,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-72 {
+  font-size: 72px;
 }
 
 .square-73 {
@@ -7315,6 +7551,10 @@ body {
      object-fit: contain;
 }
 
+.text-73 {
+  font-size: 73px;
+}
+
 .square-74 {
   width: 74px;
   height: 74px;
@@ -7329,6 +7569,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-74 {
+  font-size: 74px;
 }
 
 .square-75 {
@@ -7347,6 +7591,10 @@ body {
      object-fit: contain;
 }
 
+.text-75 {
+  font-size: 75px;
+}
+
 .square-76 {
   width: 76px;
   height: 76px;
@@ -7361,6 +7609,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-76 {
+  font-size: 76px;
 }
 
 .square-77 {
@@ -7379,6 +7631,10 @@ body {
      object-fit: contain;
 }
 
+.text-77 {
+  font-size: 77px;
+}
+
 .square-78 {
   width: 78px;
   height: 78px;
@@ -7393,6 +7649,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-78 {
+  font-size: 78px;
 }
 
 .square-79 {
@@ -7411,6 +7671,10 @@ body {
      object-fit: contain;
 }
 
+.text-79 {
+  font-size: 79px;
+}
+
 .square-80 {
   width: 80px;
   height: 80px;
@@ -7425,6 +7689,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-80 {
+  font-size: 80px;
 }
 
 .square-81 {
@@ -7443,6 +7711,10 @@ body {
      object-fit: contain;
 }
 
+.text-81 {
+  font-size: 81px;
+}
+
 .square-82 {
   width: 82px;
   height: 82px;
@@ -7457,6 +7729,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-82 {
+  font-size: 82px;
 }
 
 .square-83 {
@@ -7475,6 +7751,10 @@ body {
      object-fit: contain;
 }
 
+.text-83 {
+  font-size: 83px;
+}
+
 .square-84 {
   width: 84px;
   height: 84px;
@@ -7489,6 +7769,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-84 {
+  font-size: 84px;
 }
 
 .square-85 {
@@ -7507,6 +7791,10 @@ body {
      object-fit: contain;
 }
 
+.text-85 {
+  font-size: 85px;
+}
+
 .square-86 {
   width: 86px;
   height: 86px;
@@ -7521,6 +7809,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-86 {
+  font-size: 86px;
 }
 
 .square-87 {
@@ -7539,6 +7831,10 @@ body {
      object-fit: contain;
 }
 
+.text-87 {
+  font-size: 87px;
+}
+
 .square-88 {
   width: 88px;
   height: 88px;
@@ -7553,6 +7849,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-88 {
+  font-size: 88px;
 }
 
 .square-89 {
@@ -7571,6 +7871,10 @@ body {
      object-fit: contain;
 }
 
+.text-89 {
+  font-size: 89px;
+}
+
 .square-90 {
   width: 90px;
   height: 90px;
@@ -7585,6 +7889,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-90 {
+  font-size: 90px;
 }
 
 .square-91 {
@@ -7603,6 +7911,10 @@ body {
      object-fit: contain;
 }
 
+.text-91 {
+  font-size: 91px;
+}
+
 .square-92 {
   width: 92px;
   height: 92px;
@@ -7617,6 +7929,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-92 {
+  font-size: 92px;
 }
 
 .square-93 {
@@ -7635,6 +7951,10 @@ body {
      object-fit: contain;
 }
 
+.text-93 {
+  font-size: 93px;
+}
+
 .square-94 {
   width: 94px;
   height: 94px;
@@ -7649,6 +7969,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-94 {
+  font-size: 94px;
 }
 
 .square-95 {
@@ -7667,6 +7991,10 @@ body {
      object-fit: contain;
 }
 
+.text-95 {
+  font-size: 95px;
+}
+
 .square-96 {
   width: 96px;
   height: 96px;
@@ -7681,6 +8009,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-96 {
+  font-size: 96px;
 }
 
 .square-97 {
@@ -7699,6 +8031,10 @@ body {
      object-fit: contain;
 }
 
+.text-97 {
+  font-size: 97px;
+}
+
 .square-98 {
   width: 98px;
   height: 98px;
@@ -7713,6 +8049,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-98 {
+  font-size: 98px;
 }
 
 .square-99 {
@@ -7731,6 +8071,10 @@ body {
      object-fit: contain;
 }
 
+.text-99 {
+  font-size: 99px;
+}
+
 .square-100 {
   width: 100px;
   height: 100px;
@@ -7745,6 +8089,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-100 {
+  font-size: 100px;
 }
 
 .square-101 {
@@ -7763,6 +8111,10 @@ body {
      object-fit: contain;
 }
 
+.text-101 {
+  font-size: 101px;
+}
+
 .square-102 {
   width: 102px;
   height: 102px;
@@ -7777,6 +8129,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-102 {
+  font-size: 102px;
 }
 
 .square-103 {
@@ -7795,6 +8151,10 @@ body {
      object-fit: contain;
 }
 
+.text-103 {
+  font-size: 103px;
+}
+
 .square-104 {
   width: 104px;
   height: 104px;
@@ -7809,6 +8169,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-104 {
+  font-size: 104px;
 }
 
 .square-105 {
@@ -7827,6 +8191,10 @@ body {
      object-fit: contain;
 }
 
+.text-105 {
+  font-size: 105px;
+}
+
 .square-106 {
   width: 106px;
   height: 106px;
@@ -7841,6 +8209,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-106 {
+  font-size: 106px;
 }
 
 .square-107 {
@@ -7859,6 +8231,10 @@ body {
      object-fit: contain;
 }
 
+.text-107 {
+  font-size: 107px;
+}
+
 .square-108 {
   width: 108px;
   height: 108px;
@@ -7873,6 +8249,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-108 {
+  font-size: 108px;
 }
 
 .square-109 {
@@ -7891,6 +8271,10 @@ body {
      object-fit: contain;
 }
 
+.text-109 {
+  font-size: 109px;
+}
+
 .square-110 {
   width: 110px;
   height: 110px;
@@ -7905,6 +8289,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-110 {
+  font-size: 110px;
 }
 
 .square-111 {
@@ -7923,6 +8311,10 @@ body {
      object-fit: contain;
 }
 
+.text-111 {
+  font-size: 111px;
+}
+
 .square-112 {
   width: 112px;
   height: 112px;
@@ -7937,6 +8329,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-112 {
+  font-size: 112px;
 }
 
 .square-113 {
@@ -7955,6 +8351,10 @@ body {
      object-fit: contain;
 }
 
+.text-113 {
+  font-size: 113px;
+}
+
 .square-114 {
   width: 114px;
   height: 114px;
@@ -7969,6 +8369,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-114 {
+  font-size: 114px;
 }
 
 .square-115 {
@@ -7987,6 +8391,10 @@ body {
      object-fit: contain;
 }
 
+.text-115 {
+  font-size: 115px;
+}
+
 .square-116 {
   width: 116px;
   height: 116px;
@@ -8001,6 +8409,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-116 {
+  font-size: 116px;
 }
 
 .square-117 {
@@ -8019,6 +8431,10 @@ body {
      object-fit: contain;
 }
 
+.text-117 {
+  font-size: 117px;
+}
+
 .square-118 {
   width: 118px;
   height: 118px;
@@ -8033,6 +8449,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-118 {
+  font-size: 118px;
 }
 
 .square-119 {
@@ -8051,6 +8471,10 @@ body {
      object-fit: contain;
 }
 
+.text-119 {
+  font-size: 119px;
+}
+
 .square-120 {
   width: 120px;
   height: 120px;
@@ -8065,6 +8489,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-120 {
+  font-size: 120px;
 }
 
 .square-121 {
@@ -8083,6 +8511,10 @@ body {
      object-fit: contain;
 }
 
+.text-121 {
+  font-size: 121px;
+}
+
 .square-122 {
   width: 122px;
   height: 122px;
@@ -8097,6 +8529,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-122 {
+  font-size: 122px;
 }
 
 .square-123 {
@@ -8115,6 +8551,10 @@ body {
      object-fit: contain;
 }
 
+.text-123 {
+  font-size: 123px;
+}
+
 .square-124 {
   width: 124px;
   height: 124px;
@@ -8129,6 +8569,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-124 {
+  font-size: 124px;
 }
 
 .square-125 {
@@ -8147,6 +8591,10 @@ body {
      object-fit: contain;
 }
 
+.text-125 {
+  font-size: 125px;
+}
+
 .square-126 {
   width: 126px;
   height: 126px;
@@ -8161,6 +8609,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-126 {
+  font-size: 126px;
 }
 
 .square-127 {
@@ -8179,6 +8631,10 @@ body {
      object-fit: contain;
 }
 
+.text-127 {
+  font-size: 127px;
+}
+
 .square-128 {
   width: 128px;
   height: 128px;
@@ -8193,6 +8649,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-128 {
+  font-size: 128px;
 }
 
 .square-129 {
@@ -8211,6 +8671,10 @@ body {
      object-fit: contain;
 }
 
+.text-129 {
+  font-size: 129px;
+}
+
 .square-130 {
   width: 130px;
   height: 130px;
@@ -8225,6 +8689,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-130 {
+  font-size: 130px;
 }
 
 .square-131 {
@@ -8243,6 +8711,10 @@ body {
      object-fit: contain;
 }
 
+.text-131 {
+  font-size: 131px;
+}
+
 .square-132 {
   width: 132px;
   height: 132px;
@@ -8257,6 +8729,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-132 {
+  font-size: 132px;
 }
 
 .square-133 {
@@ -8275,6 +8751,10 @@ body {
      object-fit: contain;
 }
 
+.text-133 {
+  font-size: 133px;
+}
+
 .square-134 {
   width: 134px;
   height: 134px;
@@ -8289,6 +8769,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-134 {
+  font-size: 134px;
 }
 
 .square-135 {
@@ -8307,6 +8791,10 @@ body {
      object-fit: contain;
 }
 
+.text-135 {
+  font-size: 135px;
+}
+
 .square-136 {
   width: 136px;
   height: 136px;
@@ -8321,6 +8809,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-136 {
+  font-size: 136px;
 }
 
 .square-137 {
@@ -8339,6 +8831,10 @@ body {
      object-fit: contain;
 }
 
+.text-137 {
+  font-size: 137px;
+}
+
 .square-138 {
   width: 138px;
   height: 138px;
@@ -8353,6 +8849,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-138 {
+  font-size: 138px;
 }
 
 .square-139 {
@@ -8371,6 +8871,10 @@ body {
      object-fit: contain;
 }
 
+.text-139 {
+  font-size: 139px;
+}
+
 .square-140 {
   width: 140px;
   height: 140px;
@@ -8385,6 +8889,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-140 {
+  font-size: 140px;
 }
 
 .square-141 {
@@ -8403,6 +8911,10 @@ body {
      object-fit: contain;
 }
 
+.text-141 {
+  font-size: 141px;
+}
+
 .square-142 {
   width: 142px;
   height: 142px;
@@ -8417,6 +8929,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-142 {
+  font-size: 142px;
 }
 
 .square-143 {
@@ -8435,6 +8951,10 @@ body {
      object-fit: contain;
 }
 
+.text-143 {
+  font-size: 143px;
+}
+
 .square-144 {
   width: 144px;
   height: 144px;
@@ -8449,6 +8969,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-144 {
+  font-size: 144px;
 }
 
 .square-145 {
@@ -8467,6 +8991,10 @@ body {
      object-fit: contain;
 }
 
+.text-145 {
+  font-size: 145px;
+}
+
 .square-146 {
   width: 146px;
   height: 146px;
@@ -8481,6 +9009,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-146 {
+  font-size: 146px;
 }
 
 .square-147 {
@@ -8499,6 +9031,10 @@ body {
      object-fit: contain;
 }
 
+.text-147 {
+  font-size: 147px;
+}
+
 .square-148 {
   width: 148px;
   height: 148px;
@@ -8513,6 +9049,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-148 {
+  font-size: 148px;
 }
 
 .square-149 {
@@ -8531,6 +9071,10 @@ body {
      object-fit: contain;
 }
 
+.text-149 {
+  font-size: 149px;
+}
+
 .square-150 {
   width: 150px;
   height: 150px;
@@ -8545,6 +9089,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-150 {
+  font-size: 150px;
 }
 
 .square-151 {
@@ -8563,6 +9111,10 @@ body {
      object-fit: contain;
 }
 
+.text-151 {
+  font-size: 151px;
+}
+
 .square-152 {
   width: 152px;
   height: 152px;
@@ -8577,6 +9129,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-152 {
+  font-size: 152px;
 }
 
 .square-153 {
@@ -8595,6 +9151,10 @@ body {
      object-fit: contain;
 }
 
+.text-153 {
+  font-size: 153px;
+}
+
 .square-154 {
   width: 154px;
   height: 154px;
@@ -8609,6 +9169,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-154 {
+  font-size: 154px;
 }
 
 .square-155 {
@@ -8627,6 +9191,10 @@ body {
      object-fit: contain;
 }
 
+.text-155 {
+  font-size: 155px;
+}
+
 .square-156 {
   width: 156px;
   height: 156px;
@@ -8641,6 +9209,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-156 {
+  font-size: 156px;
 }
 
 .square-157 {
@@ -8659,6 +9231,10 @@ body {
      object-fit: contain;
 }
 
+.text-157 {
+  font-size: 157px;
+}
+
 .square-158 {
   width: 158px;
   height: 158px;
@@ -8673,6 +9249,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-158 {
+  font-size: 158px;
 }
 
 .square-159 {
@@ -8691,6 +9271,10 @@ body {
      object-fit: contain;
 }
 
+.text-159 {
+  font-size: 159px;
+}
+
 .square-160 {
   width: 160px;
   height: 160px;
@@ -8705,6 +9289,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-160 {
+  font-size: 160px;
 }
 
 .square-161 {
@@ -8723,6 +9311,10 @@ body {
      object-fit: contain;
 }
 
+.text-161 {
+  font-size: 161px;
+}
+
 .square-162 {
   width: 162px;
   height: 162px;
@@ -8737,6 +9329,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-162 {
+  font-size: 162px;
 }
 
 .square-163 {
@@ -8755,6 +9351,10 @@ body {
      object-fit: contain;
 }
 
+.text-163 {
+  font-size: 163px;
+}
+
 .square-164 {
   width: 164px;
   height: 164px;
@@ -8769,6 +9369,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-164 {
+  font-size: 164px;
 }
 
 .square-165 {
@@ -8787,6 +9391,10 @@ body {
      object-fit: contain;
 }
 
+.text-165 {
+  font-size: 165px;
+}
+
 .square-166 {
   width: 166px;
   height: 166px;
@@ -8801,6 +9409,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-166 {
+  font-size: 166px;
 }
 
 .square-167 {
@@ -8819,6 +9431,10 @@ body {
      object-fit: contain;
 }
 
+.text-167 {
+  font-size: 167px;
+}
+
 .square-168 {
   width: 168px;
   height: 168px;
@@ -8833,6 +9449,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-168 {
+  font-size: 168px;
 }
 
 .square-169 {
@@ -8851,6 +9471,10 @@ body {
      object-fit: contain;
 }
 
+.text-169 {
+  font-size: 169px;
+}
+
 .square-170 {
   width: 170px;
   height: 170px;
@@ -8865,6 +9489,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-170 {
+  font-size: 170px;
 }
 
 .square-171 {
@@ -8883,6 +9511,10 @@ body {
      object-fit: contain;
 }
 
+.text-171 {
+  font-size: 171px;
+}
+
 .square-172 {
   width: 172px;
   height: 172px;
@@ -8897,6 +9529,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-172 {
+  font-size: 172px;
 }
 
 .square-173 {
@@ -8915,6 +9551,10 @@ body {
      object-fit: contain;
 }
 
+.text-173 {
+  font-size: 173px;
+}
+
 .square-174 {
   width: 174px;
   height: 174px;
@@ -8929,6 +9569,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-174 {
+  font-size: 174px;
 }
 
 .square-175 {
@@ -8947,6 +9591,10 @@ body {
      object-fit: contain;
 }
 
+.text-175 {
+  font-size: 175px;
+}
+
 .square-176 {
   width: 176px;
   height: 176px;
@@ -8961,6 +9609,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-176 {
+  font-size: 176px;
 }
 
 .square-177 {
@@ -8979,6 +9631,10 @@ body {
      object-fit: contain;
 }
 
+.text-177 {
+  font-size: 177px;
+}
+
 .square-178 {
   width: 178px;
   height: 178px;
@@ -8993,6 +9649,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-178 {
+  font-size: 178px;
 }
 
 .square-179 {
@@ -9011,6 +9671,10 @@ body {
      object-fit: contain;
 }
 
+.text-179 {
+  font-size: 179px;
+}
+
 .square-180 {
   width: 180px;
   height: 180px;
@@ -9025,6 +9689,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-180 {
+  font-size: 180px;
 }
 
 .square-181 {
@@ -9043,6 +9711,10 @@ body {
      object-fit: contain;
 }
 
+.text-181 {
+  font-size: 181px;
+}
+
 .square-182 {
   width: 182px;
   height: 182px;
@@ -9057,6 +9729,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-182 {
+  font-size: 182px;
 }
 
 .square-183 {
@@ -9075,6 +9751,10 @@ body {
      object-fit: contain;
 }
 
+.text-183 {
+  font-size: 183px;
+}
+
 .square-184 {
   width: 184px;
   height: 184px;
@@ -9089,6 +9769,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-184 {
+  font-size: 184px;
 }
 
 .square-185 {
@@ -9107,6 +9791,10 @@ body {
      object-fit: contain;
 }
 
+.text-185 {
+  font-size: 185px;
+}
+
 .square-186 {
   width: 186px;
   height: 186px;
@@ -9121,6 +9809,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-186 {
+  font-size: 186px;
 }
 
 .square-187 {
@@ -9139,6 +9831,10 @@ body {
      object-fit: contain;
 }
 
+.text-187 {
+  font-size: 187px;
+}
+
 .square-188 {
   width: 188px;
   height: 188px;
@@ -9153,6 +9849,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-188 {
+  font-size: 188px;
 }
 
 .square-189 {
@@ -9171,6 +9871,10 @@ body {
      object-fit: contain;
 }
 
+.text-189 {
+  font-size: 189px;
+}
+
 .square-190 {
   width: 190px;
   height: 190px;
@@ -9185,6 +9889,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-190 {
+  font-size: 190px;
 }
 
 .square-191 {
@@ -9203,6 +9911,10 @@ body {
      object-fit: contain;
 }
 
+.text-191 {
+  font-size: 191px;
+}
+
 .square-192 {
   width: 192px;
   height: 192px;
@@ -9217,6 +9929,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-192 {
+  font-size: 192px;
 }
 
 .square-193 {
@@ -9235,6 +9951,10 @@ body {
      object-fit: contain;
 }
 
+.text-193 {
+  font-size: 193px;
+}
+
 .square-194 {
   width: 194px;
   height: 194px;
@@ -9249,6 +9969,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-194 {
+  font-size: 194px;
 }
 
 .square-195 {
@@ -9267,6 +9991,10 @@ body {
      object-fit: contain;
 }
 
+.text-195 {
+  font-size: 195px;
+}
+
 .square-196 {
   width: 196px;
   height: 196px;
@@ -9281,6 +10009,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-196 {
+  font-size: 196px;
 }
 
 .square-197 {
@@ -9299,6 +10031,10 @@ body {
      object-fit: contain;
 }
 
+.text-197 {
+  font-size: 197px;
+}
+
 .square-198 {
   width: 198px;
   height: 198px;
@@ -9313,6 +10049,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-198 {
+  font-size: 198px;
 }
 
 .square-199 {
@@ -9331,6 +10071,10 @@ body {
      object-fit: contain;
 }
 
+.text-199 {
+  font-size: 199px;
+}
+
 .square-200 {
   width: 200px;
   height: 200px;
@@ -9345,6 +10089,10 @@ body {
   height: inherit;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-200 {
+  font-size: 200px;
 }
 
 @media (max-width: 992px) {

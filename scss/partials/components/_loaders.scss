@@ -1,0 +1,47 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  background: white;
+  transition: opacity 0.3s ease-in-out;
+  flex-direction: column;
+  gap: 10px;
+
+  & svg,
+  & img {
+    width: 150px;
+  }
+}
+
+.loader .box {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-right: 4px solid transparent;
+  border-top: 4px solid black;
+
+  will-change: transform;
+  animation-name: loader-animation;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

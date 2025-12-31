@@ -16,56 +16,6 @@
 </head>
 
 <body class="bg-dark">
-
-    <style>
-        .loader {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1500;
-            background: white;
-            transition: opacity 0.3s ease-in-out;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .loader svg {
-            width: 200px;
-        }
-
-        .loader .box {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            border-right: 4px solid transparent;
-            border-top: 4px solid black;
-
-            will-change: transform;
-            animation-name: loader-animation;
-            animation-delay: 0s;
-            animation-timing-function: linear;
-            animation-duration: .7s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: forwards;
-            animation-direction: normal;
-        }
-
-        @keyframes loader-animation {
-            0% {
-                transform: rotateZ(0deg);
-            }
-
-            100% {
-                transform: rotateZ(360deg);
-            }
-        }
-    </style>
-
     <div class="loader" id="loader">
         <svg width="291" height="222" viewBox="0 0 291 222" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -114,7 +64,7 @@
         <div class="box"></div>
     </div>
 
-    <nav class="nav-transparent fixed shadow-0 ">
+    <nav class="nav-transparent absolute shadow-0 ">
         <div class="container flex justify-between align-center">
             <div class="nav-brand">
                 <a href=".">
@@ -188,8 +138,6 @@
 
             <section class="relative h-100vh">
                 <div class="container">
-
-
                     <h2 class="pop-up">WHO WE ARE ?</h2>
                     <p>
                         Scientific Systems Construction Company was established with the aim
@@ -224,7 +172,7 @@
 
             <section id="infrastructure" class="w-100">
                 <section class=" pb-5">
-                    <div class="container flex row-wrap ">
+                    <div class="container flex flex-column ">
                         <div class=" my-5">
                             <h1 class="text-theme-1 fade-up">Infrastructure Development</h1>
                             <p class="text-secondary fs-18px mt-2 fade-up">

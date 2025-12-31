@@ -5308,8 +5308,6 @@ body {
 .carousal .carousal-controls {
   position: absolute;
   width: 100%;
-  background: linear-gradient(165deg, rgba(244, 202, 41, 0.2588235294) 0%, rgba(0, 0, 0, 0.4117647059) 30%);
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -5388,14 +5386,20 @@ body {
 }
 .carousal .carousal-items .item img:nth-child(1),
 .carousal .carousal-items .item video:nth-child(1) {
-  filter: blur(10px);
+  filter: blur(25px);
 }
 .carousal .carousal-items .item img:nth-child(2),
 .carousal .carousal-items .item video:nth-child(2) {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-backdrop-filter: grayscale(1);
-          backdrop-filter: grayscale(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 95%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 30px -10px black;
 }
 .carousal .carousal-items .item.active {
   opacity: 1;
@@ -5408,8 +5412,19 @@ body {
   border-radius: 3px;
 }
 .carousal[data-auto=true] .carousal-controls .progress-item.active .progress-value {
-  background: white;
   animation: increase-progress 10s 1 linear forwards;
+}
+.carousal[data-auto=true] .carousal-controls .progress-item.active:nth-of-type(1) .progress-value {
+  background: linear-gradient(90deg, #f4cb2a, rgb(174.9642857143, 141.2857142857, 9.0357142857));
+}
+.carousal[data-auto=true] .carousal-controls .progress-item.active:nth-of-type(2) .progress-value {
+  background: linear-gradient(90deg, #1c477f, rgb(9.5741935484, 24.2774193548, 43.4258064516));
+}
+.carousal[data-auto=true] .carousal-controls .progress-item.active:nth-of-type(3) .progress-value {
+  background: linear-gradient(90deg, #818588, rgb(79.1714285714, 81.8326530612, 83.8285714286));
+}
+.carousal[data-auto=true] .carousal-controls .progress-item.active:nth-of-type(4) .progress-value {
+  background: linear-gradient(90deg, #d9b47e, rgb(186.1616766467, 132.7664670659, 54.8383233533));
 }
 .carousal[data-auto=true] .carousal-images .image {
   transform: scale(1.2) rotate(2deg);
@@ -5646,6 +5661,49 @@ body {
   cursor: pointer;
 }
 
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  background: white;
+  transition: opacity 0.3s ease-in-out;
+  flex-direction: column;
+  gap: 10px;
+}
+.loader svg, .loader img {
+  width: 150px;
+}
+
+.loader .box {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-right: 4px solid transparent;
+  border-top: 4px solid black;
+  will-change: transform;
+  animation-name: loader-animation;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 .animated-normal-stroke {
   position: absolute;
   left: 0%;

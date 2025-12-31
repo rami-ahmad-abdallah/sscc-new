@@ -8,8 +8,10 @@
     width: 27px;
     height: 27px;
     border-radius: 50%;
-    background-color: rgba(lighten(set-text-color($bg-color), 50%),
-        $alpha: 0.2);
+    background-color: rgba(
+      lighten(set-text-color($bg-color), 50%),
+      $alpha: 0.2
+    );
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,6 +97,11 @@
   }
 }
 
+.glass-bg {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+}
+
 .center-absolute-item {
   position: absolute;
   top: 50%;
@@ -114,7 +121,7 @@
   flex-flow: row wrap;
   gap: 10px;
 
-  >div {
+  > div {
     width: 350px;
     overflow: hidden;
     border-radius: 7px;
@@ -129,7 +136,7 @@
 }
 
 .flex-child-auto {
-  &>div {
+  & > div {
     flex: 0 0 auto;
   }
 }

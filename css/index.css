@@ -18,26 +18,6 @@
   src: url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.woff2") format("woff2"), url("../files/fonts/barlow-v13-latin_latin-ext_vietnamese-500.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-/* cairo-regular - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "cairo";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../files/fonts/cairo-v31-latin-regular.woff2") format("woff2"), url("../files/fonts/cairo-v31-latin-regular.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* cairo-600 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "cairo";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../files/fonts/cairo-v31-latin-600.woff2") format("woff2"), url("../files/fonts/cairo-v31-latin-600.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
 *,
 *::after,
 *::before {
@@ -46,7 +26,7 @@
   box-sizing: border-box;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  font-family: "cairo", "barlow";
+  font-family: "Cairo", "barlow";
   scroll-behavior: smooth;
 }
 
@@ -640,6 +620,12 @@ body {
      object-fit: cover;
 }
 
+.glass-bg {
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .center-absolute-item {
   position: absolute;
   top: 50%;
@@ -713,15 +699,15 @@ body {
 }
 
 .left-0 {
-  top: 0;
+  left: 0;
 }
 
 .right-0 {
-  top: 0;
+  right: 0;
 }
 
 .bottom-0 {
-  top: 0;
+  bottom: 0;
 }
 
 .top-50 {
@@ -729,15 +715,15 @@ body {
 }
 
 .left-50 {
-  top: 50;
+  left: 50;
 }
 
 .right-50 {
-  top: 50;
+  right: 50;
 }
 
 .bottom-50 {
-  top: 50;
+  bottom: 50;
 }
 
 .top-100 {
@@ -745,15 +731,15 @@ body {
 }
 
 .left-100 {
-  top: 100;
+  left: 100;
 }
 
 .right-100 {
-  top: 100;
+  right: 100;
 }
 
 .bottom-100 {
-  top: 100;
+  bottom: 100;
 }
 
 .flex {
@@ -5540,27 +5526,31 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-carousal .carousal-cards .carousal-card .card-body img:nth-child(1),
 .card-carousal .carousal-cards .carousal-card .card-body video:nth-child(1) {
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: blur(10px);
+  filter: blur(15px);
 }
 .card-carousal .carousal-cards .carousal-card .card-body img:nth-child(2),
 .card-carousal .carousal-cards .carousal-card .card-body video:nth-child(2) {
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: clamp(345px, 70%, 80%);
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  box-shadow: 0 0 20px -5px black;
 }
 .card-carousal .carousal-cards .carousal-card .card-title {
   position: absolute;
   background: rgba(0, 0, 0, 0.4901960784);
-  font-size: 28px;
   color: white;
-  padding: 28px;
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  border-radius: 7px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   text-transform: uppercase;
   bottom: 10px;
 }
@@ -5569,8 +5559,7 @@ body {
     position: relative;
   }
   .card-carousal .carousal-cards .carousal-card .card-title {
-    font-size: 14px;
-    padding: 20px;
+    padding: 10px 15px;
     font-weight: bold;
     bottom: 5px;
   }

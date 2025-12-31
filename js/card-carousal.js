@@ -55,8 +55,6 @@ cardCarousals.forEach((carousal, carousalNumber) => {
     card.querySelector(".card-body").appendChild(cardContent);
   });
 
-  console.log(cardContent);
-
   carousalCards[0].classList.add("active");
   // SET THE CAROUSAL card TO THE FIRST card
   carousal.dataset.currentCard = 0;

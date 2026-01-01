@@ -1,40 +1,38 @@
 @each $classStart, $property in $uMap {
-    @each $val in $utilitiesValues {
-        .#{$classStart}-#{$val} {
-            #{$property}: $val * $base-padding;
-        }
+  @each $val in $utilitiesValues {
+    .#{$classStart}-#{$val} {
+      #{$property}: $val * $base-padding !important;
     }
-
+  }
 }
 
-
 @each $val in $utilitiesValues {
-    .px-#{$val} {
-        padding-left: $val * $base-padding;
-        padding-right: $val * $base-padding;
-    }
+  .px-#{$val} {
+    padding-left: $val * $base-padding !important;
+    padding-right: $val * $base-padding !important;
+  }
 
-    .py-#{$val} {
-        padding-top: $val * $base-padding;
-        padding-bottom: $val * $base-padding;
-    }
+  .py-#{$val} {
+    padding-top: $val * $base-padding !important;
+    padding-bottom: $val * $base-padding !important;
+  }
 
-    .mx-#{$val} {
-        margin-left: $val * $base-margin;
-        margin-right: $val * $base-margin;
-    }
+  .mx-#{$val} {
+    margin-left: $val * $base-margin !important;
+    margin-right: $val * $base-margin !important;
+  }
 
-    .my-#{$val} {
-        margin-top: $val * $base-margin;
-        margin-bottom: $val * $base-margin;
-    }
+  .my-#{$val} {
+    margin-top: $val * $base-margin !important;
+    margin-bottom: $val * $base-margin !important;
+  }
 
-    .radius-#{$val} {
-        border-radius: $val * $base-radius;
-    }
+  .radius-#{$val} {
+    border-radius: $val * $base-radius;
+  }
 }
 
 .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -6,7 +6,7 @@ $positionsMap: (absolute, fixed, relative, static, sticky);
   }
 }
 
-$positionValues: (0, 50, 100);
+$positionValues: (0, 10, 50, 100);
 
 @each $val in $positionValues {
   .top-#{$val} {

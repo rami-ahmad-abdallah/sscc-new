@@ -47,3 +47,14 @@
     }
   }
 }
+
+.vision {
+  text-align: center;
+  background: linear-gradient(235deg, $theme-color-2, white) !important;
+
+  .section-text {
+    display: grid;
+    place-content: center;
+    margin: 0px auto;
+  }
+}

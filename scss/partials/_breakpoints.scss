@@ -12,7 +12,7 @@ $bp: (
   }
 }
 
-@mixin on-sm-screen-and-lower() {
+@mixin on-mobile() {
   @media (max-width: map_get($bp,"sm")) {
     @content;
   }

@@ -58,18 +58,18 @@
 .container {
   margin: 0px auto;
   height: inherit;
-  padding: $base-padding;
+  padding: $base-padding + 2;
 
   @include on-lg-screen-and-lower() {
     width: 100%;
   }
 
   @include on-lg-screen-and-higher() {
-    width: 990px;
+    width: 900px;
   }
 
   @include on-xl-screen-and-higher() {
-    width: 1199px;
+    width: 1050px;
   }
 }
 
@@ -95,6 +95,10 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+.mobile-width {
+  width: 345px;
 }
 
 .glass-bg {

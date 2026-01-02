@@ -7,7 +7,22 @@
     align-items: center;
     height: 500px;
     color: black;
+    text-align: center;
     overflow: hidden;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #ffffffbf;
+      z-index: -1;
+      position: absolute;
+      backdrop-filter: blur(15px);
+    }
 
     .section-text {
       width: 345px;
@@ -45,6 +60,16 @@
     }
 
     &:nth-of-type(1) {
+      background-image: url("../files/images/about-section/whoare.jpeg");
+
+      &::after {
+        background: linear-gradient(
+          0deg,
+          rgba($theme-color-1, 0.85) 25%,
+          rgba(255, 255, 255, 0.5)
+        );
+      }
+
       svg {
         bottom: -10px;
         right: -10px;
@@ -52,6 +77,16 @@
     }
 
     &:nth-of-type(2) {
+      background-image: url("../files/images/about-section/vision.jpg");
+
+      &::after {
+        background: linear-gradient(
+          90deg,
+          rgba($theme-color-2, 0.85) 25%,
+          rgba(255, 255, 255, 0.5)
+        ) !important;
+      }
+
       svg {
         top: -50px;
         right: -5px;
@@ -59,6 +94,16 @@
     }
 
     &:nth-of-type(3) {
+      background-image: url("../files/images/about-section/message.jpeg");
+
+      &::after {
+        background: linear-gradient(
+          180deg,
+          rgba($theme-color-3, 0.85) 25%,
+          rgba(255, 255, 255, 0.5)
+        ) !important;
+      }
+
       svg {
         bottom: -10px;
         left: -30px;
@@ -66,24 +111,34 @@
     }
 
     &:nth-of-type(4) {
+      background-image: url("../files/images/about-section/chairman.jpeg");
+
+      &::after {
+        background: linear-gradient(
+          270deg,
+          rgba($theme-color-4, 0.85) 25%,
+          rgba(255, 255, 255, 0.5)
+        ) !important;
+      }
+
       svg {
         top: -10px;
         left: -10px;
       }
     }
   }
-  .container {
-    background: linear-gradient(125deg, $theme-color-1, white);
-  }
 }
 
-.vision {
-  text-align: center;
-  background: linear-gradient(235deg, $theme-color-2, white) !important;
-
-  .section-text {
-    display: grid;
-    place-content: center;
-    margin: 0px auto;
+.fade-up {
+  svg {
+    transition: all 7s ease;
+    stroke-dasharray: 105;
+    stroke-dashoffset: 105;
+  }
+}
+// WE CAN APPLY STYLE AFTER THE SHOW_UP CLASS ADDED
+.show-fade-up {
+  svg {
+    stroke-dashoffset: 0;
   }
 }

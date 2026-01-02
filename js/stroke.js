@@ -1,3 +1,13 @@
+let allPageSVG = document.querySelectorAll("svg");
+
+allPageSVG.forEach((svg) => {
+  let svgPaths = svg.querySelectorAll("path");
+
+  svgPaths.forEach((path) => {
+    path.setAttribute("pathLength", "100");
+  });
+});
+
 let strokeSvg = document.querySelectorAll(".stroke-effect");
 
 const strokeObserver = new IntersectionObserver(

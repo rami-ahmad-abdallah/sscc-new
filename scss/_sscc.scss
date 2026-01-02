@@ -1,50 +1,79 @@
 .about {
+  .about-section {
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: black;
+    overflow: hidden;
+
+    .section-text {
+      width: 345px;
+    }
+
+    svg {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+
+    @include on-mobile() {
+      &:nth-of-type(1),
+      &:nth-of-type(3) {
+        .section-text {
+          width: 345px;
+          align-self: flex-start;
+          padding-top: 20px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        .section-text {
+          width: 345px;
+        }
+      }
+
+      &:nth-of-type(4) {
+        height: 600px;
+        .section-text {
+          width: 345px;
+          align-self: flex-end;
+        }
+      }
+    }
+
+    &:nth-of-type(1) {
+      svg {
+        bottom: -10px;
+        right: -10px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      svg {
+        top: -50px;
+        right: -5px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      svg {
+        bottom: -10px;
+        left: -30px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      svg {
+        top: -10px;
+        left: -10px;
+      }
+    }
+  }
   .container {
     background: linear-gradient(125deg, $theme-color-1, white);
-    height: 500px;
-  }
-  .section-text {
-    height: 430px;
-    overflow: hidden;
-    overflow-y: auto;
-    color: black;
-    width: 670px;
-    padding: 20px;
-    z-index: 1;
-    width: clamp(275px, 75%, 775px);
-
-    &::-webkit-scrollbar {
-      width: 16px;
-    }
-
-    /* Track */
-    &::-webkit-scrollbar-track {
-      background: #4d4d4d00;
-    }
-
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background-color: #555;
-      border: 3px solid transparent;
-      background-clip: padding-box;
-
-      border-top-left-radius: 20px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 0px;
-    }
-
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-      background: $dark;
-      border: 3px solid transparent;
-      background-clip: padding-box;
-
-      border-top-left-radius: 20px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 0px;
-    }
   }
 }
 

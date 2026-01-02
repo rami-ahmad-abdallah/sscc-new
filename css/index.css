@@ -10172,46 +10172,59 @@ svg {
   width: 16px;
 }
 
+.about .about-section {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  color: black;
+  overflow: hidden;
+}
+.about .about-section .section-text {
+  width: 345px;
+}
+.about .about-section svg {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 576px) {
+  .about .about-section:nth-of-type(1) .section-text, .about .about-section:nth-of-type(3) .section-text {
+    width: 345px;
+    align-self: flex-start;
+    padding-top: 20px;
+  }
+  .about .about-section:nth-of-type(2) .section-text {
+    width: 345px;
+  }
+  .about .about-section:nth-of-type(4) {
+    height: 600px;
+  }
+  .about .about-section:nth-of-type(4) .section-text {
+    width: 345px;
+    align-self: flex-end;
+  }
+}
+.about .about-section:nth-of-type(1) svg {
+  bottom: -10px;
+  right: -10px;
+}
+.about .about-section:nth-of-type(2) svg {
+  top: -50px;
+  right: -5px;
+}
+.about .about-section:nth-of-type(3) svg {
+  bottom: -10px;
+  left: -30px;
+}
+.about .about-section:nth-of-type(4) svg {
+  top: -10px;
+  left: -10px;
+}
 .about .container {
   background: linear-gradient(125deg, #f4cb2a, white);
-  height: 500px;
-}
-.about .section-text {
-  height: 430px;
-  overflow: hidden;
-  overflow-y: auto;
-  color: black;
-  width: 670px;
-  padding: 20px;
-  z-index: 1;
-  width: clamp(275px, 75%, 775px);
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-.about .section-text::-webkit-scrollbar {
-  width: 16px;
-}
-.about .section-text::-webkit-scrollbar-track {
-  background: rgba(77, 77, 77, 0);
-}
-.about .section-text::-webkit-scrollbar-thumb {
-  background-color: #555;
-  border: 3px solid transparent;
-  background-clip: padding-box;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 0px;
-}
-.about .section-text::-webkit-scrollbar-thumb:hover {
-  background: rgb(35, 35, 35);
-  border: 3px solid transparent;
-  background-clip: padding-box;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 0px;
 }
 
 .vision {

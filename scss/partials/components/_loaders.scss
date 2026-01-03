@@ -9,13 +9,25 @@
   left: 0;
   z-index: 1500;
   background: white;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
   flex-direction: column;
   gap: 10px;
 
-  & svg,
-  & img {
+  .image {
+    background: url("../../../files/images/loader/BG.png");
+    background-repeat: no-repeat;
+    background-size: 125%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: blur(5px);
+  }
+
+  svg,
+  img {
     width: 150px;
+    z-index: 2;
   }
 }
 
@@ -25,7 +37,7 @@
   height: 40px;
   border-right: 4px solid transparent;
   border-top: 4px solid black;
-
+  z-index: 2;
   will-change: transform;
   animation-name: loader-animation;
   animation-delay: 0s;

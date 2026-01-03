@@ -1,4 +1,4 @@
-.about {
+#about {
   .about-section {
     margin-bottom: 50px;
     position: relative;
@@ -12,20 +12,31 @@
 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 110%;
 
     &::after {
       content: "";
-      width: 100%;
-      height: 100%;
+      width: 105%;
+      height: 105%;
+      top: -10px;
+      left: -10px;
       background-color: #ffffffbf;
       z-index: -1;
       position: absolute;
-      backdrop-filter: blur(15px);
+      backdrop-filter: blur(7px);
     }
 
     .section-text {
       width: 345px;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 18px;
+      }
     }
 
     svg {
@@ -88,8 +99,8 @@
       }
 
       svg {
-        top: -50px;
-        right: -5px;
+        top: -20px;
+        right: -1px;
       }
     }
 
@@ -99,7 +110,7 @@
       &::after {
         background: linear-gradient(
           180deg,
-          rgba($theme-color-3, 0.85) 25%,
+          rgba(129, 133, 136, 0.95) 30%,
           rgba(255, 255, 255, 0.5)
         ) !important;
       }
@@ -113,10 +124,14 @@
     &:nth-of-type(4) {
       background-image: url("../files/images/about-section/chairman.jpeg");
 
+      .section-text {
+        width: clamp(350px, 100%, 500px);
+      }
+
       &::after {
         background: linear-gradient(
           270deg,
-          rgba($theme-color-4, 0.85) 25%,
+          rgba(217, 180, 126, 0.95) 30%,
           rgba(255, 255, 255, 0.5)
         ) !important;
       }
@@ -126,6 +141,38 @@
         left: -10px;
       }
     }
+  }
+}
+
+#infrastructure {
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px $theme-color-1;
+  }
+}
+
+#management {
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px $theme-color-2;
+  }
+}
+
+#supplies {
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px $theme-color-3;
+  }
+}
+
+#interior {
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px $theme-color-4;
   }
 }
 

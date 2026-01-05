@@ -5382,30 +5382,30 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
-.carousal .carousal-items .item img,
-.carousal .carousal-items .item video {
+.carousal .carousal-items .item .bg {
   position: absolute;
-  width: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(10px) brightness(0.6);
+  transform: scale(1.2);
+  z-index: 0;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
 }
-.carousal .carousal-items .item img:nth-child(1),
-.carousal .carousal-items .item video:nth-child(1) {
-  filter: blur(25px);
-}
-.carousal .carousal-items .item img:nth-child(2),
-.carousal .carousal-items .item video:nth-child(2) {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 95%;
-  height: 70%;
+.carousal .carousal-items .item .fg {
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 0 30px -10px black;
+  width: 95%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
 }
 .carousal .carousal-items .item.active {
   opacity: 1;
@@ -5686,9 +5686,6 @@ body {
   gap: 10px;
 }
 .loader .image {
-  background: url("../../../files/images/loader/BG.png");
-  background-repeat: no-repeat;
-  background-size: 125%;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -10309,6 +10306,41 @@ svg {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px #d9b47e;
+}
+
+.offcanvas {
+  position: fixed;
+  z-index: 2;
+}
+.offcanvas.actions {
+  bottom: 10px;
+  right: 10px;
+}
+.offcanvas.actions .square {
+  background: red;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+.offcanvas.actions .square svg {
+  width: 65%;
+}
+.offcanvas.nav {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7607843137);
+  gap: 20px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-top-right-radius: 10px;
+  overflow: hidden;
 }
 
 .fade-up svg {

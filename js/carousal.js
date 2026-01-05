@@ -66,6 +66,31 @@ carousals.forEach((carousal, carousalNumber) => {
 
   // APPENDING A PROGRESS ITEM FOR EACH ITEM IN THE CAROUSAL
   carousalItems.forEach((item, itemNumber) => {
+    const fg = item.querySelector(".fg");
+    const bg = item.querySelector(".bg");
+
+    if (itemNumber == 0) {
+      fg.src = "./files/videos/sscc-construction.mp4";
+    } else if (itemNumber == 1) {
+      fg.src = "./files/videos/sscc-desgin.mp4";
+    } else if (itemNumber == 2) {
+      fg.src = "./files/videos/sscc-management-final.mp4";
+    } else if (itemNumber == 3) {
+      fg.src = "./files/videos/sscc-rentals.mp4";
+    }
+
+    fg.preload = "none";
+    fg.addEventListener("loadeddata", () => {
+      if (fg.captureStream) {
+        bg.srcObject = fg.captureStream();
+        bg.play();
+      } else {
+        // fallback: use static blurred poster for background
+        bg.poster = "./files/posters/sscc-construction-blur.webp";
+      }
+    });
+
+    fg.play();
     // PROGRESSES THAT WILL BE ADDED TO EACH CAROUSAL
     const progressItem = document.createElement("div");
     progressItem.classList.add("progress-item");

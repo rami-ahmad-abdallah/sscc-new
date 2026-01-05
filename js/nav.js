@@ -68,9 +68,9 @@ document.addEventListener("click", (e) => {
   } else if (clickedItem.classList.contains("nav-menu")) {
     closeCurrentOpenSubLinks();
   } else {
-    e.preventDefault();
     if (navMenuIsOpen) {
       hideNavMenu();
+      e.preventDefault();
     }
     if (subLinksIsOpen) {
       closeCurrentOpenSubLinks();

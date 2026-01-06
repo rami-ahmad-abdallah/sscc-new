@@ -178,26 +178,56 @@
 
 .offcanvas {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
 
   &.actions {
     bottom: 10px;
     right: 10px;
+    display: flex;
+    gap: 10px;
 
     .square {
-      background: red;
       width: 50px;
       height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border-radius: 10px;
-      margin: 5px 0px;
+      background: #ffffffc2;
+      backdrop-filter: blur(3px);
+      overflow: hidden;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+          animation: background-on-hover 8s ease infinite forwards;
+        }
+      }
 
       svg {
         width: 65%;
       }
     }
+    // a {
+    //   color: black;
+    //   text-decoration: none;
+    //   background: white;
+    //   background-size: 300%;
+    //   background-position-x: 106%;
+    //   background-attachment: fixed;
+
+    //   transition: all 2s ease;
+
+    //   &:hover {
+    //     background: linear-gradient(90deg, #eb2222, #2cff00, yellow, blue);
+    //     background-position-x: 0%;
+    //     background-size: 300%;
+    //     background-position-x: 106%;
+    //     background-attachment: fixed;
+    //   }
+    // }
   }
 
   &.nav {
@@ -225,5 +255,23 @@
 .show-fade-up {
   svg {
     stroke-dashoffset: 0;
+  }
+}
+
+@keyframes background-on-hover {
+  0% {
+    background-color: rgba($theme-color-1, 0.85);
+  }
+  25% {
+    background-color: rgba($theme-color-2, 0.85);
+  }
+  50% {
+    background-color: rgba($theme-color-3, 0.85);
+  }
+  75% {
+    background-color: rgba($theme-color-4, 0.85);
+  }
+  100% {
+    background-color: rgba($theme-color-1, 0.85);
   }
 }

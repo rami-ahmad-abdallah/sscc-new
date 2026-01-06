@@ -10310,21 +10310,32 @@ svg {
 
 .offcanvas {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
 }
 .offcanvas.actions {
   bottom: 10px;
   right: 10px;
+  display: flex;
+  gap: 10px;
 }
 .offcanvas.actions .square {
-  background: red;
   width: 50px;
   height: 50px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7607843137);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  overflow: hidden;
+}
+.offcanvas.actions .square a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  margin: 5px 0px;
+  width: 100%;
+  height: 100%;
+}
+.offcanvas.actions .square a:hover {
+  animation: background-on-hover 8s ease infinite forwards;
 }
 .offcanvas.actions .square svg {
   width: 65%;
@@ -10351,4 +10362,22 @@ svg {
 
 .show-fade-up svg {
   stroke-dashoffset: 0;
+}
+
+@keyframes background-on-hover {
+  0% {
+    background-color: rgba(244, 203, 42, 0.85);
+  }
+  25% {
+    background-color: rgba(28, 71, 127, 0.85);
+  }
+  50% {
+    background-color: rgba(129, 133, 136, 0.85);
+  }
+  75% {
+    background-color: rgba(217, 180, 126, 0.85);
+  }
+  100% {
+    background-color: rgba(244, 203, 42, 0.85);
+  }
 }

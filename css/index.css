@@ -5402,7 +5402,7 @@ body {
   overflow: hidden;
   box-shadow: 0 0 30px -10px black;
   width: 95%;
-  height: 70%;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -10311,6 +10311,53 @@ svg {
 .offcanvas {
   position: fixed;
   z-index: 10;
+  background-color: white;
+  color: black;
+}
+.offcanvas.square {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  bottom: 10px;
+}
+.offcanvas.square.gototop {
+  right: 60px;
+}
+.offcanvas.square.whats {
+  right: 10px;
+}
+.offcanvas.square.menu-toggle {
+  left: 10px;
+}
+.offcanvas.square a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: black;
+}
+.offcanvas.square a .icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.offcanvas.square a svg {
+  width: 100%;
+}
+.offcanvas.menu {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 .offcanvas.actions {
   bottom: 10px;
@@ -10319,8 +10366,8 @@ svg {
   gap: 10px;
 }
 .offcanvas.actions .square {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.7607843137);
   -webkit-backdrop-filter: blur(3px);
@@ -10341,17 +10388,32 @@ svg {
   width: 65%;
 }
 .offcanvas.nav {
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  left: 10px;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  overflow: hidden;
+  gap: 10px;
+}
+.offcanvas.nav .menu,
+.offcanvas.nav .square {
   background: rgba(255, 255, 255, 0.7607843137);
-  gap: 20px;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  border-top-right-radius: 10px;
-  overflow: hidden;
+}
+.offcanvas.nav .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.offcanvas.nav .square {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .fade-up svg {

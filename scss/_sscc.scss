@@ -1,3 +1,12 @@
+section {
+  scroll-margin: 50px;
+
+  @include on-mobile() {
+    width: 95% !important;
+    margin: auto;
+  }
+}
+
 #about {
   .about-section {
     margin-bottom: 50px;
@@ -51,7 +60,7 @@
         .section-text {
           width: 345px;
           align-self: flex-start;
-          padding-top: 20px;
+          padding-top: 7px;
         }
       }
 
@@ -62,7 +71,7 @@
       }
 
       &:nth-of-type(4) {
-        height: 600px;
+        height: auto;
         .section-text {
           width: 345px;
           align-self: flex-end;
@@ -99,7 +108,7 @@
       }
 
       svg {
-        top: -20px;
+        top: -7px;
         right: -1px;
       }
     }
@@ -146,15 +155,21 @@
 
 #infrastructure {
   .container {
-    padding: 20px;
+    padding: 15px;
+    @include on-mobile() {
+      padding: 7px;
+    }
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-1;
   }
 }
 
-#management {
+#manage {
   .container {
-    padding: 20px;
+    padding: 15px;
+    @include on-mobile() {
+      padding: 7px;
+    }
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-2;
   }
@@ -162,7 +177,10 @@
 
 #supplies {
   .container {
-    padding: 20px;
+    padding: 15px;
+    @include on-mobile() {
+      padding: 7px;
+    }
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-3;
   }
@@ -170,9 +188,19 @@
 
 #interior {
   .container {
-    padding: 20px;
+    padding: 15px;
+    @include on-mobile() {
+      padding: 7px;
+    }
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-4;
+  }
+}
+
+footer {
+  a {
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -190,6 +218,13 @@
     align-items: center;
     cursor: pointer;
     bottom: 10px;
+    border-radius: 7px;
+    transition: transform 0.5s ease;
+    transform: translate(0%, 150%);
+
+    &.show {
+      transform: translate(0%, 0%);
+    }
 
     &.gototop {
       right: 60px;
@@ -201,6 +236,22 @@
 
     &.menu-toggle {
       left: 10px;
+      gap: 5px;
+      left: 10px;
+      width: auto;
+      padding: 0px 10px;
+
+      span {
+        transition: transform 0.3s ease;
+        transform: rotateZ(180deg);
+        transform-origin: center;
+      }
+
+      &.on {
+        span {
+          transform: rotateZ(0deg);
+        }
+      }
     }
 
     a {
@@ -228,11 +279,144 @@
   &.menu {
     top: 50%;
     left: 10px;
-    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+
+    transform: translate(-150%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    padding: 5px;
+    border-radius: 7px;
+
+    &.on {
+      transform: translate(0%, -50%);
+    }
+
+    .menu-link {
+      width: 101%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+      font-size: 16px;
+      margin-bottom: 5px;
+      overflow: hidden;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 7px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:last-of-type {
+        border-bottom: 0px solid rgba(128, 128, 128, 0.1607843137);
+      }
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          width: 35px;
+          fill: currentColor !important;
+        }
+      }
+
+      a {
+        height: 40px;
+        background: white;
+        flex: 1;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 3px;
+        gap: 10px;
+      }
+
+      &.active,
+      &:hover {
+        &:nth-of-type(1) {
+          box-shadow: inset -50px 0 0 0px #7070ff, inset 0 0 0 1px #7070ff;
+          border: 0;
+          color: #7070ff;
+
+          a {
+            color: #7070ff;
+          }
+        }
+
+        &:nth-of-type(2) {
+          box-shadow: inset -50px 0 0 0px $theme-color-1,
+            inset 0 0 0 1px $theme-color-1;
+          border: 0;
+          color: $theme-color-1;
+
+          a {
+            color: $theme-color-1;
+          }
+        }
+
+        &:nth-of-type(3) {
+          box-shadow: inset -50px 0 0 0px $theme-color-2,
+            inset 0 0 0 1px $theme-color-2;
+          border: 0;
+          color: $theme-color-2;
+
+          a {
+            color: $theme-color-2;
+          }
+        }
+
+        &:nth-of-type(4) {
+          box-shadow: inset -50px 0 0 0px $theme-color-3,
+            inset 0 0 0 1px $theme-color-3;
+          border: 0;
+          color: $theme-color-3;
+
+          a {
+            color: $theme-color-3;
+          }
+        }
+
+        &:nth-of-type(5) {
+          box-shadow: inset -50px 0 0 0px $theme-color-4,
+            inset 0 0 0 1px $theme-color-4;
+          border: 0;
+          color: $theme-color-4;
+
+          a {
+            color: $theme-color-4;
+          }
+        }
+
+        &:nth-of-type(6) {
+          box-shadow: inset -50px 0 0 0px $dark, inset 0 0 0 1px $dark;
+          border: 0;
+          color: $dark;
+
+          a {
+            color: $dark;
+          }
+        }
+
+        &:nth-of-type(7) {
+          box-shadow: inset -50px 0 0 0px $dark, inset 0 0 0 1px $dark;
+          border: 0;
+          color: $dark;
+
+          a {
+            color: $dark;
+          }
+        }
+      }
+    }
   }
 
   &.actions {
@@ -331,20 +515,33 @@
   }
 }
 
-@keyframes background-on-hover {
+.colors-hover {
+  &:hover {
+    animation: colors-hover 3s ease infinite;
+
+    a {
+      animation: colors-hover 3s ease infinite;
+    }
+    svg {
+      fill: currentColor;
+    }
+  }
+}
+
+@keyframes colors-hover {
   0% {
-    background-color: rgba($theme-color-1, 0.85);
+    color: rgba($theme-color-1, 1);
   }
   25% {
-    background-color: rgba($theme-color-2, 0.85);
+    color: rgba($theme-color-2, 1);
   }
   50% {
-    background-color: rgba($theme-color-3, 0.85);
+    color: rgba($theme-color-3, 1);
   }
   75% {
-    background-color: rgba($theme-color-4, 0.85);
+    color: rgba($theme-color-4, 1);
   }
   100% {
-    background-color: rgba($theme-color-1, 0.85);
+    color: rgba($theme-color-1, 1);
   }
 }

@@ -11,9 +11,43 @@ window.addEventListener("load", function () {
     loader.style.display = "none";
   }
 
-  const allImages = this.document.querySelectorAll("img");
+  const menuToggler = this.document.querySelector(".menu-toggle");
+  const menu = this.document.querySelector(".menu");
+  const goToTopBtn = this.document.querySelector(".gototop");
+  const whatsAppBtn = this.document.querySelector(".whats");
 
-  allImages.forEach((image) => {
-    image.setAttribute("loading", "lazy");
+  menuToggler.addEventListener("click", () => {
+    menu.classList.toggle("on");
+    menuToggler.classList.toggle("on");
+  });
+
+  let pageLinks = this.document.querySelectorAll("a");
+  pageLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      if (link.href.includes("#")) {
+        e.preventDefault();
+        this.document.getElementById(link.hash.substring(1)).scrollIntoView();
+        menu.classList.remove("on");
+        menuToggler.classList.remove("on");
+      }
+    });
+  });
+
+  if (this.window.scrollY > 420) {
+    goToTopBtn.classList.add("show");
+    whatsAppBtn.classList.add("show");
+    menuToggler.classList.add("show");
+  }
+
+  this.document.addEventListener("scroll", (e) => {
+    if (this.scrollY > 420) {
+      goToTopBtn.classList.add("show");
+      whatsAppBtn.classList.add("show");
+      menuToggler.classList.add("show");
+    } else {
+      goToTopBtn.classList.remove("show");
+      whatsAppBtn.classList.remove("show");
+      menuToggler.classList.remove("show");
+    }
   });
 });

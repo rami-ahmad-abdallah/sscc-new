@@ -10188,12 +10188,8 @@ svg {
 
 section {
   scroll-margin: 50px;
-}
-@media (max-width: 576px) {
-  section {
-    width: 95% !important;
-    margin: auto;
-  }
+  width: 95% !important;
+  margin: auto;
 }
 
 #about .about-section {

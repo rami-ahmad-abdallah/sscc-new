@@ -1,10 +1,7 @@
 section {
   scroll-margin: 50px;
-
-  @include on-mobile() {
-    width: 95% !important;
-    margin: auto;
-  }
+  width: 95% !important;
+  margin: auto;
 }
 
 #about {

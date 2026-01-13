@@ -52,6 +52,7 @@ section {
     }
 
     @include on-mobile() {
+
       &:nth-of-type(1),
       &:nth-of-type(3) {
         .section-text {
@@ -69,6 +70,7 @@ section {
 
       &:nth-of-type(4) {
         height: auto;
+
         .section-text {
           width: 345px;
           align-self: flex-end;
@@ -80,11 +82,9 @@ section {
       background-image: url("../files/images/about-section/whoare.jpeg");
 
       &::after {
-        background: linear-gradient(
-          0deg,
-          rgba($theme-color-1, 0.85) 25%,
-          rgba(255, 255, 255, 0.5)
-        );
+        background: linear-gradient(0deg,
+            rgba($theme-color-1, 0.85) 25%,
+            rgba(255, 255, 255, 0.5));
       }
 
       svg {
@@ -97,11 +97,9 @@ section {
       background-image: url("../files/images/about-section/vision.jpg");
 
       &::after {
-        background: linear-gradient(
-          90deg,
-          rgba($theme-color-2, 0.85) 25%,
-          rgba(255, 255, 255, 0.5)
-        ) !important;
+        background: linear-gradient(90deg,
+            rgba($theme-color-2, 0.85) 25%,
+            rgba(255, 255, 255, 0.5)) !important;
       }
 
       svg {
@@ -114,11 +112,9 @@ section {
       background-image: url("../files/images/about-section/message.jpeg");
 
       &::after {
-        background: linear-gradient(
-          180deg,
-          rgba(129, 133, 136, 0.95) 30%,
-          rgba(255, 255, 255, 0.5)
-        ) !important;
+        background: linear-gradient(180deg,
+            rgba(129, 133, 136, 0.95) 30%,
+            rgba(255, 255, 255, 0.5)) !important;
       }
 
       svg {
@@ -135,11 +131,9 @@ section {
       }
 
       &::after {
-        background: linear-gradient(
-          270deg,
-          rgba(217, 180, 126, 0.95) 30%,
-          rgba(255, 255, 255, 0.5)
-        ) !important;
+        background: linear-gradient(270deg,
+            rgba(217, 180, 126, 0.95) 30%,
+            rgba(255, 255, 255, 0.5)) !important;
       }
 
       svg {
@@ -153,9 +147,11 @@ section {
 #infrastructure {
   .container {
     padding: 15px;
+
     @include on-mobile() {
       padding: 7px;
     }
+
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-1;
   }
@@ -164,9 +160,11 @@ section {
 #manage {
   .container {
     padding: 15px;
+
     @include on-mobile() {
       padding: 7px;
     }
+
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-2;
   }
@@ -175,9 +173,11 @@ section {
 #supplies {
   .container {
     padding: 15px;
+
     @include on-mobile() {
       padding: 7px;
     }
+
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-3;
   }
@@ -186,9 +186,11 @@ section {
 #interior {
   .container {
     padding: 15px;
+
     @include on-mobile() {
       padding: 7px;
     }
+
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-4;
   }
@@ -318,6 +320,7 @@ footer {
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
         svg {
           width: 35px;
           fill: currentColor !important;
@@ -446,6 +449,7 @@ footer {
         width: 65%;
       }
     }
+
     // a {
     //   color: black;
     //   text-decoration: none;
@@ -496,6 +500,44 @@ footer {
       align-items: center;
     }
   }
+
+  &.logo {
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 80px;
+    transition: all 0.3s ease;
+    background: linear-gradient(7deg, #ffffff 0%, white 50%);
+
+    padding: 5px;
+    border-radius: 7px;
+    border-bottom-right-radius: 25px;
+
+    &.about {
+      background: linear-gradient(7deg, $dark 0%, white 50%);
+    }
+
+    &.infrastructure {
+      background: linear-gradient(7deg, $theme-color-1 0%, white 50%);
+    }
+
+    &.manage {
+      background: linear-gradient(7deg, $theme-color-2 0%, white 50%);
+    }
+
+    &.supplies {
+      background: linear-gradient(7deg, $theme-color-3 0%, white 50%);
+    }
+
+    &.interior {
+      background: linear-gradient(7deg, $theme-color-4 0%, white 50%);
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .fade-up {
@@ -505,6 +547,7 @@ footer {
     stroke-dashoffset: 105;
   }
 }
+
 // WE CAN APPLY STYLE AFTER THE SHOW_UP CLASS ADDED
 .show-fade-up {
   svg {
@@ -519,6 +562,7 @@ footer {
     a {
       animation: colors-hover 3s ease infinite;
     }
+
     svg {
       fill: currentColor;
     }
@@ -529,15 +573,19 @@ footer {
   0% {
     color: rgba($theme-color-1, 1);
   }
+
   25% {
     color: rgba($theme-color-2, 1);
   }
+
   50% {
     color: rgba($theme-color-3, 1);
   }
+
   75% {
     color: rgba($theme-color-4, 1);
   }
+
   100% {
     color: rgba($theme-color-1, 1);
   }

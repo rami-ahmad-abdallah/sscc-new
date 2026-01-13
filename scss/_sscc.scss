@@ -506,32 +506,14 @@ footer {
     left: 10px;
     width: 100px;
     height: 80px;
-    transition: all 0.3s ease;
-    background: linear-gradient(7deg, #ffffff 0%, white 50%);
+    transition: background 0.3s ease;
+    background: white;
 
     padding: 5px;
     border-radius: 7px;
     border-bottom-right-radius: 25px;
 
-    &.about {
-      background: linear-gradient(7deg, $dark 0%, white 50%);
-    }
 
-    &.infrastructure {
-      background: linear-gradient(7deg, $theme-color-1 0%, white 50%);
-    }
-
-    &.manage {
-      background: linear-gradient(7deg, $theme-color-2 0%, white 50%);
-    }
-
-    &.supplies {
-      background: linear-gradient(7deg, $theme-color-3 0%, white 50%);
-    }
-
-    &.interior {
-      background: linear-gradient(7deg, $theme-color-4 0%, white 50%);
-    }
 
     svg {
       width: 100%;

@@ -10579,26 +10579,11 @@ footer a {
   left: 10px;
   width: 100px;
   height: 80px;
-  transition: all 0.3s ease;
-  background: linear-gradient(7deg, #ffffff 0%, white 50%);
+  transition: background 0.3s ease;
+  background: white;
   padding: 5px;
   border-radius: 7px;
   border-bottom-right-radius: 25px;
-}
-.offcanvas.logo.about {
-  background: linear-gradient(7deg, rgb(35, 35, 35) 0%, white 50%);
-}
-.offcanvas.logo.infrastructure {
-  background: linear-gradient(7deg, #f4cb2a 0%, white 50%);
-}
-.offcanvas.logo.manage {
-  background: linear-gradient(7deg, #1c477f 0%, white 50%);
-}
-.offcanvas.logo.supplies {
-  background: linear-gradient(7deg, #818588 0%, white 50%);
-}
-.offcanvas.logo.interior {
-  background: linear-gradient(7deg, #d9b47e 0%, white 50%);
 }
 .offcanvas.logo svg {
   width: 100%;

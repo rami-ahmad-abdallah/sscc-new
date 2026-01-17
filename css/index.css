@@ -10579,11 +10579,57 @@ footer a {
   left: 10px;
   width: 100px;
   height: 80px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   background: white;
+  overflow: hidden;
   padding: 5px;
   border-radius: 7px;
   border-bottom-right-radius: 25px;
+}
+.offcanvas.logo path {
+  transition: all 0.3s ease;
+}
+.offcanvas.logo.about {
+  box-shadow: 0 0 15px 3px rgb(35, 35, 35);
+}
+.offcanvas.logo.infrastructure {
+  box-shadow: 0 0 15px 3px #f4cb2a;
+}
+.offcanvas.logo.infrastructure path {
+  filter: grayscale(1);
+}
+.offcanvas.logo.infrastructure .in {
+  filter: grayscale(0);
+}
+.offcanvas.logo.manage {
+  box-shadow: 0 0 15px 3px #1c477f;
+}
+.offcanvas.logo.manage path {
+  filter: grayscale(1);
+}
+.offcanvas.logo.manage .ma {
+  filter: grayscale(0);
+}
+.offcanvas.logo.supplies {
+  box-shadow: 0 0 15px 3px #818588;
+}
+.offcanvas.logo.supplies path {
+  filter: grayscale(1);
+}
+.offcanvas.logo.supplies .su {
+  filter: grayscale(0);
+}
+.offcanvas.logo.interior {
+  box-shadow: 0 0 15px 3px #d9b47e;
+}
+.offcanvas.logo.interior path {
+  filter: grayscale(1);
+}
+.offcanvas.logo.interior .int {
+  filter: grayscale(0);
+}
+.offcanvas.logo.contact {
+  box-shadow: 0 0 15px 3px rgb(35, 35, 35);
 }
 .offcanvas.logo svg {
   width: 100%;

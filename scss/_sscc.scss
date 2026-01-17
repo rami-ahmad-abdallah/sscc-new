@@ -52,7 +52,6 @@ section {
     }
 
     @include on-mobile() {
-
       &:nth-of-type(1),
       &:nth-of-type(3) {
         .section-text {
@@ -82,9 +81,11 @@ section {
       background-image: url("../files/images/about-section/whoare.jpeg");
 
       &::after {
-        background: linear-gradient(0deg,
-            rgba($theme-color-1, 0.85) 25%,
-            rgba(255, 255, 255, 0.5));
+        background: linear-gradient(
+          0deg,
+          rgba($theme-color-1, 0.85) 25%,
+          rgba(255, 255, 255, 0.5)
+        );
       }
 
       svg {
@@ -97,9 +98,11 @@ section {
       background-image: url("../files/images/about-section/vision.jpg");
 
       &::after {
-        background: linear-gradient(90deg,
-            rgba($theme-color-2, 0.85) 25%,
-            rgba(255, 255, 255, 0.5)) !important;
+        background: linear-gradient(
+          90deg,
+          rgba($theme-color-2, 0.85) 25%,
+          rgba(255, 255, 255, 0.5)
+        ) !important;
       }
 
       svg {
@@ -112,9 +115,11 @@ section {
       background-image: url("../files/images/about-section/message.jpeg");
 
       &::after {
-        background: linear-gradient(180deg,
-            rgba(129, 133, 136, 0.95) 30%,
-            rgba(255, 255, 255, 0.5)) !important;
+        background: linear-gradient(
+          180deg,
+          rgba(129, 133, 136, 0.95) 30%,
+          rgba(255, 255, 255, 0.5)
+        ) !important;
       }
 
       svg {
@@ -131,9 +136,11 @@ section {
       }
 
       &::after {
-        background: linear-gradient(270deg,
-            rgba(217, 180, 126, 0.95) 30%,
-            rgba(255, 255, 255, 0.5)) !important;
+        background: linear-gradient(
+          270deg,
+          rgba(217, 180, 126, 0.95) 30%,
+          rgba(255, 255, 255, 0.5)
+        ) !important;
       }
 
       svg {
@@ -343,7 +350,9 @@ footer {
       &.active,
       &:hover {
         &:nth-of-type(1) {
-          box-shadow: inset -50px 0 0 0px #7070ff, inset 0 0 0 1px #7070ff;
+          box-shadow:
+            inset -50px 0 0 0px #7070ff,
+            inset 0 0 0 1px #7070ff;
           border: 0;
           color: #7070ff;
 
@@ -353,7 +362,8 @@ footer {
         }
 
         &:nth-of-type(2) {
-          box-shadow: inset -50px 0 0 0px $theme-color-1,
+          box-shadow:
+            inset -50px 0 0 0px $theme-color-1,
             inset 0 0 0 1px $theme-color-1;
           border: 0;
           color: $theme-color-1;
@@ -364,7 +374,8 @@ footer {
         }
 
         &:nth-of-type(3) {
-          box-shadow: inset -50px 0 0 0px $theme-color-2,
+          box-shadow:
+            inset -50px 0 0 0px $theme-color-2,
             inset 0 0 0 1px $theme-color-2;
           border: 0;
           color: $theme-color-2;
@@ -375,7 +386,8 @@ footer {
         }
 
         &:nth-of-type(4) {
-          box-shadow: inset -50px 0 0 0px $theme-color-3,
+          box-shadow:
+            inset -50px 0 0 0px $theme-color-3,
             inset 0 0 0 1px $theme-color-3;
           border: 0;
           color: $theme-color-3;
@@ -386,7 +398,8 @@ footer {
         }
 
         &:nth-of-type(5) {
-          box-shadow: inset -50px 0 0 0px $theme-color-4,
+          box-shadow:
+            inset -50px 0 0 0px $theme-color-4,
             inset 0 0 0 1px $theme-color-4;
           border: 0;
           color: $theme-color-4;
@@ -397,7 +410,9 @@ footer {
         }
 
         &:nth-of-type(6) {
-          box-shadow: inset -50px 0 0 0px $dark, inset 0 0 0 1px $dark;
+          box-shadow:
+            inset -50px 0 0 0px $dark,
+            inset 0 0 0 1px $dark;
           border: 0;
           color: $dark;
 
@@ -407,7 +422,9 @@ footer {
         }
 
         &:nth-of-type(7) {
-          box-shadow: inset -50px 0 0 0px $dark, inset 0 0 0 1px $dark;
+          box-shadow:
+            inset -50px 0 0 0px $dark,
+            inset 0 0 0 1px $dark;
           border: 0;
           color: $dark;
 
@@ -506,14 +523,74 @@ footer {
     left: 10px;
     width: 100px;
     height: 80px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
     background: white;
+
+    overflow: hidden;
 
     padding: 5px;
     border-radius: 7px;
     border-bottom-right-radius: 25px;
 
+    path {
+      transition: all 0.3s ease;
+    }
 
+    &.about {
+      box-shadow: 0 0 15px 3px $dark;
+    }
+
+    &.infrastructure {
+      box-shadow: 0 0 15px 3px $theme-color-1;
+
+      path {
+        filter: grayscale(1);
+      }
+
+      .in {
+        filter: grayscale(0);
+      }
+    }
+
+    &.manage {
+      box-shadow: 0 0 15px 3px $theme-color-2;
+
+      path {
+        filter: grayscale(1);
+      }
+
+      .ma {
+        filter: grayscale(0);
+      }
+    }
+
+    &.supplies {
+      box-shadow: 0 0 15px 3px $theme-color-3;
+
+      path {
+        filter: grayscale(1);
+      }
+
+      .su {
+        filter: grayscale(0);
+      }
+    }
+
+    &.interior {
+      box-shadow: 0 0 15px 3px $theme-color-4;
+
+      path {
+        filter: grayscale(1);
+      }
+
+      .int {
+        filter: grayscale(0);
+      }
+    }
+
+    &.contact {
+      box-shadow: 0 0 15px 3px $dark;
+    }
 
     svg {
       width: 100%;

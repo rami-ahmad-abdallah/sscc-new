@@ -1,16 +1,15 @@
+const loader = document.getElementById("loader");
+setTimeout(loaderOpacity, 1000);
+setTimeout(loaderRemove, 1350);
+
+function loaderOpacity() {
+  loader.style.opacity = 0;
+}
+
+function loaderRemove() {
+  loader.style.display = "none";
+}
 window.addEventListener("load", function () {
-  // const loader = document.getElementById("loader");
-  // setTimeout(loaderOpacity, 1000);
-  // setTimeout(loaderRemove, 1350);
-
-  // function loaderOpacity() {
-  //   loader.style.opacity = 0;
-  // }
-
-  // function loaderRemove() {
-  //   loader.style.display = "none";
-  // }
-
   const menuToggler = this.document.querySelector(".menu-toggle");
   const menu = this.document.querySelector(".menu");
   const goToTopBtn = this.document.querySelector(".gototop");

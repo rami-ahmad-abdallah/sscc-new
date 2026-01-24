@@ -74,7 +74,7 @@ carousals.forEach((carousal, carousalNumber) => {
     } else if (itemNumber == 1) {
       fg.src = "./files/videos/sscc-desgin.mp4";
     } else if (itemNumber == 2) {
-      fg.src = "./files/videos/sscc-management-final.mp4";
+      fg.src = "./files/videos/sscc-management-finals.mp4";
     } else if (itemNumber == 3) {
       fg.src = "./files/videos/sscc-rentals.mp4";
     }

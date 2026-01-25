@@ -11,44 +11,31 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
     color: black;
     text-align: center;
     overflow: hidden;
-
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 110%;
-
-    &::after {
-      content: "";
-      width: 105%;
-      height: 105%;
-      top: -10px;
-      left: -10px;
-      background-color: #ffffffbf;
-      z-index: -1;
-      position: absolute;
-      backdrop-filter: blur(7px);
-    }
-
-    .section-text {
-      width: 345px;
-
-      h2 {
-        font-size: 32px;
-      }
-
-      p {
-        font-weight: 700;
-        font-size: 18px;
-      }
-    }
+    min-height: 300px;
+    background: #d0e9ff;
+    border-radius: 7px;
+    padding: 50px 0px;
 
     svg {
       position: absolute;
-      width: 200px;
-      height: 200px;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: auto;
+      transform: translate(-45%, -45%);
+    }
+
+    .texxt {
+      width: clamp(345px, 75%, 850px);
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0);
+      padding: 10px;
+      border-radius: 10px;
+      overflow: hidden;
     }
 
     @include on-mobile() {
@@ -78,75 +65,15 @@ section {
     }
 
     &:nth-of-type(1) {
-      background-image: url("../files/images/about-section/whoare.jpeg");
-
-      &::after {
-        background: linear-gradient(
-          0deg,
-          rgba($theme-color-1, 0.85) 25%,
-          rgba(255, 255, 255, 0.5)
-        );
-      }
-
-      svg {
-        bottom: -10px;
-        right: -10px;
-      }
     }
 
     &:nth-of-type(2) {
-      background-image: url("../files/images/about-section/vision.jpg");
-
-      &::after {
-        background: linear-gradient(
-          90deg,
-          rgba($theme-color-2, 0.85) 25%,
-          rgba(255, 255, 255, 0.5)
-        ) !important;
-      }
-
-      svg {
-        top: -7px;
-        right: -1px;
-      }
     }
 
     &:nth-of-type(3) {
-      background-image: url("../files/images/about-section/message.jpeg");
-
-      &::after {
-        background: linear-gradient(
-          180deg,
-          rgba(129, 133, 136, 0.95) 30%,
-          rgba(255, 255, 255, 0.5)
-        ) !important;
-      }
-
-      svg {
-        bottom: -10px;
-        left: -30px;
-      }
     }
 
     &:nth-of-type(4) {
-      background-image: url("../files/images/about-section/chairman.jpeg");
-
-      .section-text {
-        width: clamp(350px, 100%, 500px);
-      }
-
-      &::after {
-        background: linear-gradient(
-          270deg,
-          rgba(217, 180, 126, 0.95) 30%,
-          rgba(255, 255, 255, 0.5)
-        ) !important;
-      }
-
-      svg {
-        top: -10px;
-        left: -10px;
-      }
     }
   }
 }
@@ -610,6 +537,7 @@ footer {
 // WE CAN APPLY STYLE AFTER THE SHOW_UP CLASS ADDED
 .show-fade-up {
   svg {
+    transform: scale(0.9) translate(-50%, -50%) !important;
     stroke-dashoffset: 0;
   }
 }

@@ -17,160 +17,243 @@
         margin: 0;
     }
 
+    section {
+        min-height: 100vh;
+        border: 3px solid;
+    }
+
+    .cards {
+        margin-top: -80vh;
+    }
+
+    .about-card {
+        width: clamp(340px, 50%, 500px);
+        padding: 10px;
+        min-height: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        margin: 0px auto;
+    }
+
+    .card-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .card-head svg {
+        width: 50px;
+    }
+
+    .card-content {
+        font-size: 18px;
+        padding: 0px 25px;
+        line-height: 28px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-top: 50px;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
     .about-section {
         height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-flow: row wrap;
         border: 1px solid black;
         margin-bottom: 10px;
     }
 
+
     .about-text {
-        width: 330px;
+        width: clamp(340px, 50%, 900px);
         text-align: left;
+        background-color: red;
+    }
+
+    .header {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 16px;
     }
 
     .text-title {
         text-transform: uppercase;
-        font-size: 22px;
-        margin-bottom: 14px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 10px;
+        font-size: 20px;
+    }
+
+    .header svg {
+        width: 50px;
+    }
+
+    .text-paragraph {
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .pinned {
         background-color: lightgray;
-        font-size: 24px;
-        font-weight: bold;
-        height: 100vh;
+        overflow: hidden;
+        color: white;
+        min-height: 100vh;
+    }
+
+    .pinned::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #1f2354cf;
+        backdrop-filter: blur(5px);
+        z-index: 2;
+    }
+
+    .pinned img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
     }
 </style>
 
 <body>
-    <section class="about">
-        <div class="about-section"></div>
-        <div class="about-section pinned"></div>
+    <section></section>
 
-        <div class="about-section">
-            <div class="about-text">
-                <div>
-                    <h1 class="animate-text text-title">Who we are</h1>
-                    <svg class="icon" width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path fill="currentColor"
-                            d="M64 160c0-53 43-96 96-96s96 43 96 96c0 42.7-27.9 78.9-66.5 91.4-28.4 9.2-61.5 35.3-61.5 76.6l0 24c0 17.7 14.3 32 32 32s32-14.3 32-32l0-24c0-1.7 .6-4.1 3.5-7.3 3-3.3 7.9-6.5 13.7-8.4 64.3-20.7 110.8-81 110.8-152.3 0-88.4-71.6-160-160-160S0 71.6 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm96 352c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="animate-text text-paragraph">
-                    Scientific Systems Contracting Company was established with the purpose of providing innovative
-                    solutions that enrich the urban landscape, in alignment with the Kingdom of Saudi Arabia’s
-                    Vision
-                    2030 and its ongoing journey of growth and prosperity. Guided by our forward-looking vision, the
-                    company has successfully built a distinguished reputation as a leading model in the contracting
-                    sector, achieving notable accomplishments across various fields including construction,
-                    infrastructure, interior and exterior design, and project management.
-                </div>
-            </div>
-        </div>
+    <section class="pinned">
+        <img src="./files/images/about.jpeg" alt="about-bg">
+        <h1 class="animate-text-by-word section-title ">ABOUT SSCC</h1>
 
-        <div class="about-section">
-            <div class="about-text">
-                <div>
-                    <h1 class="animate-text text-title">OUR VISION</h1>
-
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-
-                        <path fill="currentColor"
-                            d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="animate-text text-paragraph">
-                    To be one of the leading companies in the contracting sector, advancing to become the most trusted
-                    service provider and the first choice in the Kingdom of Saudi Arabia and across the Middle East.
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section">
-            <div class="about-text">
-                <div>
-                    <h1 class="animate-text text-title">OUR VALUES</h1>
-
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M16 8V5L19 2L20 4L22 5L19 8H16ZM16 8L12 11.9999M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7"
-                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div class="animate-text text-paragraph">
-                    To deliver exceptional services to our clients in accordance with the highest international quality
-                    standards, while embracing technological advancement and upholding the highest levels of
-                    professionalism, integrity, honesty, and precision. Through these principles, we aim to become a
-                    leading provider of construction and development services for major projects in the Kingdom of Saudi
-                    Arabia and the Middle East.
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section">
-            <div class="about-text">
-                <div>
-                    <h1 class="animate-text text-title">Business Plan</h1>
-
-                    <svg class="icon" fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M7 2L7 7L2 7L2 46L14 46L14 44L4 44L4 9L9 9L9 4L29 4L29 7L11 7L11 9L34 9L34 20L36 20L36 7L31 7L31 2 Z M 8 12L8 14L12 14L12 12 Z M 17 12L17 14L21 14L21 12 Z M 26 12L26 14L30 14L30 12 Z M 8 17L8 19L12 19L12 17 Z M 17 17L17 19L21 19L21 17 Z M 26 17L26 19L30 19L30 17 Z M 29 20C25.742188 20 23.328125 21.324219 22.074219 23.296875C20.929688 25.09375 20.875 27.339844 21.59375 29.433594C21.515625 29.566406 21.402344 29.679688 21.328125 29.839844C21.171875 30.191406 21.035156 30.589844 21.054688 31.097656L21.054688 31.101563C21.109375 32.378906 21.851563 33.046875 22.398438 33.421875C22.628906 34.640625 23.207031 35.660156 24 36.390625L24 38.53125C23.824219 38.953125 23.472656 39.308594 22.796875 39.679688C22.089844 40.070313 21.132813 40.4375 20.144531 40.917969C19.15625 41.398438 18.125 42.011719 17.324219 42.988281C16.519531 43.96875 16 45.308594 16 47L16 48L48.050781 48L47.992188 46.941406C47.902344 45.363281 47.316406 44.117188 46.488281 43.222656C45.664063 42.328125 44.644531 41.765625 43.679688 41.320313C42.714844 40.875 41.785156 40.535156 41.109375 40.171875C40.464844 39.832031 40.148438 39.511719 40 39.160156L40 37.472656C40.597656 36.609375 40.859375 35.617188 40.9375 34.6875C41.414063 34.265625 41.96875 33.617188 42.125 32.457031C42.230469 31.625 42.019531 30.996094 41.695313 30.464844C42.144531 29.277344 42.328125 27.84375 41.933594 26.417969C41.707031 25.589844 41.277344 24.777344 40.5625 24.171875C40.003906 23.691406 39.238281 23.425781 38.390625 23.308594L37.75 22L37.125 22C36.097656 22 35.085938 22.238281 34.214844 22.578125C33.871094 22.714844 33.558594 22.863281 33.265625 23.027344C33.101563 22.808594 32.921875 22.601563 32.714844 22.414063C32.105469 21.863281 31.261719 21.550781 30.324219 21.421875L29.621094 20 Z M 8 22L8 24L12 24L12 22 Z M 17 22L17 24L19.484375 24L20.761719 22 Z M 28.4375 22.113281L29.027344 23.300781L29.644531 23.300781C30.464844 23.300781 30.96875 23.535156 31.371094 23.894531C31.773438 24.257813 32.066406 24.796875 32.238281 25.429688C32.582031 26.695313 32.289063 28.339844 32.007813 28.792969L31.644531 29.371094L32.050781 29.921875C32.289063 30.238281 32.441406 30.566406 32.363281 31.007813C32.253906 31.625 32.03125 31.707031 31.589844 32.089844L31.257813 32.375L31.246094 32.8125C31.210938 33.792969 30.871094 34.777344 30.300781 35.339844L30 35.632813L30 38.988281L30.058594 39.152344C30.453125 40.25 31.335938 40.933594 32.234375 41.429688C33.132813 41.925781 34.101563 42.289063 34.976563 42.714844C35.851563 43.140625 36.609375 43.625 37.132813 44.261719C37.496094 44.699219 37.71875 45.289063 37.855469 46L18.144531 46C18.28125 45.289063 18.503906 44.699219 18.867188 44.261719C19.390625 43.625 20.148438 43.140625 21.023438 42.714844C21.898438 42.289063 22.867188 41.925781 23.765625 41.429688C24.664063 40.933594 25.546875 40.25 25.941406 39.152344L26 38.988281L26 35.523438L25.5625 35.226563C25.101563 34.914063 24.34375 33.769531 24.238281 32.742188L24.183594 32.1875L23.683594 31.945313C23.398438 31.808594 23.082031 31.753906 23.050781 31.015625C23.050781 31.015625 23.082031 30.824219 23.15625 30.65625C23.234375 30.484375 23.375 30.304688 23.332031 30.347656L23.8125 29.867188L23.542969 29.242188C22.796875 27.523438 22.898438 25.722656 23.761719 24.367188C24.550781 23.125 26.097656 22.269531 28.4375 22.113281 Z M 36.558594 24.113281L37.089844 25.199219L37.714844 25.199219C38.472656 25.199219 38.921875 25.398438 39.265625 25.691406C39.613281 25.984375 39.859375 26.414063 40.003906 26.949219C40.300781 28.019531 40.085938 29.480469 39.746094 30.144531L39.417969 30.796875L39.933594 31.308594C39.867188 31.242188 40.195313 31.785156 40.140625 32.195313C40.011719 33.175781 39.871094 33.113281 39.449219 33.390625L39.03125 33.667969L39 34.171875C38.953125 35.042969 38.515625 36.351563 38.28125 36.589844L38 36.878906L38 39.621094L38.058594 39.78125C38.4375 40.835938 39.296875 41.476563 40.167969 41.9375C41.035156 42.398438 41.980469 42.738281 42.84375 43.136719C43.707031 43.535156 44.476563 43.984375 45.019531 44.578125C45.367188 44.953125 45.601563 45.433594 45.769531 46L39.921875 46C39.757813 44.777344 39.3125 43.765625 38.675781 42.988281C37.875 42.011719 36.84375 41.398438 35.855469 40.917969C34.867188 40.4375 33.910156 40.070313 33.203125 39.679688C32.527344 39.308594 32.175781 38.953125 32 38.53125L32 36.296875C32.691406 35.421875 33.054688 34.390625 33.15625 33.34375C33.542969 33.003906 34.144531 32.417969 34.332031 31.359375C34.484375 30.492188 34.226563 29.785156 33.90625 29.210938C34.4375 27.988281 34.59375 26.460938 34.167969 24.902344C34.164063 24.886719 34.15625 24.871094 34.152344 24.855469C34.367188 24.71875 34.640625 24.5625 34.949219 24.441406C35.4375 24.25 36.007813 24.179688 36.558594 24.113281 Z M 8 27L8 29L12 29L12 27 Z M 17 27L17 29L19.753906 29L19.394531 27 Z M 8 32L8 34L12 34L12 32 Z M 17 32L17 34L20.449219 34L19.613281 32 Z M 8 37L8 39L12 39L12 37 Z M 17 37L17 39L21 39L21 37Z">
-                            </path>
-                        </g>
-                    </svg>
-                </div>
-                <div class="animate-text text-paragraph">
-                    SSCC’s business plan focuses on precise planning and professional execution of infrastructure
-                    projects, ensuring quality delivery, schedule compliance, and cost efficiency to maximize client
-                    value
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section end-pinned">
-            <div class="about-text">
-                <div>
-                    <h1 class="animate-text text-title">Capability & Capacity</h1>
-
-                    <svg class="icon" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        transform="rotate(0)" stroke="#000000" stroke-width="0.00024000000000000003">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                            stroke-width="0.048"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path clip-rule="evenodd"
-                                d="M9.84097 3.33008L9.84096 3.3301L9.84096 3.3301C9.6695 3.54105 9.58377 3.64652 9.49216 3.73628C9.07447 4.14552 8.51471 4.37738 7.92998 4.38336C7.80174 4.38467 7.66654 4.37071 7.39614 4.34278L7.39613 4.34278L7.39612 4.34278C6.82149 4.28344 6.53417 4.25377 6.30489 4.27674C5.23242 4.38418 4.38418 5.23242 4.27674 6.30489C4.25377 6.53417 4.28344 6.82149 4.34278 7.39612L4.34278 7.39613L4.34278 7.39615C4.37071 7.66654 4.38467 7.80174 4.38336 7.92998C4.37738 8.51471 4.14552 9.07447 3.73628 9.49216C3.64652 9.58377 3.54105 9.6695 3.3301 9.84096L3.33008 9.84097C2.8818 10.2053 2.65766 10.3875 2.51178 10.5659C1.82941 11.4002 1.82941 12.5998 2.51178 13.4341C2.65766 13.6125 2.8818 13.7947 3.33008 14.159L3.3301 14.159L3.33011 14.1591C3.54105 14.3305 3.64653 14.4162 3.73628 14.5078C4.14552 14.9255 4.37738 15.4853 4.38336 16.07C4.38467 16.1983 4.37071 16.3335 4.34278 16.6039L4.34278 16.6039C4.28344 17.1785 4.25377 17.4658 4.27674 17.6951C4.38418 18.7676 5.23242 19.6158 6.30489 19.7233C6.53417 19.7462 6.82149 19.7166 7.39613 19.6572C7.66653 19.6293 7.80173 19.6153 7.92998 19.6166C8.51471 19.6226 9.07447 19.8545 9.49216 20.2637C9.58376 20.3535 9.66949 20.4589 9.84093 20.6699L9.84096 20.6699C10.2053 21.1182 10.3875 21.3423 10.5659 21.4882C11.4002 22.1706 12.5998 22.1706 13.4341 21.4882C13.6125 21.3423 13.7947 21.1182 14.159 20.6699L14.1591 20.6699C14.3305 20.4589 14.4162 20.3535 14.5078 20.2637C14.9255 19.8545 15.4853 19.6226 16.07 19.6166C16.1983 19.6153 16.3335 19.6293 16.6039 19.6572C17.1785 19.7166 17.4658 19.7462 17.6951 19.7233C18.7676 19.6158 19.6158 18.7676 19.7233 17.6951C19.7462 17.4658 19.7166 17.1785 19.6572 16.6039C19.6293 16.3335 19.6153 16.1983 19.6166 16.07C19.6226 15.4853 19.8545 14.9255 20.2637 14.5078C20.3535 14.4162 20.4589 14.3305 20.6699 14.1591L20.6699 14.159C21.1182 13.7947 21.3423 13.6125 21.4882 13.4341C22.1706 12.5998 22.1706 11.4002 21.4882 10.5659C21.3423 10.3875 21.1182 10.2053 20.6699 9.84096L20.6699 9.84094C20.4589 9.66949 20.3535 9.58377 20.2637 9.49216C19.8545 9.07447 19.6226 8.51471 19.6166 7.92998C19.6153 7.80173 19.6293 7.66653 19.6572 7.39613C19.7166 6.82149 19.7462 6.53417 19.7233 6.30489C19.6158 5.23242 18.7676 4.38418 17.6951 4.27674C17.4658 4.25377 17.1785 4.28344 16.6039 4.34278L16.6039 4.34278L16.6039 4.34278C16.3335 4.37071 16.1983 4.38467 16.07 4.38336C15.4853 4.37738 14.9255 4.14552 14.5078 3.73628C14.4162 3.64653 14.3305 3.54105 14.1591 3.33011L14.159 3.3301L14.159 3.33008C13.7947 2.8818 13.6125 2.65766 13.4341 2.51178C12.5998 1.82941 11.4002 1.82941 10.5659 2.51178C10.3875 2.65766 10.2053 2.8818 9.84097 3.33008ZM14.5304 8.53033C14.8232 8.23744 14.8232 7.76256 14.5304 7.46967C14.2375 7.17678 13.7626 7.17678 13.4697 7.46967L9.46969 11.4697C9.25519 11.6842 9.19103 12.0068 9.30711 12.287C9.4232 12.5673 9.69668 12.75 10 12.75H12.1894L9.46969 15.4697C9.1768 15.7626 9.1768 16.2374 9.46969 16.5303C9.76259 16.8232 10.2375 16.8232 10.5304 16.5303L14.5304 12.5303C14.7449 12.3158 14.809 11.9932 14.6929 11.713C14.5768 11.4327 14.3034 11.25 14 11.25H11.8107L14.5304 8.53033Z"
-                                fill="#000000" fill-rule="evenodd"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div class="animate-text text-paragraph">
-                    SSCC has the technical capability and operational capacity to deliver infrastructure projects
-                    efficiently, supported by qualified engineering teams, specialized equipment, and integrated project
-                    management systems that ensure quality, safety, and on-time delivery.
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section"></div>
     </section>
+
+    <div class="cards">
+        <div class="about-card">
+            <div class="card-head">
+                <h2 class="bounce-item text-title">Who we are</h2>
+                <svg class="bounce-item" width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M64 160c0-53 43-96 96-96s96 43 96 96c0 42.7-27.9 78.9-66.5 91.4-28.4 9.2-61.5 35.3-61.5 76.6l0 24c0 17.7 14.3 32 32 32s32-14.3 32-32l0-24c0-1.7 .6-4.1 3.5-7.3 3-3.3 7.9-6.5 13.7-8.4 64.3-20.7 110.8-81 110.8-152.3 0-88.4-71.6-160-160-160S0 71.6 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm96 352c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40z">
+                    </path>
+                </svg>
+            </div>
+            <div class="card-content animate-text-by-line">
+                Scientific Systems Contracting Company was established with the purpose of providing innovative
+                solutions that enrich the urban landscape, in alignment with the Kingdom of Saudi Arabia’s
+                Vision
+                2030 and its ongoing journey of growth and prosperity. Guided by our forward-looking vision, the
+                company has successfully built a distinguished reputation as a leading model in the contracting
+                sector, achieving notable accomplishments across various fields including construction,
+                infrastructure, interior and exterior design, and project management.
+            </div>
+        </div>
+
+        <div class="about-card">
+            <div class="card-head">
+                <h2 class="bounce-item text-title">OUR VISION</h2>
+                <svg class="bounce-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                        d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z">
+                    </path>
+                </svg>
+            </div>
+            <div class="card-content animate-text-by-line">
+                To be one of the leading companies in the contracting sector, advancing to become the most
+                trusted
+                service provider and the first choice in the Kingdom of Saudi Arabia and across the Middle East.
+            </div>
+        </div>
+
+        <div class="about-card">
+            <div class="card-head">
+                <h2 class="bounce-item text-title">OUR VALUES</h2>
+
+                <svg class="bounce-item" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M16 8V5L19 2L20 4L22 5L19 8H16ZM16 8L12 11.9999M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="card-content animate-text-by-line">
+                To deliver exceptional services to our clients in accordance with the highest international
+                quality
+                standards, while embracing technological advancement and upholding the highest levels of
+                professionalism, integrity, honesty, and precision. Through these principles, we aim to become a
+                leading provider of construction and development services for major projects in the Kingdom of
+                Saudi
+                Arabia and the Middle East.
+            </div>
+        </div>
+
+        <div class="about-card">
+            <div class="card-head">
+                <h2 class="bounce-item text-title">Business Plan</h2>
+                <svg class="bounce-item" fill="currentColor" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                    </g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M7 2L7 7L2 7L2 46L14 46L14 44L4 44L4 9L9 9L9 4L29 4L29 7L11 7L11 9L34 9L34 20L36 20L36 7L31 7L31 2 Z M 8 12L8 14L12 14L12 12 Z M 17 12L17 14L21 14L21 12 Z M 26 12L26 14L30 14L30 12 Z M 8 17L8 19L12 19L12 17 Z M 17 17L17 19L21 19L21 17 Z M 26 17L26 19L30 19L30 17 Z M 29 20C25.742188 20 23.328125 21.324219 22.074219 23.296875C20.929688 25.09375 20.875 27.339844 21.59375 29.433594C21.515625 29.566406 21.402344 29.679688 21.328125 29.839844C21.171875 30.191406 21.035156 30.589844 21.054688 31.097656L21.054688 31.101563C21.109375 32.378906 21.851563 33.046875 22.398438 33.421875C22.628906 34.640625 23.207031 35.660156 24 36.390625L24 38.53125C23.824219 38.953125 23.472656 39.308594 22.796875 39.679688C22.089844 40.070313 21.132813 40.4375 20.144531 40.917969C19.15625 41.398438 18.125 42.011719 17.324219 42.988281C16.519531 43.96875 16 45.308594 16 47L16 48L48.050781 48L47.992188 46.941406C47.902344 45.363281 47.316406 44.117188 46.488281 43.222656C45.664063 42.328125 44.644531 41.765625 43.679688 41.320313C42.714844 40.875 41.785156 40.535156 41.109375 40.171875C40.464844 39.832031 40.148438 39.511719 40 39.160156L40 37.472656C40.597656 36.609375 40.859375 35.617188 40.9375 34.6875C41.414063 34.265625 41.96875 33.617188 42.125 32.457031C42.230469 31.625 42.019531 30.996094 41.695313 30.464844C42.144531 29.277344 42.328125 27.84375 41.933594 26.417969C41.707031 25.589844 41.277344 24.777344 40.5625 24.171875C40.003906 23.691406 39.238281 23.425781 38.390625 23.308594L37.75 22L37.125 22C36.097656 22 35.085938 22.238281 34.214844 22.578125C33.871094 22.714844 33.558594 22.863281 33.265625 23.027344C33.101563 22.808594 32.921875 22.601563 32.714844 22.414063C32.105469 21.863281 31.261719 21.550781 30.324219 21.421875L29.621094 20 Z M 8 22L8 24L12 24L12 22 Z M 17 22L17 24L19.484375 24L20.761719 22 Z M 28.4375 22.113281L29.027344 23.300781L29.644531 23.300781C30.464844 23.300781 30.96875 23.535156 31.371094 23.894531C31.773438 24.257813 32.066406 24.796875 32.238281 25.429688C32.582031 26.695313 32.289063 28.339844 32.007813 28.792969L31.644531 29.371094L32.050781 29.921875C32.289063 30.238281 32.441406 30.566406 32.363281 31.007813C32.253906 31.625 32.03125 31.707031 31.589844 32.089844L31.257813 32.375L31.246094 32.8125C31.210938 33.792969 30.871094 34.777344 30.300781 35.339844L30 35.632813L30 38.988281L30.058594 39.152344C30.453125 40.25 31.335938 40.933594 32.234375 41.429688C33.132813 41.925781 34.101563 42.289063 34.976563 42.714844C35.851563 43.140625 36.609375 43.625 37.132813 44.261719C37.496094 44.699219 37.71875 45.289063 37.855469 46L18.144531 46C18.28125 45.289063 18.503906 44.699219 18.867188 44.261719C19.390625 43.625 20.148438 43.140625 21.023438 42.714844C21.898438 42.289063 22.867188 41.925781 23.765625 41.429688C24.664063 40.933594 25.546875 40.25 25.941406 39.152344L26 38.988281L26 35.523438L25.5625 35.226563C25.101563 34.914063 24.34375 33.769531 24.238281 32.742188L24.183594 32.1875L23.683594 31.945313C23.398438 31.808594 23.082031 31.753906 23.050781 31.015625C23.050781 31.015625 23.082031 30.824219 23.15625 30.65625C23.234375 30.484375 23.375 30.304688 23.332031 30.347656L23.8125 29.867188L23.542969 29.242188C22.796875 27.523438 22.898438 25.722656 23.761719 24.367188C24.550781 23.125 26.097656 22.269531 28.4375 22.113281 Z M 36.558594 24.113281L37.089844 25.199219L37.714844 25.199219C38.472656 25.199219 38.921875 25.398438 39.265625 25.691406C39.613281 25.984375 39.859375 26.414063 40.003906 26.949219C40.300781 28.019531 40.085938 29.480469 39.746094 30.144531L39.417969 30.796875L39.933594 31.308594C39.867188 31.242188 40.195313 31.785156 40.140625 32.195313C40.011719 33.175781 39.871094 33.113281 39.449219 33.390625L39.03125 33.667969L39 34.171875C38.953125 35.042969 38.515625 36.351563 38.28125 36.589844L38 36.878906L38 39.621094L38.058594 39.78125C38.4375 40.835938 39.296875 41.476563 40.167969 41.9375C41.035156 42.398438 41.980469 42.738281 42.84375 43.136719C43.707031 43.535156 44.476563 43.984375 45.019531 44.578125C45.367188 44.953125 45.601563 45.433594 45.769531 46L39.921875 46C39.757813 44.777344 39.3125 43.765625 38.675781 42.988281C37.875 42.011719 36.84375 41.398438 35.855469 40.917969C34.867188 40.4375 33.910156 40.070313 33.203125 39.679688C32.527344 39.308594 32.175781 38.953125 32 38.53125L32 36.296875C32.691406 35.421875 33.054688 34.390625 33.15625 33.34375C33.542969 33.003906 34.144531 32.417969 34.332031 31.359375C34.484375 30.492188 34.226563 29.785156 33.90625 29.210938C34.4375 27.988281 34.59375 26.460938 34.167969 24.902344C34.164063 24.886719 34.15625 24.871094 34.152344 24.855469C34.367188 24.71875 34.640625 24.5625 34.949219 24.441406C35.4375 24.25 36.007813 24.179688 36.558594 24.113281 Z M 8 27L8 29L12 29L12 27 Z M 17 27L17 29L19.753906 29L19.394531 27 Z M 8 32L8 34L12 34L12 32 Z M 17 32L17 34L20.449219 34L19.613281 32 Z M 8 37L8 39L12 39L12 37 Z M 17 37L17 39L21 39L21 37Z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="card-content animate-text-by-line">
+                SSCC’s business plan focuses on precise planning and professional execution of infrastructure
+                projects, ensuring quality delivery, schedule compliance, and cost efficiency to maximize client
+                value
+            </div>
+        </div>
+
+        <div class="about-card end-pin">
+            <div class="card-head">
+                <h2 class="bounce-item text-title">Capability & Capacity</h2>
+                <svg class="bounce-item" viewBox="0 0 24.00 24.00" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#000000"
+                    stroke-width="0.00024000000000000003">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                        stroke-width="0.048"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path clip-rule="evenodd" fill="currentColor"
+                            d="M9.84097 3.33008L9.84096 3.3301L9.84096 3.3301C9.6695 3.54105 9.58377 3.64652 9.49216 3.73628C9.07447 4.14552 8.51471 4.37738 7.92998 4.38336C7.80174 4.38467 7.66654 4.37071 7.39614 4.34278L7.39613 4.34278L7.39612 4.34278C6.82149 4.28344 6.53417 4.25377 6.30489 4.27674C5.23242 4.38418 4.38418 5.23242 4.27674 6.30489C4.25377 6.53417 4.28344 6.82149 4.34278 7.39612L4.34278 7.39613L4.34278 7.39615C4.37071 7.66654 4.38467 7.80174 4.38336 7.92998C4.37738 8.51471 4.14552 9.07447 3.73628 9.49216C3.64652 9.58377 3.54105 9.6695 3.3301 9.84096L3.33008 9.84097C2.8818 10.2053 2.65766 10.3875 2.51178 10.5659C1.82941 11.4002 1.82941 12.5998 2.51178 13.4341C2.65766 13.6125 2.8818 13.7947 3.33008 14.159L3.3301 14.159L3.33011 14.1591C3.54105 14.3305 3.64653 14.4162 3.73628 14.5078C4.14552 14.9255 4.37738 15.4853 4.38336 16.07C4.38467 16.1983 4.37071 16.3335 4.34278 16.6039L4.34278 16.6039C4.28344 17.1785 4.25377 17.4658 4.27674 17.6951C4.38418 18.7676 5.23242 19.6158 6.30489 19.7233C6.53417 19.7462 6.82149 19.7166 7.39613 19.6572C7.66653 19.6293 7.80173 19.6153 7.92998 19.6166C8.51471 19.6226 9.07447 19.8545 9.49216 20.2637C9.58376 20.3535 9.66949 20.4589 9.84093 20.6699L9.84096 20.6699C10.2053 21.1182 10.3875 21.3423 10.5659 21.4882C11.4002 22.1706 12.5998 22.1706 13.4341 21.4882C13.6125 21.3423 13.7947 21.1182 14.159 20.6699L14.1591 20.6699C14.3305 20.4589 14.4162 20.3535 14.5078 20.2637C14.9255 19.8545 15.4853 19.6226 16.07 19.6166C16.1983 19.6153 16.3335 19.6293 16.6039 19.6572C17.1785 19.7166 17.4658 19.7462 17.6951 19.7233C18.7676 19.6158 19.6158 18.7676 19.7233 17.6951C19.7462 17.4658 19.7166 17.1785 19.6572 16.6039C19.6293 16.3335 19.6153 16.1983 19.6166 16.07C19.6226 15.4853 19.8545 14.9255 20.2637 14.5078C20.3535 14.4162 20.4589 14.3305 20.6699 14.1591L20.6699 14.159C21.1182 13.7947 21.3423 13.6125 21.4882 13.4341C22.1706 12.5998 22.1706 11.4002 21.4882 10.5659C21.3423 10.3875 21.1182 10.2053 20.6699 9.84096L20.6699 9.84094C20.4589 9.66949 20.3535 9.58377 20.2637 9.49216C19.8545 9.07447 19.6226 8.51471 19.6166 7.92998C19.6153 7.80173 19.6293 7.66653 19.6572 7.39613C19.7166 6.82149 19.7462 6.53417 19.7233 6.30489C19.6158 5.23242 18.7676 4.38418 17.6951 4.27674C17.4658 4.25377 17.1785 4.28344 16.6039 4.34278L16.6039 4.34278L16.6039 4.34278C16.3335 4.37071 16.1983 4.38467 16.07 4.38336C15.4853 4.37738 14.9255 4.14552 14.5078 3.73628C14.4162 3.64653 14.3305 3.54105 14.1591 3.33011L14.159 3.3301L14.159 3.33008C13.7947 2.8818 13.6125 2.65766 13.4341 2.51178C12.5998 1.82941 11.4002 1.82941 10.5659 2.51178C10.3875 2.65766 10.2053 2.8818 9.84097 3.33008ZM14.5304 8.53033C14.8232 8.23744 14.8232 7.76256 14.5304 7.46967C14.2375 7.17678 13.7626 7.17678 13.4697 7.46967L9.46969 11.4697C9.25519 11.6842 9.19103 12.0068 9.30711 12.287C9.4232 12.5673 9.69668 12.75 10 12.75H12.1894L9.46969 15.4697C9.1768 15.7626 9.1768 16.2374 9.46969 16.5303C9.76259 16.8232 10.2375 16.8232 10.5304 16.5303L14.5304 12.5303C14.7449 12.3158 14.809 11.9932 14.6929 11.713C14.5768 11.4327 14.3034 11.25 14 11.25H11.8107L14.5304 8.53033Z"
+                            fill="#000000" fill-rule="evenodd"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="card-content animate-text-by-line">
+                SSCC has the technical capability and operational capacity to deliver infrastructure projects
+                efficiently, supported by qualified engineering teams, specialized equipment, and integrated
+                project
+                management systems that ensure quality, safety, and on-time delivery.
+            </div>
+        </div>
+    </div>
+
+    <section></section>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
@@ -178,21 +261,19 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script>
         gsap.registerPlugin(ScrollTrigger, CustomBounce, SplitText);
-
     </script>
 
     <script>
-        const icons = gsap.utils.toArray('.icon');
-        icons.forEach(el => {
+        // GSAP BOUNCY ITEMS CODE
+        const bounceItems = gsap.utils.toArray('.bounce-item');
+        bounceItems.forEach(el => {
             gsap.fromTo(el, {
                 scale: 0,
-
             }, {
                 scrollTrigger: {
                     trigger: el,
-                    start: "top 85%",
+                    start: "top 80%",
                     end: "bottom 15%",
-
                     toggleActions: "restart reverse restart reverse",
                 },
                 scale: 1,
@@ -201,14 +282,14 @@
             });
         });
 
-        let splitLines = SplitText.create('.animate-text', { type: 'lines' });
 
-        splitLines.lines.forEach(line => {
+        // SPLIT TEXT BY LINE 
+        SplitText.create('.animate-text-by-line', { type: 'lines' }).lines.forEach(line => {
             gsap.from(line, {
                 scrollTrigger: {
                     trigger: line,
-                    start: "top 85%",
-                    end: "bottom 15%",
+                    start: "top 80%",
+                    end: "bottom 10%",
                     toggleActions: "restart reverse restart reverse",
                 },
                 opacity: 0,
@@ -216,25 +297,40 @@
                 stagger: 0.05,
                 duration: 1,
                 ease: "power2.out",
-
             });
         });
 
+        // SPLIT TEXT BY WORD 
+        let splitTextByWord = SplitText.create('.animate-text-by-word', { type: 'words' });
+        gsap.from(splitTextByWord.words, {
+            scrollTrigger: {
+                trigger: splitTextByWord.words,
+                start: "top 90%",
+                end: "bottom 10%",
+                toggleActions: "restart reverse restart reverse",
+                markers: true,
+                scrub: true,
+            },
+            opacity: 0,
+            y: 50,
+            stagger: 0.1,
+            duration: 1,
+            ease: "power2.out",
+        });
+
+
+        // PIN A SECTION UNTIL A CERTAIN ELEMENT 
         gsap.to(".pinned", {
             scrollTrigger: {
                 trigger: ".pinned",
                 start: "top top",
-                endTrigger: ".end-pinned",
+                endTrigger: ".end-pin",
                 end: "bottom bottom",
                 pin: true,
                 pinSpacing: false,
                 scrub: true,
-                markers: true,
             }
         });
-
-
-
 
 
     </script>

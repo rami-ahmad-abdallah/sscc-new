@@ -10197,16 +10197,37 @@ section {
 }
 
 .pinned {
-  background-color: lightgray;
-  overflow: hidden;
-  color: white;
-  min-height: 100vh;
-  scroll-margin: 0px !important;
-  margin: 0 auto !important;
-  border-radius: 15px;
+  padding: 10px;
+  height: 100vh;
+  padding: 0 !important;
+}
+.pinned .inside-pin {
+  width: 100%;
+  border: 2px solid;
+  height: 90%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+.pinned .inside-pin h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(-90deg) translate(0%, -50%);
+  letter-spacing: 10px;
+}
+.pinned .inside-pin h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 5px;
+  background-color: #166cac;
 }
 
-.pinned::after {
+.inned::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -10219,31 +10240,32 @@ section {
   z-index: 2;
 }
 
-.pinned img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  z-index: 1;
-}
-
 .cards {
   position: relative;
-  margin-top: -75vh;
+  margin-top: -25vh;
 }
 
 .about-card {
-  width: clamp(340px, 50%, 500px);
+  width: clamp(340px, 50%, 800px);
   padding: 10px;
-  min-height: 500px;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
   margin: 0px auto;
+  margin-bottom: 50px;
+}
+.about-card .special-text {
+  margin-left: auto;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.about-card .special-content {
+  background: rgba(128, 128, 128, 0.1019607843);
+  padding: 15px;
+  border-radius: 10px;
+  border-bottom-right-radius: 40px;
 }
 .about-card .card-head {
   text-transform: uppercase;
@@ -10267,58 +10289,20 @@ section {
 .about-card .card-head svg {
   width: 25px;
 }
-
-#about .about-section {
-  margin-bottom: 50px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  text-align: center;
-  overflow: hidden;
-  background-position: center;
-  min-height: 300px;
-  background: #d0e9ff;
-  border-radius: 7px;
-  padding: 50px 0px;
-}
-#about .about-section svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  transform: translate(-45%, -45%);
-}
-#about .about-section .texxt {
-  width: clamp(345px, 75%, 850px);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0);
+.about-card .special-card {
+  width: 200px;
   padding: 10px;
+  border: 2px solid;
   border-radius: 10px;
+  height: auto;
+}
+
+#about .container {
   overflow: hidden;
 }
-@media (max-width: 576px) {
-  #about .about-section:nth-of-type(1) .section-text, #about .about-section:nth-of-type(3) .section-text {
-    width: 345px;
-    align-self: flex-start;
-    padding-top: 7px;
-  }
-  #about .about-section:nth-of-type(2) .section-text {
-    width: 345px;
-  }
-  #about .about-section:nth-of-type(4) {
-    height: auto;
-  }
-  #about .about-section:nth-of-type(4) .section-text {
-    width: 345px;
-    align-self: flex-end;
-  }
-}
+
 #infrastructure {
-  margin-top: 25vh;
+  margin-top: 10vh;
 }
 #infrastructure .container {
   padding: 15px;

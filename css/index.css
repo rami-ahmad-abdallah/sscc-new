@@ -10315,6 +10315,31 @@ section {
   }
 }
 
+.projects-table {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.projects-table table {
+  text-align: left;
+  border-collapse: collapse;
+  width: -moz-max-content;
+  width: max-content;
+}
+.projects-table tr:last-of-type td {
+  border: 0;
+}
+.projects-table th,
+.projects-table td {
+  border: 3px solid rgba(255, 255, 0, 0.25);
+  padding: 10px;
+}
+.projects-table th {
+  background: #f4cb2a;
+  color: black;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+}
+
 #manage .container {
   padding: 15px;
   border-radius: 10px;

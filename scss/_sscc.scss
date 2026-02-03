@@ -29,16 +29,6 @@ section {
       left: 0;
       transform: rotate(-90deg) translate(0%, -50%);
       letter-spacing: 10px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 50%;
-        height: 5px;
-        background-color: #166cac;
-      }
     }
   }
 }
@@ -95,16 +85,6 @@ section {
     margin-bottom: 15px;
     position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 10%;
-      height: 5px;
-      background-color: #166cac;
-    }
-
     svg {
       width: 25px;
     }
@@ -123,6 +103,8 @@ section {
   .container {
     overflow: hidden;
   }
+
+
 
   .partners {
     display: flex;
@@ -151,6 +133,40 @@ section {
         object-fit: contain;
       }
     }
+
+
+
+  }
+
+}
+
+.observed {
+  &.bottom-border::after {
+    transition-delay: 300ms;
+    transform: scaleX(100%);
+  }
+}
+
+// SPECIAL EFFECTS CLASSES 
+.bottom-border {
+  width: max-content;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 0 0 7px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40%;
+    height: 7px;
+    border-radius: 1px;
+    background-color: #166cac;
+    transform-origin: left;
+    transition-delay: 300ms;
+    transition: transform 1s ease;
+    transform: scaleX(0%);
   }
 }
 
@@ -167,12 +183,19 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-1;
   }
+
+  .bottom-border {
+    &::after {
+      background-color: rgba($theme-color-1, 1);
+    }
+  }
 }
 
 .projects-table {
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
+
   table {
     text-align: left;
     border-collapse: collapse;
@@ -186,6 +209,7 @@ section {
       }
     }
   }
+
   th,
   td {
     border: 3px solid rgb(255 255 0 / 25%);
@@ -210,6 +234,12 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-2;
   }
+
+  .bottom-border {
+    &::after {
+      background-color: rgba($theme-color-2, 1);
+    }
+  }
 }
 
 #supplies {
@@ -223,6 +253,12 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-3;
   }
+
+  .bottom-border {
+    &::after {
+      background-color: rgba($theme-color-3, 1);
+    }
+  }
 }
 
 #interior {
@@ -235,6 +271,12 @@ section {
 
     border-radius: 10px;
     box-shadow: 0 0 10px 5px $theme-color-4;
+  }
+
+  .bottom-border {
+    &::after {
+      background-color: rgba($theme-color-4, 1);
+    }
   }
 }
 
@@ -634,12 +676,10 @@ footer {
   }
 }
 
-.fade-up {
-}
+.fade-up {}
 
 // WE CAN APPLY STYLE AFTER THE SHOW_UP CLASS ADDED
-.show-fade-up {
-}
+.show-fade-up {}
 
 .colors-hover {
   &:hover {

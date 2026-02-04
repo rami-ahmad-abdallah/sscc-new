@@ -10262,12 +10262,18 @@ section {
 .about-card .card-head {
   text-transform: uppercase;
   display: flex;
-  gap: 10px;
-  align-items: center;
+  gap: 20px;
+  align-items: start;
   justify-content: start;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
+}
+.about-card .card-head img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .about-card .card-head svg {
   width: 25px;
@@ -10284,6 +10290,7 @@ section {
   overflow: hidden;
 }
 #about .partners {
+  width: clamp(340px, 50%, 800px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10291,12 +10298,12 @@ section {
   gap: 25px;
 }
 #about .partners .partner {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 130px;
   background: white;
   overflow: hidden;
   padding: 15px;
-  border-radius: 50%;
+  border-radius: 15px;
   filter: grayscale(1) brightness(0.8);
 }
 #about .partners .partner:hover {
@@ -10438,10 +10445,11 @@ footer a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  bottom: 10px;
-  border-radius: 7px;
+  bottom: 0px;
   transition: transform 0.5s ease;
   transform: translate(0%, 150%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .offcanvas.square.show {
   transform: translate(0%, 0%);
@@ -10487,7 +10495,7 @@ footer a {
 }
 .offcanvas.menu {
   top: 50%;
-  left: 10px;
+  left: 0;
   transition: transform 0.3s ease;
   transform: translate(-150%, -50%);
   display: flex;
@@ -10495,7 +10503,8 @@ footer a {
   justify-content: center;
   align-items: start;
   padding: 5px;
-  border-radius: 7px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .offcanvas.menu.on {
   transform: translate(0%, -50%);
@@ -10545,12 +10554,12 @@ footer a {
   gap: 10px;
 }
 .offcanvas.menu .menu-link.active:nth-of-type(1), .offcanvas.menu .menu-link:hover:nth-of-type(1) {
-  box-shadow: inset -50px 0 0 0px #7070ff, inset 0 0 0 1px #7070ff;
+  box-shadow: inset -50px 0 0 0px #166cac, inset 0 0 0 1px #166cac;
   border: 0;
-  color: #7070ff;
+  color: #166cac;
 }
 .offcanvas.menu .menu-link.active:nth-of-type(1) a, .offcanvas.menu .menu-link:hover:nth-of-type(1) a {
-  color: #7070ff;
+  color: #166cac;
 }
 .offcanvas.menu .menu-link.active:nth-of-type(2), .offcanvas.menu .menu-link:hover:nth-of-type(2) {
   box-shadow: inset -50px 0 0 0px #f4cb2a, inset 0 0 0 1px #f4cb2a;
@@ -10657,61 +10666,37 @@ footer a {
   align-items: center;
 }
 .offcanvas.logo {
-  top: 10px;
+  top: 0;
   left: 10px;
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 70px;
   transition: all 0.3s ease;
   background: white;
   overflow: hidden;
   padding: 5px;
-  border-radius: 7px;
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .offcanvas.logo path {
   transition: all 0.3s ease;
 }
 .offcanvas.logo.about {
-  box-shadow: 0 0 15px 3px rgb(35, 35, 35);
+  box-shadow: 0 3px 15px 3px rgb(35, 35, 35);
 }
 .offcanvas.logo.infrastructure {
-  box-shadow: 0 0 15px 3px #f4cb2a;
-}
-.offcanvas.logo.infrastructure path {
-  filter: grayscale(1);
-}
-.offcanvas.logo.infrastructure .in {
-  filter: grayscale(0);
+  box-shadow: 0 3px 15px 3px #f4cb2a;
 }
 .offcanvas.logo.manage {
-  box-shadow: 0 0 15px 3px #2d6fc6;
-}
-.offcanvas.logo.manage path {
-  filter: grayscale(1);
-}
-.offcanvas.logo.manage .ma {
-  filter: grayscale(0);
+  box-shadow: 0 3px 15px 3px #2d6fc6;
 }
 .offcanvas.logo.supplies {
-  box-shadow: 0 0 15px 3px #c6c6c6;
-}
-.offcanvas.logo.supplies path {
-  filter: grayscale(1);
-}
-.offcanvas.logo.supplies .su {
-  filter: grayscale(0);
+  box-shadow: 0 3px 15px 3px #c6c6c6;
 }
 .offcanvas.logo.interior {
-  box-shadow: 0 0 15px 3px #d9b47e;
-}
-.offcanvas.logo.interior path {
-  filter: grayscale(1);
-}
-.offcanvas.logo.interior .int {
-  filter: grayscale(0);
+  box-shadow: 0 3px 15px 3px #d9b47e;
 }
 .offcanvas.logo.contact {
-  box-shadow: 0 0 15px 3px rgb(35, 35, 35);
+  box-shadow: 0 3px 15px 3px rgb(35, 35, 35);
 }
 .offcanvas.logo svg {
   width: 100%;

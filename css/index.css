@@ -10234,11 +10234,9 @@ section {
 
 .cards {
   position: relative;
-  margin-top: -25vh;
 }
 
 .about-card {
-  width: clamp(340px, 50%, 800px);
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -10266,7 +10264,6 @@ section {
   align-items: start;
   justify-content: start;
   width: 100%;
-  margin-bottom: 15px;
   position: relative;
 }
 .about-card .card-head img {
@@ -10287,18 +10284,21 @@ section {
 }
 
 #about .container {
+  box-shadow: 0 0 10px 5px white;
+  border-radius: 15px;
   overflow: hidden;
+  animation: shadow-animation 10s ease 0s infinite normal forwards;
 }
 #about .partners {
-  width: clamp(340px, 50%, 800px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   gap: 25px;
+  margin-top: 10px;
 }
 #about .partners .partner {
-  width: 125px;
+  width: 120px;
   height: 130px;
   background: white;
   overflow: hidden;
@@ -10316,6 +10316,23 @@ section {
      object-fit: contain;
 }
 
+@keyframes shadow-animation {
+  0%, 100% {
+    box-shadow: 0 0 10px 5px white;
+  }
+  20% {
+    box-shadow: 0 0 10px 5px #f4cb2a;
+  }
+  40% {
+    box-shadow: 0 0 10px 5px #2d6fc6;
+  }
+  60% {
+    box-shadow: 0 0 10px 5px #c6c6c6;
+  }
+  80% {
+    box-shadow: 0 0 10px 5px #d9b47e;
+  }
+}
 .observed.bottom-border::after {
   transition-delay: 300ms;
   transform: scaleX(100%);
@@ -10325,8 +10342,8 @@ section {
   width: -moz-max-content;
   width: max-content;
   position: relative;
-  margin-bottom: 15px;
   padding: 0 0 7px 0;
+  margin-bottom: 25px;
 }
 .bottom-border::after {
   content: "";
@@ -10364,6 +10381,7 @@ section {
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
+  padding-bottom: 20px;
 }
 .projects-table table {
   text-align: left;

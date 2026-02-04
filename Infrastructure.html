@@ -290,12 +290,7 @@
 
     <section id="about">
         <div class="container">
-            <div class="pinned">
-                <div class="inside-pin">
-                    <h1 class="observe bottom-border">ABOUT SSCC</h1>
-                </div>
 
-            </div>
 
             <div class="cards">
                 <div class="about-card fade-up">
@@ -603,7 +598,6 @@
                 </div>
             </div>
         </div>
-
 
     </section>
 
@@ -1948,19 +1942,6 @@
         gsap.registerPlugin(ScrollTrigger, CustomBounce, SplitText);
     </script>
     <script>
-        // PIN A SECTION UNTIL A CERTAIN ELEMENT 
-        gsap.to(".pinned", {
-            scrollTrigger: {
-                trigger: ".pinned",
-                start: "top top",
-                endTrigger: ".end-pin",
-                end: "bottom bottom",
-                pin: true,
-                pinSpacing: false,
-                scrub: true,
-                // markers: true,
-            }
-        });
 
         gsap.utils.toArray(".partner").forEach((item) => {
             gsap.from(item, {

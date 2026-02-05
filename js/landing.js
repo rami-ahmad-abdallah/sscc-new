@@ -1,6 +1,6 @@
 const loader = document.getElementById("loader");
-setTimeout(loaderOpacity, 1000);
-setTimeout(loaderRemove, 1350);
+setTimeout(loaderOpacity, 6000);
+setTimeout(loaderRemove, 6500);
 
 function loaderOpacity() {
   loader.style.opacity = 0;
@@ -8,6 +8,7 @@ function loaderOpacity() {
 
 function loaderRemove() {
   loader.style.display = "none";
+  document.body.style.overflow = "auto";
 }
 window.addEventListener("load", function () {
   const menuToggler = this.document.querySelector(".menu-toggle");

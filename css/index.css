@@ -10192,6 +10192,76 @@ section {
   margin: auto;
 }
 
+body {
+  overflow: hidden;
+}
+
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: black;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.loading svg {
+  width: auto !important;
+}
+.loading img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+  transform: scale(1.2);
+  animation: wiggle 5s ease 0s infinite alternate;
+}
+.loading svg,
+.loading .loading-square {
+  position: relative;
+  z-index: 2;
+}
+.loading .loading-square {
+  width: 50px;
+  height: 50px;
+  border-right: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  border-bottom: 5px solid transparent;
+  animation: loading-square 1s linear 0s infinite normal;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: scale(1.2) translateX(-20px);
+  }
+  100% {
+    transform: scale(1.2) translateX(20px);
+  }
+}
+@keyframes loading-square {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#svg-stage {
+  width: 60%;
+  max-height: 60vh;
+  max-width: 500px;
+  overflow: visible;
+}
+
+#gradient {
+  height: 0;
+}
+
 .carousal {
   margin-bottom: 10vh;
 }

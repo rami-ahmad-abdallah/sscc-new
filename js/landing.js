@@ -8,7 +8,7 @@ function loaderOpacity() {
 
 function loaderRemove() {
   loader.style.display = "none";
-  document.body.style.overflow = "auto";
+  document.body.style.overflowY = "auto";
 }
 window.addEventListener("load", function () {
   const menuToggler = this.document.querySelector(".menu-toggle");

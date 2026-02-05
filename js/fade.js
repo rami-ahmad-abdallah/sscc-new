@@ -8,9 +8,9 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.25,
+    threshold: 0,
     root: null,
-  }
+  },
 );
 
 fadeUpElements.forEach((el) => observer.observe(el));

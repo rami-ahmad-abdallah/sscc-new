@@ -10348,7 +10348,7 @@ body {
 .about-card .special-card {
   width: 200px;
   padding: 10px;
-  border: 2px solid;
+  border: 2px solid #166cac;
   border-radius: 10px;
   height: auto;
 }
@@ -10358,6 +10358,19 @@ body {
   border-radius: 15px;
   overflow: hidden;
   animation: shadow-animation 10s ease 0s infinite normal forwards;
+}
+#about .service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+}
+#about .service img {
+  width: 150px;
 }
 #about .partners {
   display: flex;

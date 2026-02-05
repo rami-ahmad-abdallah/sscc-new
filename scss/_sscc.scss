@@ -177,7 +177,7 @@ body {
   .special-card {
     width: 200px;
     padding: 10px;
-    border: 2px solid;
+    border: 2px solid #166cac;
     border-radius: 10px;
     height: auto;
   }
@@ -190,6 +190,21 @@ body {
     overflow: hidden;
 
     animation: shadow-animation 10s ease 0s infinite normal forwards;
+  }
+
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 250px;
+    height: 250px;
+    img {
+      width: 150px;
+    }
   }
 
   .partners {

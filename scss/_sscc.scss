@@ -183,6 +183,15 @@ body {
   }
 }
 
+.special-heading-parent {
+  background: linear-gradient(45deg, rgba($theme-color-2, 1), white);
+}
+.special-heading-manage {
+  top: 15%;
+  color: white;
+  z-index: 1;
+}
+
 #about {
   .container {
     box-shadow: 0 0 10px 5px white;
@@ -220,13 +229,18 @@ body {
       height: 130px;
       background: white;
       overflow: hidden;
-      padding: 15px;
+      padding: 5px;
       border-radius: 15px;
+      transition: filter 0.3s ease;
 
       filter: grayscale(1) brightness(0.8);
 
       &:hover {
         filter: grayscale(0) brightness(1);
+      }
+
+      @include on-mobile() {
+        filter: grayscale(0) brightness(0.9);
       }
 
       img {
@@ -270,7 +284,7 @@ body {
 
 // SPECIAL EFFECTS CLASSES
 .bottom-border {
-  width: max-content;
+  width: fit-content;
   position: relative;
   padding: 0 0 7px 0;
   margin-bottom: 25px;
@@ -294,7 +308,10 @@ body {
     transform: scaleX(0%);
   }
 }
-
+ul {
+  margin-left: 25px;
+  text-transform: uppercase;
+}
 #infrastructure {
   margin-top: 10vh;
 
@@ -313,6 +330,11 @@ body {
     &::after {
       background-color: rgba($theme-color-1, 1);
     }
+  }
+
+  ul {
+    margin-left: 25px;
+    text-transform: uppercase;
   }
 }
 

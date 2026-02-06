@@ -26,6 +26,7 @@ window.addEventListener("load", function () {
     link.addEventListener("click", (e) => {
       if (link.href.includes("#")) {
         e.preventDefault();
+        console.log(link.hash.substring(1));
         this.document.getElementById(link.hash.substring(1)).scrollIntoView();
         menu.classList.remove("on");
         menuToggler.classList.remove("on");

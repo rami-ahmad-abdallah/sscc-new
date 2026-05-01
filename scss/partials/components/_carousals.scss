@@ -113,6 +113,11 @@ $card-carousal-radius: 7px;
         object-fit: cover;
         z-index: 1;
         margin-top: 30px;
+
+        &.ar {
+          right: 50%;
+          transform: translate(50%, -50%);
+        }
       }
 
       // img,
@@ -382,10 +387,20 @@ $card-carousal-radius: 7px;
 
       .next-btn {
         right: 3px;
+
+        &.ar {
+          right: unset;
+          left: 3px;
+        }
       }
 
       .previous-btn {
         left: 3px;
+
+        &.ar {
+          left: unset;
+          right: 3px;
+        }
       }
     }
   }

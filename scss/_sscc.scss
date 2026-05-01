@@ -306,11 +306,24 @@ body {
     transition: transform 1s ease;
     transform: scaleX(0%);
   }
+
+  &.ar {
+    &::after {
+      right: 0;
+      transform-origin: right;
+    }
+  }
 }
 ul {
   margin-left: 25px;
   text-transform: uppercase;
+
+  &.ar {
+    margin: 0;
+    margin-right: 25px;
+  }
 }
+
 #infrastructure {
   margin-top: 10vh;
 
@@ -334,6 +347,11 @@ ul {
   ul {
     margin-left: 25px;
     text-transform: uppercase;
+
+    &.ar {
+      margin: 0;
+      margin-right: 25px;
+    }
   }
 }
 
@@ -347,6 +365,10 @@ ul {
     text-align: left;
     border-collapse: collapse;
     width: max-content;
+
+    &.ar {
+      text-align: right;
+    }
   }
 
   tr {

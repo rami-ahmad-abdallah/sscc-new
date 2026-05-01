@@ -5392,6 +5392,10 @@ body {
   z-index: 1;
   margin-top: 30px;
 }
+.carousal .carousal-items .item .fg.ar {
+  right: 50%;
+  transform: translate(50%, -50%);
+}
 .carousal .carousal-items .item.active {
   opacity: 1;
 }
@@ -5575,8 +5579,16 @@ body {
   .card-carousal .next-btn {
     right: 3px;
   }
+  .card-carousal .next-btn.ar {
+    right: unset;
+    left: 3px;
+  }
   .card-carousal .previous-btn {
     left: 3px;
+  }
+  .card-carousal .previous-btn.ar {
+    left: unset;
+    right: 3px;
   }
 }
 
@@ -10446,10 +10458,18 @@ body {
   transition: transform 1s ease;
   transform: scaleX(0%);
 }
+.bottom-border.ar::after {
+  right: 0;
+  transform-origin: right;
+}
 
 ul {
   margin-left: 25px;
   text-transform: uppercase;
+}
+ul.ar {
+  margin: 0;
+  margin-right: 25px;
 }
 
 #infrastructure {
@@ -10474,6 +10494,10 @@ ul {
   margin-left: 25px;
   text-transform: uppercase;
 }
+#infrastructure ul.ar {
+  margin: 0;
+  margin-right: 25px;
+}
 
 .projects-table {
   width: 100%;
@@ -10486,6 +10510,9 @@ ul {
   border-collapse: collapse;
   width: -moz-max-content;
   width: max-content;
+}
+.projects-table table.ar {
+  text-align: right;
 }
 .projects-table tr:last-of-type td {
   border: 0;

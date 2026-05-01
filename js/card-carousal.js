@@ -1,11 +1,19 @@
+let siteLang = document.documentElement.lang;
+
+console.log(siteLang);
+
 function makePreviousBtn(carousalId) {
   // PREVIOUS BUTTON
   const previousBtn = document.createElement("button");
   previousBtn.classList.add(
     "card-carousal-control",
     "previous-btn",
-    "hide-control"
+    "hide-control",
   );
+
+  if (siteLang === "ar") {
+    previousBtn.classList.add("ar");
+  }
   previousBtn.id = `previous-card-btn-${carousalId}`;
   previousBtn.innerHTML = "&#10094;";
 
@@ -19,6 +27,9 @@ function makeNextBtn(carousalId) {
   nextBtn.id = `next-card-btn-${carousalId}`;
   nextBtn.innerHTML = "&#10095;";
 
+  if (siteLang === "ar") {
+    nextBtn.classList.add("ar");
+  }
   return nextBtn;
 }
 
@@ -38,13 +49,13 @@ cardCarousals.forEach((carousal, carousalNumber) => {
   // ADDING A PREVIOUS BUTTON BEFORE THE CARDS CONTAINER
   carousalCardsContainer.insertAdjacentElement(
     "beforebegin",
-    makePreviousBtn(carousalNumber)
+    makePreviousBtn(carousalNumber),
   );
 
   // ADDING A NEXT BUTTON AFTER THE CARDS CONTAINER
   carousalCardsContainer.insertAdjacentElement(
     "afterend",
-    makeNextBtn(carousalNumber)
+    makeNextBtn(carousalNumber),
   );
   let cardContent = "";
   carousalCards.forEach((card, cardNumber) => {

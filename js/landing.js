@@ -1,6 +1,6 @@
 const loader = document.getElementById("loader");
-setTimeout(loaderOpacity, 500);
-setTimeout(loaderRemove, 500);
+setTimeout(loaderOpacity, 6000);
+setTimeout(loaderRemove, 6500);
 
 function loaderOpacity() {
   loader.style.opacity = 0;

@@ -34,9 +34,9 @@ body {
   img {
     position: absolute;
     top: 0;
-    left: 0;
+
     filter: brightness(0.5);
-    transform: scale(1.2);
+    transform: scale(1.4);
     animation: wiggle 5s ease 0s infinite alternate;
   }
 
@@ -59,11 +59,11 @@ body {
 
 @keyframes wiggle {
   0% {
-    transform: scale(1.2) translateX(-20px);
+    transform: scale(1.4) translateX(-20px);
   }
 
   100% {
-    transform: scale(1.2) translateX(20px);
+    transform: scale(1.4) translateX(20px);
   }
 }
 
@@ -185,6 +185,7 @@ body {
 .special-heading-parent {
   background: linear-gradient(45deg, rgba($theme-color-2, 1), white);
 }
+
 .special-heading-manage {
   top: 15%;
   color: white;
@@ -210,6 +211,7 @@ body {
 
     width: 250px;
     height: 250px;
+
     img {
       width: 150px;
     }
@@ -252,6 +254,7 @@ body {
 }
 
 @keyframes shadow-animation {
+
   0%,
   100% {
     box-shadow: 0 0 10px 5px white;
@@ -314,6 +317,7 @@ body {
     }
   }
 }
+
 ul {
   margin-left: 25px;
   text-transform: uppercase;
